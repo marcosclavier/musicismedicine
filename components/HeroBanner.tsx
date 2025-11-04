@@ -25,10 +25,10 @@ export default function HeroBanner() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-block mb-6"
+            className="inline-block mb-6 max-w-full px-4"
           >
-            <span className="bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-semibold border border-white/30">
-              Featuring Grammy-Winning Artist Alan Parsons
+            <span className="bg-white/20 backdrop-blur-sm text-white px-4 sm:px-6 py-2 sm:py-3 rounded-2xl sm:rounded-full text-xs sm:text-sm font-semibold border border-white/30 inline-block text-center leading-relaxed">
+              N2O Featuring Grammy-Winning Artist Alan Parsons
             </span>
           </motion.div>
 
@@ -39,9 +39,9 @@ export default function HeroBanner() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Music is Medicine Presents
+            Music is Medicine
             <br />
-            <span className="text-accent-orange">5 Exclusive Singles</span>
+            <span className="text-accent-orange">Where music, purpose, and hope come together</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -51,7 +51,7 @@ export default function HeroBanner() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 max-w-4xl mx-auto"
           >
-            Turning Tunes into Hope for Brain Cancer Research
+            Four original singles by N2O, featuring Alan Parsons and distributed by LANDR
           </motion.p>
 
           {/* Release Info */}
@@ -61,9 +61,11 @@ export default function HeroBanner() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg sm:text-xl text-white/80 mb-12"
           >
-            First single drops <span className="font-bold text-accent-orange">October 30, 2025</span>
+            First release: <span className="font-bold text-accent-orange">"Radio"</span> – Produced and Mixed by Alan Parsons
             <br />
-            5 singles releasing monthly through February 2026
+            Available <span className="font-bold text-accent-orange">November 4, 2025</span>
+            <br />
+            One new single every month through February 2026
           </motion.p>
 
           {/* CTA Buttons */}
@@ -84,17 +86,17 @@ export default function HeroBanner() {
                 Listen Now
               </button>
             </Link>
-            <Link
-              to="donate"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer group"
+            <a
+              href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
             >
               <button className="flex items-center gap-3 bg-accent-orange text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-2xl hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-orange-500/50">
                 <FaHeart className="group-hover:scale-110 transition-transform" />
                 Donate Now
               </button>
-            </Link>
+            </a>
           </motion.div>
 
           {/* Additional Info */}
@@ -104,8 +106,8 @@ export default function HeroBanner() {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="mt-12 text-white/70 text-sm sm:text-base"
           >
-            <p>All proceeds benefit brain cancer research at The Neuro</p>
-            <p className="mt-2">Distributed by LANDR • Tax-receiptable through McGill University</p>
+            <p>Net proceeds donated to the Brain Tumour Foundation of Canada</p>
+            <p className="mt-2">Distributed by LANDR</p>
           </motion.div>
         </motion.div>
 

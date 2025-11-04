@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Music is Medicine | 5 Exclusive Singles Featuring Alan Parsons',
-  description: 'Music is Medicine presents 5 charity singles featuring Grammy-winning artist Alan Parsons. First single drops October 30, 2025. All proceeds benefit brain cancer research at The Neuro.',
-  keywords: ['Music is Medicine', 'Alan Parsons', 'Brain Cancer Research', 'The Neuro', 'Charity Music', 'PEAK Financial Group', 'Robert Frances'],
+  title: 'Music Is Medicine – N2O & Alan Parsons for Brain Cancer',
+  description: 'A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada through hope, healing, and powerful songs.',
+  keywords: ['Music is Medicine', 'N2O', 'Alan Parsons', 'Brain Cancer Research', 'Brain Tumour Foundation of Canada', 'Charity Music', 'PEAK Financial Group', 'Robert Frances'],
   authors: [{ name: 'PEAK Financial Group' }],
   openGraph: {
-    title: 'Music is Medicine | 5 Exclusive Singles Featuring Alan Parsons',
-    description: 'First single drops October 30, 2025. Join the movement to support life-changing brain cancer research.',
+    title: 'Music Is Medicine – N2O & Alan Parsons for Brain Cancer',
+    description: 'A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada through hope, healing, and powerful songs.',
     url: 'https://musicismedicine.ca',
     siteName: 'Music is Medicine',
     images: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Music is Medicine featuring Alan Parsons',
+        alt: 'Music is Medicine featuring N2O and Alan Parsons',
       },
     ],
     locale: 'en_CA',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Music is Medicine | 5 Exclusive Singles Featuring Alan Parsons',
-    description: 'First single drops October 30, 2025. Support brain cancer research through music.',
+    title: 'Music Is Medicine – N2O & Alan Parsons for Brain Cancer',
+    description: 'A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada.',
     images: ['/images/twitter-image.jpg'],
   },
   robots: {

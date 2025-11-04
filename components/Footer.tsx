@@ -2,14 +2,50 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState, FormEvent } from 'react'
 import { Link } from 'react-scroll'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope, FaHeart, FaMusic } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope, FaHeart, FaMusic, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa'
 import Image from 'next/image'
 
 export default function Footer() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  // Newsletter signup state
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [message, setMessage] = useState('')
+
+  // Handle newsletter form submission
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setStatus('loading')
+    setMessage('')
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setStatus('success')
+        setMessage(data.message || 'Thank you for subscribing!')
+        setEmail('') // Clear the input
+      } else {
+        setStatus('error')
+        setMessage(data.error || 'Something went wrong. Please try again.')
+      }
+    } catch (error) {
+      setStatus('error')
+      setMessage('Network error. Please check your connection and try again.')
+    }
+  }
 
   const socialLinks = [
     { icon: FaFacebook, link: '#', label: 'Facebook' },
@@ -57,17 +93,16 @@ export default function Footer() {
                 Listen to the First Single
               </button>
             </Link>
-            <Link
-              to="donate"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer"
+            <a
+              href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <button className="flex items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
                 <FaHeart />
                 Donate Now
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </motion.div>
@@ -92,13 +127,13 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              A charitable initiative by PEAK Financial Group, featuring Grammy-winning artist
-              Alan Parsons. Raising funds for brain cancer research at The Neuro through the
-              healing power of music.
+              A heartfelt Canadian music initiative by PEAK Financial Group and N2O,
+              featuring Grammy-winning artist Alan Parsons. Raising funds and awareness for
+              brain cancer research through the healing power of music.
             </p>
             <p className="text-gray-400 text-sm">
-              All proceeds benefit The Neuro (Montreal Neurological Institute-Hospital),
-              part of McGill University Health Centre.
+              Net proceeds donated to the Brain Tumour Foundation of Canada, supporting research,
+              education, and patient programs nationwide.
             </p>
           </motion.div>
 
@@ -173,19 +208,51 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Get notified when new singles drop and stay informed about our research impact.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-purple text-white placeholder-gray-400"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={status === 'loading'}
+                className="flex-1 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-purple text-white placeholder-gray-400 disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-accent-purple text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
+                disabled={status === 'loading'}
+                className="px-8 py-3 bg-accent-purple text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
-                Subscribe
+                {status === 'loading' ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    Subscribing...
+                  </>
+                ) : (
+                  'Subscribe'
+                )}
               </button>
             </form>
+
+            {/* Status Messages */}
+            {message && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className={`mt-4 p-3 rounded-lg flex items-center justify-center gap-2 ${
+                  status === 'success'
+                    ? 'bg-accent-green/20 text-accent-green border border-accent-green/30'
+                    : 'bg-red-500/20 text-red-400 border border-red-500/30'
+                }`}
+              >
+                {status === 'success' ? (
+                  <FaCheckCircle className="flex-shrink-0" />
+                ) : (
+                  <FaExclamationCircle className="flex-shrink-0" />
+                )}
+                <span className="text-sm">{message}</span>
+              </motion.div>
+            )}
           </div>
         </motion.div>
 
@@ -196,15 +263,52 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mb-12 text-center"
         >
-          <h5 className="text-sm font-semibold text-gray-400 mb-4">
+          <h5 className="text-sm font-semibold text-gray-400 mb-6">
             Proud Partners & Sponsors
           </h5>
-          <div className="flex flex-wrap justify-center items-center gap-6">
-            {['National Bank', 'Air Canada', 'TD Bank', 'CN', 'Sun Life', 'LANDR', 'The Neuro'].map((partner, index) => (
-              <span key={index} className="text-gray-500 font-semibold text-sm">
-                {partner}
-              </span>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center max-w-5xl mx-auto">
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/BNC-Logo.png"
+                alt="National Bank"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/air-canada-logo-black-and-white.png"
+                alt="Air Canada"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/TD_Bank-logo-png.png"
+                alt="TD Bank"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/Canadian_National_Railway-Logo.png"
+                alt="CN"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/sun-life-logo.png"
+                alt="Sun Life"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 px-4">
+              <img
+                src="/logo/groupe-deschenes-logo.png"
+                alt="Groupe Deschenes"
+                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
           </div>
         </motion.div>
 

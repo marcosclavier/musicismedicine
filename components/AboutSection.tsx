@@ -10,10 +10,10 @@ export default function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const stats = [
-    { value: '5', label: 'Charity Singles', icon: FaMusic },
-    { value: '$500K+', label: 'Already Raised', icon: FaHeart },
-    { value: '4', label: 'Clinical Trials', icon: FaMicroscope },
-    { value: '1000s', label: 'Lives Touched', icon: FaBrain },
+    { value: '4', label: 'Charity Singles', icon: FaMusic },
+    { value: '$600K+', label: 'Already Raised', icon: FaHeart },
+    { value: '1000s', label: 'Supporters Nationwide', icon: FaBrain },
+    { value: '100%', label: 'Net Proceeds Donated', icon: FaMicroscope },
   ]
 
   const features = [
@@ -24,12 +24,12 @@ export default function AboutSection() {
     },
     {
       title: 'Research Saves Lives',
-      description: 'Every dollar raised funds clinical trials at The Neuro, advancing treatments and uncovering the causes of brain cancer.',
+      description: 'Every dollar raised supports the Brain Tumour Foundation of Canada in funding research, education, and patient support programs.',
       icon: FaMicroscope,
     },
     {
       title: 'Hope for Families',
-      description: 'Supporting patients and families affected by glioblastoma and other brain tumors through groundbreaking research.',
+      description: 'Supporting patients and families affected by brain tumours across Canada through awareness, research, and community programs.',
       icon: FaHeart,
     },
   ]
@@ -45,11 +45,11 @@ export default function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            About the <span className="text-gradient">Initiative</span>
+            About <span className="text-gradient">Music Is Medicine</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            A series of 5 charity singles featuring legendary producer and musician Alan Parsons,
-            created in collaboration with Music is Medicine to raise funds and awareness for brain cancer research.
+            Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O.
+            Four original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.
           </p>
         </motion.div>
 
@@ -88,22 +88,19 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h3 className="text-3xl font-bold text-text-primary mb-6">
-              From Benefit Concerts to Recorded Releases
+              Turning Loss Into Purpose
             </h3>
             <p className="text-lg text-text-secondary mb-4 leading-relaxed">
-              Music is Medicine began as a benefit concert series and has evolved into a
-              multi-faceted fundraising initiative. These 5 exclusive singles represent the
-              next chapter in our mission to support brain cancer research.
+              After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. Together with Alan Parsons,
+              he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.
             </p>
             <p className="text-lg text-text-secondary mb-4 leading-relaxed">
-              Glioblastoma affects thousands of people annually, with limited treatment options.
-              Our past events have raised over <span className="font-bold text-primary-blue">$500,000</span>,
-              launching four clinical trials at The Neuro (Montreal Neurological Institute-Hospital),
-              part of McGill University Health Centre.
+              Brain tumours affect thousands of families every year. Through past benefit concerts and early support,
+              Music Is Medicine has raised over <span className="font-bold text-primary-blue">$600,000</span> for brain cancer research and programs.
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
-              Through these singles, we aim to generate new data, advance innovative therapies,
-              and provide hope for patients and families facing this devastating diagnosis.
+              Every stream, download, and share contributes to the mission, with net proceeds donated to the Brain Tumour Foundation of Canada,
+              helping fund research, advocacy, and patient support.
             </p>
           </motion.div>
 
@@ -148,24 +145,24 @@ export default function AboutSection() {
           className="bg-gradient-to-r from-primary-blue to-accent-purple text-white rounded-2xl p-8 sm:p-12 text-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-            Our Mission: Awareness, Support, and Hope
+            Turning Sound Into Hope for Families Across Canada
           </h3>
           <p className="text-lg sm:text-xl mb-6 max-w-2xl mx-auto opacity-90">
-            Every stream, purchase, and donation brings us closer to better treatments,
-            deeper understanding, and ultimately, a cure for brain cancer.
+            Every listener, every share, every act of kindness counts.
+            Together, we can make every note a step toward healing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#singles"
               className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-primary-gray transition-colors duration-300"
             >
-              Explore the Singles
+              Listen to the Singles
             </a>
             <a
               href="#donate"
               className="bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
             >
-              Make a Donation
+              Support the Cause
             </a>
           </div>
         </motion.div>

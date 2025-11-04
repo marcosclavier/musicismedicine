@@ -93,3 +93,7 @@ The landing page should follow a single-page structure with smooth scrolling sec
   The development server is running at:
   - Local: http://localhost:3000
   - Network: http://192.168.131.169:3000
+
+  rm -rf .next
+
+  npm run dev

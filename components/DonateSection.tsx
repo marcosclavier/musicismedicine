@@ -16,6 +16,7 @@ export default function DonateSection() {
       description: 'Equivalent to one single release',
       impact: 'Supports basic research materials',
       icon: '🎵',
+      link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=10',
     },
     {
       amount: '$25',
@@ -24,6 +25,7 @@ export default function DonateSection() {
       impact: 'Funds laboratory testing',
       icon: '🎸',
       popular: true,
+      link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=25',
     },
     {
       amount: '$50',
@@ -31,6 +33,7 @@ export default function DonateSection() {
       description: 'Make a significant impact',
       impact: 'Contributes to clinical trial costs',
       icon: '🎼',
+      link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=50',
     },
     {
       amount: '$100',
@@ -38,6 +41,7 @@ export default function DonateSection() {
       description: 'Full collection support',
       impact: 'Funds advanced research equipment',
       icon: '🏆',
+      link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=100',
     },
     {
       amount: 'Custom',
@@ -45,23 +49,15 @@ export default function DonateSection() {
       description: 'Choose your amount',
       impact: 'Every dollar makes a difference',
       icon: '💫',
+      link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1',
     },
   ]
 
   const benefits = [
-    { text: '100% tax-receiptable through McGill University', icon: FaReceipt },
+    { text: 'Tax-receiptable through Brain Tumour Foundation of Canada', icon: FaReceipt },
     { text: 'Secure donation processing', icon: FaCheck },
-    { text: 'Immediate impact on research', icon: FaHeart },
-    { text: 'Regular updates on funded research', icon: FaCalendarAlt },
-  ]
-
-  const sponsors = [
-    'National Bank',
-    'Air Canada',
-    'TD Bank',
-    'CN',
-    'Sun Life',
-    'Groupe Deschenes',
+    { text: 'Direct support for research and patient programs', icon: FaHeart },
+    { text: 'Join thousands of supporters nationwide', icon: FaCalendarAlt },
   ]
 
   return (
@@ -90,24 +86,24 @@ export default function DonateSection() {
           className="bg-gradient-to-r from-primary-blue to-accent-purple text-white rounded-2xl p-8 sm:p-12 text-center mb-12"
         >
           <h3 className="text-3xl sm:text-4xl font-bold mb-4">
-            Past Events Raised Over $500,000
+            Over $600,000 Raised for Brain Tumour Research
           </h3>
           <p className="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto mb-6">
-            These funds launched 4 clinical trials at The Neuro, generating new data and hope.
+            Through past benefit concerts and early support, these funds support research, education, and patient programs.
             Your donation today continues this vital work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-left sm:text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="text-3xl font-bold">4</div>
-              <div className="text-sm opacity-90">Clinical Trials Funded</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="text-3xl font-bold">$500K+</div>
+              <div className="text-3xl font-bold">$600K+</div>
               <div className="text-sm opacity-90">Total Raised</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold">1000s</div>
-              <div className="text-sm opacity-90">Lives Impacted</div>
+              <div className="text-sm opacity-90">Supporters Nationwide</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="text-3xl font-bold">100%</div>
+              <div className="text-sm opacity-90">Net Proceeds Donated</div>
             </div>
           </div>
         </motion.div>
@@ -154,9 +150,14 @@ export default function DonateSection() {
                       {tier.impact}
                     </p>
                   </div>
-                  <button className="w-full bg-primary-blue text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300 group-hover:scale-105">
+                  <a
+                    href={tier.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-primary-blue text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300 group-hover:scale-105 text-center"
+                  >
                     Select
-                  </button>
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -178,10 +179,10 @@ export default function DonateSection() {
                 One-Time Donation
               </h4>
               <p className="text-text-secondary mb-6">
-                Make an immediate impact with a single contribution to support ongoing research.
+                Make an immediate impact with a single contribution to support research, education, and patient programs.
               </p>
               <a
-                href="https://www.mcgill.ca/neuro"
+                href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
@@ -199,10 +200,10 @@ export default function DonateSection() {
                 Monthly Pledge
               </h4>
               <p className="text-text-secondary mb-6">
-                Provide sustained support with a recurring monthly donation to fund long-term research.
+                Provide sustained support with a recurring monthly donation to fund long-term research and programs.
               </p>
               <a
-                href="https://www.mcgill.ca/neuro"
+                href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-accent-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
@@ -250,20 +251,20 @@ export default function DonateSection() {
         >
           <FaUniversity className="text-5xl text-primary-blue mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-text-primary mb-4">
-            Donations Managed by McGill University
+            Supporting the Brain Tumour Foundation of Canada
           </h3>
           <p className="text-text-secondary mb-4 max-w-2xl mx-auto leading-relaxed">
-            All donations are processed through McGill University's secure portal, with 100% of funds
-            directed to brain cancer research at The Neuro (Montreal Neurological Institute-Hospital).
-            You'll receive an official tax receipt for the full amount of your donation.
+            Net proceeds from Music Is Medicine are donated to the Brain Tumour Foundation of Canada.
+            For over four decades, the Foundation has led the way in research, education, and community support,
+            working to improve outcomes and offer hope to every Canadian affected by a brain tumour.
           </p>
           <a
-            href="https://www.mcgill.ca/neuro"
+            href="https://www.braintumour.ca/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-primary-blue font-semibold hover:text-accent-purple transition-colors duration-300"
           >
-            Learn More About The Neuro →
+            Learn More About the Brain Tumour Foundation →
           </a>
         </motion.div>
 
@@ -289,28 +290,6 @@ export default function DonateSection() {
           >
             Contact for Corporate Opportunities
           </a>
-        </motion.div>
-
-        {/* Sponsors */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.9 }}
-          className="mt-12 text-center"
-        >
-          <h4 className="text-xl font-semibold text-text-secondary mb-6">
-            Proud Sponsors & Partners
-          </h4>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {sponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="bg-primary-gray px-6 py-3 rounded-lg font-semibold text-text-primary"
-              >
-                {sponsor}
-              </div>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

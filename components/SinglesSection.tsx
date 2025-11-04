@@ -12,54 +12,45 @@ export default function SinglesSection() {
 
   const singles = [
     {
-      title: 'Single #1',
-      subtitle: 'Hope Rising',
-      releaseDate: 'October 30, 2025',
-      status: 'upcoming',
-      description: 'An uplifting progressive rock anthem blending inspirational themes with Alan Parsons\' signature sound. This powerful opening track sets the tone for the journey ahead.',
-      themes: ['Hope', 'Resilience', 'New Beginnings'],
-      artwork: '/images/single-1.jpg',
+      title: 'Radio',
+      subtitle: 'by N2O featuring Alan Parsons',
+      releaseDate: 'November 4, 2025',
+      status: 'available',
+      description: 'Produced and Mixed by Alan Parsons — a song about connection, memory, and finding light after loss. This powerful opening track sets the tone for the journey ahead.',
+      themes: ['Connection', 'Memory', 'Hope'],
+      artwork: '/Radio-Final-RGB-1500.jpeg',
       audioSnippet: '/audio/single-1-snippet.mp3',
+      spotifyLink: 'https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3?si=eyUeMGfvS9uINyRPFLQ_8w&nd=1&dlsi=dc22e2de078c4929',
     },
     {
-      title: 'Single #2',
-      subtitle: 'Echoes of Strength',
+      title: 'You & I',
+      subtitle: 'by N2O featuring Alan Parsons',
       releaseDate: 'November 30, 2025',
       status: 'upcoming',
-      description: 'A hauntingly beautiful composition that explores the inner strength found in facing life\'s greatest challenges. Features ethereal vocals and intricate instrumentation.',
-      themes: ['Courage', 'Perseverance', 'Inner Peace'],
+      description: 'A tribute to love, resilience, and unity. This heartfelt composition celebrates the bonds that give us strength through life\'s greatest challenges.',
+      themes: ['Love', 'Resilience', 'Unity'],
       artwork: '/images/single-2.jpg',
       audioSnippet: '/audio/single-2-snippet.mp3',
     },
     {
-      title: 'Single #3',
-      subtitle: 'Light Through Darkness',
+      title: 'Courage',
+      subtitle: 'by N2O featuring Alan Parsons',
       releaseDate: 'December 30, 2025',
       status: 'upcoming',
-      description: 'An emotional journey through adversity towards hope. This mid-series release showcases Parsons\' mastery of sonic landscapes.',
-      themes: ['Hope', 'Transformation', 'Healing'],
+      description: 'A song about strength, healing, and perseverance. This powerful track explores the courage we find within ourselves when facing adversity.',
+      themes: ['Strength', 'Healing', 'Perseverance'],
       artwork: '/images/single-3.jpg',
       audioSnippet: '/audio/single-3-snippet.mp3',
     },
     {
-      title: 'Single #4',
-      subtitle: 'Together We Rise',
-      releaseDate: 'January 30, 2026',
-      status: 'upcoming',
-      description: 'A celebration of community, support, and collective strength. Features uplifting melodies that remind us we\'re never alone in the fight.',
-      themes: ['Unity', 'Community', 'Support'],
-      artwork: '/images/single-4.jpg',
-      audioSnippet: '/audio/single-4-snippet.mp3',
-    },
-    {
-      title: 'Single #5',
-      subtitle: 'Tomorrow\'s Promise',
+      title: 'Where to Go',
+      subtitle: 'by N2O featuring Alan Parsons',
       releaseDate: 'February 28, 2026',
       status: 'upcoming',
-      description: 'The inspiring finale that looks toward a future of breakthrough treatments and hope. A powerful conclusion to this musical journey of healing.',
-      themes: ['Future', 'Innovation', 'Victory'],
-      artwork: '/images/single-5.jpg',
-      audioSnippet: '/audio/single-5-snippet.mp3',
+      description: 'A reflection on purpose, hope, and moving forward. The inspiring finale that looks toward a future filled with possibility and promise.',
+      themes: ['Purpose', 'Hope', 'Future'],
+      artwork: '/images/single-4.jpg',
+      audioSnippet: '/audio/single-4-snippet.mp3',
     },
   ]
 
@@ -85,7 +76,7 @@ export default function SinglesSection() {
             The <span className="text-gradient">Singles</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Five exclusive tracks releasing monthly from October 2025 through February 2026
+            Four original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026
           </p>
         </motion.div>
 
@@ -101,7 +92,7 @@ export default function SinglesSection() {
             <h3 className="text-2xl font-bold">Release Schedule</h3>
           </div>
           <p className="text-lg opacity-90">
-            New single every month • October 30, 2025 - February 28, 2026
+            One new single every month • November 4, 2025 - February 28, 2026
           </p>
         </motion.div>
 
@@ -118,11 +109,19 @@ export default function SinglesSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 {/* Artwork */}
                 <div className="relative">
-                  <div className="aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-accent-purple to-accent-orange relative group">
-                    {/* Placeholder artwork */}
-                    <div className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold">
-                      #{index + 1}
-                    </div>
+                  <div className="aspect-square rounded-lg overflow-hidden relative group">
+                    {/* Artwork Image or Placeholder */}
+                    {single.status === 'available' ? (
+                      <img
+                        src={single.artwork}
+                        alt={`${single.title} cover art`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-accent-purple to-accent-orange flex items-center justify-center text-white text-6xl font-bold">
+                        #{index + 1}
+                      </div>
+                    )}
 
                     {/* Play button overlay */}
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -145,6 +144,11 @@ export default function SinglesSection() {
                     {single.status === 'upcoming' && (
                       <span className="bg-accent-orange text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
                         <FaClock /> Coming Soon
+                      </span>
+                    )}
+                    {single.status === 'available' && (
+                      <span className="bg-accent-green text-white px-3 py-1 rounded-full text-xs font-semibold">
+                        Available Now
                       </span>
                     )}
                   </div>
@@ -180,30 +184,19 @@ export default function SinglesSection() {
 
                   {/* Action Buttons */}
                   <div className="flex flex-wrap gap-3">
-                    <button
-                      onClick={() => handlePlayPause(index)}
-                      className="flex items-center gap-2 bg-accent-purple text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
-                    >
-                      {playingSingle === index ? <FaPause /> : <FaPlay />}
-                      {playingSingle === index ? 'Pause' : 'Play'} Preview
-                    </button>
-
                     {single.status === 'upcoming' ? (
                       <button className="flex items-center gap-2 bg-primary-gray text-text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300">
                         Pre-Save
                       </button>
                     ) : (
-                      <>
-                        <button className="flex items-center gap-2 bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300">
-                          <FaSpotify /> Spotify
-                        </button>
-                        <button className="flex items-center gap-2 bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300">
-                          <FaApple /> Apple Music
-                        </button>
-                        <button className="flex items-center gap-2 bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300">
-                          <FaYoutube /> YouTube
-                        </button>
-                      </>
+                      <a
+                        href={single.spotifyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-[#1DB954] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#1ed760] transition-colors duration-300"
+                      >
+                        <FaSpotify /> Listen on Spotify
+                      </a>
                     )}
                   </div>
                 </div>
@@ -223,8 +216,8 @@ export default function SinglesSection() {
             Exclusive Charity Collection
           </h3>
           <p className="text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
-            All singles feature Alan Parsons' production and performances, recorded in Montreal.
-            Distributed by LANDR with 100% of proceeds benefiting brain cancer research at The Neuro.
+            All singles by N2O featuring Alan Parsons, distributed globally by LANDR.
+            Net proceeds donated to the Brain Tumour Foundation of Canada.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-primary-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300">

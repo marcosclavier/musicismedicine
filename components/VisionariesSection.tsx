@@ -13,19 +13,19 @@ export default function VisionariesSection() {
   const visionaries = [
     {
       name: 'Robert Frances',
-      title: 'Founder & Brain Cancer Survivor',
-      organization: 'President & CEO, PEAK Financial Group',
+      title: 'Founder',
+      organization: 'CEO, PEAK Financial Group & Member of N2O',
       image: '/robert-frances.jpg',
-      quote: 'Music healed me during my darkest hours. Now, through Music is Medicine, it\'s healing others by funding the research that saved my life.',
-      bio: 'As a brain cancer survivor diagnosed with glioblastoma around 2020, Robert found solace and healing in music during his treatment. This personal journey inspired him to launch Music is Medicine, transforming his passion for music into a purposeful movement for research funding under PEAK\'s #PEAKWithPurpose banner.',
+      quote: 'After losing a friend and bandmate to brain cancer, I wanted to turn emotion into something meaningful. Music Is Medicine is our way to give back and help others through the power of music.',
+      bio: 'After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. As CEO of PEAK Financial Group and member of the band N2O, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.',
     },
     {
       name: 'Alan Parsons',
       title: 'Grammy-Winning Artist & Producer',
       organization: 'Featured Artist',
       image: '/alan-parsons.jpg',
-      quote: 'Music has the power to inspire, heal, and bring people together. I\'m honored to contribute to such an important cause that turns sound into hope.',
-      bio: 'Legendary producer and musician known for his groundbreaking work with Pink Floyd, The Beatles, and his own Alan Parsons Project. His productions have shaped the sound of modern music, and now he\'s lending his talent to save lives through these exclusive charity singles.',
+      quote: 'Music connects people in moments that words alone can\'t reach. This project reminded me that creativity and compassion can change lives.',
+      bio: 'World-renowned musician, engineer, and producer known for his legendary work with Pink Floyd, The Beatles, and his own Alan Parsons Project. Alan Parsons brings his iconic sound and vision to Music Is Medicine, producing and mixing the debut single "Radio", capturing emotion, connection, and remembrance in every note.',
     },
   ]
 
@@ -33,17 +33,17 @@ export default function VisionariesSection() {
     {
       name: 'PEAK Financial Group',
       description: 'Montreal-based independent financial services firm driving community impact through the #PEAKWithPurpose initiative.',
-      logo: '/images/peak-logo.png',
+      logo: '/logo/peak-logo-transparent.png',
     },
     {
       name: 'LANDR',
-      description: 'Leading audio mastering and distribution platform handling the production and distribution of all five charity singles.',
-      logo: '/images/landr-logo.png',
+      description: 'Leading audio mastering and distribution platform distributing all four charity singles globally.',
+      logo: '/logo/LANDR_Blue_Logo-png.png',
     },
     {
-      name: 'The Neuro',
-      description: 'Montreal Neurological Institute-Hospital, part of McGill University Health Centre, where all proceeds fund brain cancer research.',
-      logo: '/images/neuro-logo.png',
+      name: 'Brain Tumour Foundation of Canada',
+      description: 'Leading the way in research, education, and community support for Canadians affected by brain tumours. All net proceeds benefit their programs.',
+      logo: '/logo/brain-tumour-foundation-logo.png',
     },
   ]
 
@@ -140,11 +140,15 @@ export default function VisionariesSection() {
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
                 className="text-center"
               >
-                {/* Logo Placeholder */}
-                <div className="bg-primary-gray rounded-lg h-32 flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-primary-blue">
-                    {partner.name}
-                  </span>
+                {/* Logo */}
+                <div className="bg-primary-gray rounded-lg h-32 flex items-center justify-center mb-4 p-6">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={200}
+                    height={80}
+                    className="object-contain max-h-20"
+                  />
                 </div>
                 <h4 className="text-xl font-bold text-text-primary mb-2">
                   {partner.name}

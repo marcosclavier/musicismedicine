@@ -39,47 +39,47 @@ export default function ImpactSection() {
 
   const achievements = [
     {
-      icon: FaMicroscope,
-      value: '4',
-      label: 'Clinical Trials Launched',
-      description: 'New studies investigating causes and treatments',
+      icon: FaAward,
+      value: '$600K+',
+      label: 'Funds Raised',
+      description: 'Supporting research and patient programs',
     },
     {
       icon: FaUsers,
-      value: '50+',
-      label: 'Patients Enrolled',
-      description: 'Participating in funded research studies',
+      value: '1000s',
+      label: 'Supporters',
+      description: 'Brought together nationwide',
     },
     {
       icon: FaChartLine,
-      value: '10+',
-      label: 'Research Publications',
-      description: 'Academic papers advancing the field',
+      value: '100%',
+      label: 'Net Proceeds',
+      description: 'Donated to the Foundation',
     },
     {
-      icon: FaAward,
-      value: '$500K+',
-      label: 'Research Funding',
-      description: 'Directly supporting The Neuro',
+      icon: FaMicroscope,
+      value: '40+',
+      label: 'Years of Impact',
+      description: 'Brain Tumour Foundation\'s legacy',
     },
   ]
 
   const researchAreas = [
     {
-      title: 'Understanding Glioblastoma Origins',
-      description: 'Investigating the genetic and environmental factors that lead to brain tumor formation.',
+      title: 'Research & Innovation',
+      description: 'Funding groundbreaking research to advance brain tumour treatment and find new cures.',
     },
     {
-      title: 'Innovative Treatment Approaches',
-      description: 'Exploring new therapies including immunotherapy, targeted drugs, and combination treatments.',
+      title: 'Education & Awareness',
+      description: 'Building national awareness about brain cancer and its effects on families across Canada.',
     },
     {
-      title: 'Patient Outcomes & Quality of Life',
-      description: 'Studying ways to improve survival rates and enhance quality of life during treatment.',
+      title: 'Patient & Family Support',
+      description: 'Providing education, resources, and support for patients and caregivers throughout their journey.',
     },
     {
-      title: 'Early Detection Methods',
-      description: 'Developing better diagnostic tools for earlier intervention and improved prognosis.',
+      title: 'Advocacy & Policy',
+      description: 'Working to improve outcomes through advocacy and policy changes at the national level.',
     },
   ]
 
@@ -148,7 +148,7 @@ export default function ImpactSection() {
           className="bg-white rounded-2xl p-8 sm:p-12 mb-16"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
-            Research Areas We're Funding
+            How Your Support Helps
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             {researchAreas.map((area, index) => (
@@ -260,22 +260,32 @@ export default function ImpactSection() {
           className="bg-white rounded-2xl p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-text-primary mb-6">
-            In Partnership With
+            Supporting the Brain Tumour Foundation of Canada
           </h3>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="p-6 bg-primary-gray rounded-lg">
-              <h4 className="text-xl font-bold text-primary-blue mb-2">The Neuro</h4>
-              <p className="text-text-secondary text-sm">
-                Montreal Neurological Institute-Hospital, part of McGill University Health Centre
-              </p>
-            </div>
-            <div className="p-6 bg-primary-gray rounded-lg">
+          <div className="max-w-2xl mx-auto">
+            <div className="p-6 bg-primary-gray rounded-lg text-center">
+              <div className="flex items-center justify-center h-24 mb-4">
+                <img
+                  src="/logo/brain-tumour-foundation-logo.png"
+                  alt="Brain Tumour Foundation of Canada"
+                  className="object-contain max-h-20 max-w-full"
+                />
+              </div>
               <h4 className="text-xl font-bold text-primary-blue mb-2">
                 Brain Tumour Foundation of Canada
               </h4>
-              <p className="text-text-secondary text-sm">
-                Aligned with national awareness and support efforts
+              <p className="text-text-secondary text-sm mb-4">
+                For over four decades, the Brain Tumour Foundation of Canada has led the way in research, education, and community support.
+                Its mission is to improve outcomes, fund innovation, and offer hope to every Canadian affected by a brain tumour.
               </p>
+              <a
+                href="https://www.braintumour.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-primary-blue font-semibold hover:text-accent-purple transition-colors duration-300"
+              >
+                Visit the Brain Tumour Foundation →
+              </a>
             </div>
           </div>
         </motion.div>
