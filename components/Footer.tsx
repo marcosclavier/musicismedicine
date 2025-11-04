@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState, FormEvent } from 'react'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
+import Link from 'next/link'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope, FaHeart, FaMusic, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa'
 import Image from 'next/image'
 
@@ -82,7 +83,7 @@ export default function Footer() {
             Listen, Buy, Donate, and Make a Difference
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <ScrollLink
               to="singles"
               smooth={true}
               duration={500}
@@ -92,7 +93,7 @@ export default function Footer() {
                 <FaMusic />
                 Listen to the First Single
               </button>
-            </Link>
+            </ScrollLink>
             <a
               href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
               target="_blank"
@@ -147,7 +148,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
+                  <ScrollLink
                     to={link.to}
                     smooth={true}
                     duration={500}
@@ -156,7 +157,7 @@ export default function Footer() {
                     className="text-gray-400 hover:text-accent-purple transition-colors duration-300 cursor-pointer"
                   >
                     {link.label}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
@@ -321,17 +322,17 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="#" className="hover:text-accent-purple transition-colors duration-300">
+              <Link href="/privacy" className="hover:text-accent-purple transition-colors duration-300">
                 Privacy Policy
-              </a>
+              </Link>
               <span>•</span>
-              <a href="#" className="hover:text-accent-purple transition-colors duration-300">
+              <Link href="/terms" className="hover:text-accent-purple transition-colors duration-300">
                 Terms of Service
-              </a>
+              </Link>
               <span>•</span>
-              <a href="#" className="hover:text-accent-purple transition-colors duration-300">
+              <Link href="/accessibility" className="hover:text-accent-purple transition-colors duration-300">
                 Accessibility
-              </a>
+              </Link>
             </div>
             <div className="text-center md:text-right">
               <p>&copy; {new Date().getFullYear()} PEAK Financial Group. All rights reserved.</p>
