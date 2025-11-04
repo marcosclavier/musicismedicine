@@ -42,8 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon-music-is-medicine.png" />
+        <link rel="apple-touch-icon" href="/favicon-music-is-medicine.png" />
         <meta name="theme-color" content="#0077B6" />
       </head>
       <body className="antialiased">

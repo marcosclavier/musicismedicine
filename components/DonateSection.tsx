@@ -169,7 +169,7 @@ export default function DonateSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="grid md:grid-cols-2 gap-8 mb-12"
+          className="max-w-2xl mx-auto mb-12"
         >
           {/* One-Time Donation */}
           <div className="card bg-primary-gray">
@@ -188,27 +188,6 @@ export default function DonateSection() {
                 className="inline-block bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
               >
                 Donate Now
-              </a>
-            </div>
-          </div>
-
-          {/* Monthly Pledge */}
-          <div className="card bg-primary-gray">
-            <div className="text-center">
-              <FaCalendarAlt className="text-5xl text-accent-purple mx-auto mb-4" />
-              <h4 className="text-2xl font-bold text-text-primary mb-3">
-                Monthly Pledge
-              </h4>
-              <p className="text-text-secondary mb-6">
-                Provide sustained support with a recurring monthly donation to fund long-term research and programs.
-              </p>
-              <a
-                href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-accent-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
-              >
-                Set Up Monthly
               </a>
             </div>
           </div>
