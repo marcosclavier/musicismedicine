@@ -10,11 +10,23 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
+    // Throttle function to limit scroll event frequency
+    let throttleTimer: NodeJS.Timeout | null = null
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      if (throttleTimer) return
+
+      throttleTimer = setTimeout(() => {
+        setIsScrolled(window.scrollY > 50)
+        throttleTimer = null
+      }, 100) // Fire at most once per 100ms instead of 60+ times/second
     }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (throttleTimer) clearTimeout(throttleTimer)
+    }
   }, [])
 
   const navLinks = [
@@ -48,7 +60,8 @@ export default function Navigation() {
                 alt="Music is Medicine"
                 width={150}
                 height={72}
-                className="h-[72px] w-auto"
+                priority
+                style={{ height: '72px', width: 'auto' }}
               />
             </Link>
           </div>

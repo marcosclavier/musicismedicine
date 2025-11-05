@@ -273,45 +273,63 @@ export default function Footer() {
           </h5>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center max-w-5xl mx-auto">
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/BNC-Logo.png"
                 alt="National Bank"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/air-canada-logo-black-and-white.png"
                 alt="Air Canada"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/TD_Bank-logo-png.png"
                 alt="TD Bank"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/Canadian_National_Railway-Logo.png"
                 alt="CN"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/sun-life-logo.png"
                 alt="Sun Life"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
             <div className="flex items-center justify-center h-16 px-4">
-              <img
+              <Image
                 src="/logo/groupe-deschenes-logo.png"
                 alt="Groupe Deschenes"
-                className="object-contain max-h-12 max-w-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                width={150}
+                height={48}
+                style={{ height: 'auto', width: 'auto', maxHeight: '48px' }}
+                className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           </div>

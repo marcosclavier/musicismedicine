@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaSpotify, FaCalendar, FaClock } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function SinglesSection() {
   const ref = useRef(null)
@@ -100,16 +101,19 @@ export default function SinglesSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 {/* Artwork */}
                 <div className="relative">
-                  <div className="aspect-square rounded-lg overflow-hidden relative">
+                  <div className="aspect-square rounded-lg overflow-hidden relative bg-gray-100">
                     {/* Artwork Image or Placeholder */}
                     {single.status === 'available' ? (
-                      <img
+                      <Image
                         src={single.artwork}
                         alt={`${single.title} cover art`}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover"
+                        priority={index === 0}
                       />
                     ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-accent-purple to-accent-orange flex items-center justify-center text-white text-6xl font-bold">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent-purple to-accent-orange flex items-center justify-center text-white text-6xl font-bold">
                         #{index + 1}
                       </div>
                     )}

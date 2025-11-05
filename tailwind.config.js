@@ -23,8 +23,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Poppins', 'Inter', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-poppins)', 'var(--font-inter)', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 1s ease-in',

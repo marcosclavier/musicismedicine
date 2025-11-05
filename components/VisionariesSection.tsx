@@ -147,7 +147,8 @@ export default function VisionariesSection() {
                     alt={partner.name}
                     width={200}
                     height={80}
-                    className="object-contain max-h-20"
+                    style={{ height: 'auto', width: 'auto', maxHeight: '80px' }}
+                    className="object-contain"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-text-primary mb-2">

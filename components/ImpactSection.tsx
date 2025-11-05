@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { FaChevronLeft, FaChevronRight, FaMicroscope, FaUsers, FaChartLine, FaAward } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function ImpactSection() {
   const ref = useRef(null)
@@ -265,10 +266,13 @@ export default function ImpactSection() {
           <div className="max-w-2xl mx-auto">
             <div className="p-6 bg-primary-gray rounded-lg text-center">
               <div className="flex items-center justify-center h-24 mb-4">
-                <img
+                <Image
                   src="/logo/brain-tumour-foundation-logo.png"
                   alt="Brain Tumour Foundation of Canada"
-                  className="object-contain max-h-20 max-w-full"
+                  width={200}
+                  height={80}
+                  style={{ height: 'auto', width: 'auto', maxHeight: '80px' }}
+                  className="object-contain"
                 />
               </div>
               <h4 className="text-xl font-bold text-primary-blue mb-2">

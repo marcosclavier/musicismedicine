@@ -1,5 +1,21 @@
 import type { Metadata } from 'next'
+import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
+
+// Optimized font loading with next/font
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  display: 'swap',
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://musicismedicine.ca'),
@@ -41,13 +57,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <link rel="icon" href="/favicon-music-is-medicine.png" />
         <link rel="apple-touch-icon" href="/favicon-music-is-medicine.png" />
         <meta name="theme-color" content="#0077B6" />
       </head>
-      <body className="antialiased">
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>
