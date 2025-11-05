@@ -109,6 +109,23 @@ a:focus, button:focus {
   animation: gradient 15s ease infinite;
 }
 
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .gradient-bg {
+    animation: none;
+    background-position: 0% 50%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Card styles */
 .card {
   @apply bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;

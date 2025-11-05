@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://musicismedicine.ca'),
   title: 'Music Is Medicine – N2O & Alan Parsons for Brain Cancer',
   description: 'A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada through hope, healing, and powerful songs.',
   keywords: ['Music is Medicine', 'N2O', 'Alan Parsons', 'Brain Cancer Research', 'Brain Tumour Foundation of Canada', 'Charity Music', 'PEAK Financial Group', 'Robert Frances'],
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Music is Medicine',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Music is Medicine featuring N2O and Alan Parsons',
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Music Is Medicine – N2O & Alan Parsons for Brain Cancer',
     description: 'A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada.',
-    images: ['/images/twitter-image.jpg'],
+    images: ['/images/twitter-image.svg'],
   },
   robots: {
     index: true,

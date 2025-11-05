@@ -48,13 +48,15 @@ export default function Footer() {
     }
   }
 
-  const socialLinks = [
-    { icon: FaFacebook, link: '#', label: 'Facebook' },
-    { icon: FaTwitter, link: '#', label: 'Twitter' },
-    { icon: FaInstagram, link: '#', label: 'Instagram' },
-    { icon: FaLinkedin, link: '#', label: 'LinkedIn' },
-    { icon: FaYoutube, link: '#', label: 'YouTube' },
-  ]
+  // COMMENTED OUT: No social media accounts exist yet
+  // Uncomment and add real URLs when social media presence is established
+  // const socialLinks = [
+  //   { icon: FaFacebook, link: 'https://facebook.com/yourpage', label: 'Facebook' },
+  //   { icon: FaTwitter, link: 'https://twitter.com/yourhandle', label: 'Twitter' },
+  //   { icon: FaInstagram, link: 'https://instagram.com/yourhandle', label: 'Instagram' },
+  //   { icon: FaLinkedin, link: 'https://linkedin.com/company/yourcompany', label: 'LinkedIn' },
+  //   { icon: FaYoutube, link: 'https://youtube.com/@yourchannel', label: 'YouTube' },
+  // ]
 
   const quickLinks = [
     { label: 'Home', to: 'hero' },
@@ -179,6 +181,7 @@ export default function Footer() {
                 <span className="text-sm">peakcommunication@peakgroup.com</span>
               </a>
             </div>
+            {/* COMMENTED OUT: Social media section hidden until accounts are created
             <h5 className="text-sm font-semibold mb-3">Follow Us</h5>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -194,6 +197,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+            */}
           </motion.div>
         </div>
 
