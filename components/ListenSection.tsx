@@ -184,8 +184,8 @@ export default function ListenSection() {
           </p>
         </motion.div>
 
-        {/* FAQ Section */}
-        <motion.div
+        {/* FAQ Section - COMMENTED OUT */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.7 }}
@@ -221,7 +221,7 @@ export default function ListenSection() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

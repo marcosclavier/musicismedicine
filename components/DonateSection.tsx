@@ -21,16 +21,16 @@ export default function DonateSection() {
     {
       amount: '$25',
       title: 'Music Advocate',
-      description: 'Support multiple singles',
-      impact: 'Funds laboratory testing',
+      description: 'Support multiple single releases',
+      impact: 'Funds laboratory testing and trials',
       icon: '🎸',
       popular: true,
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=25',
     },
     {
       amount: '$50',
-      title: 'Research Champion',
-      description: 'Make a significant impact',
+      title: 'Research Master',
+      description: 'Make a real impact for patients',
       impact: 'Contributes to clinical trial costs',
       icon: '🎼',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=50',
@@ -38,7 +38,7 @@ export default function DonateSection() {
     {
       amount: '$100',
       title: 'Hope Builder',
-      description: 'Full collection support',
+      description: 'Full sample collection support',
       impact: 'Funds advanced research equipment',
       icon: '🏆',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=100',
@@ -46,7 +46,7 @@ export default function DonateSection() {
     {
       amount: 'Custom',
       title: 'Visionary Donor',
-      description: 'Choose your amount',
+      description: 'Choose your preferred amount',
       impact: 'Every dollar makes a difference',
       icon: '💫',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1',

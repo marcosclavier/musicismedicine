@@ -2,13 +2,12 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
-import { FaPlay, FaPause, FaSpotify, FaApple, FaYoutube, FaCalendar, FaClock } from 'react-icons/fa'
+import { useRef } from 'react'
+import { FaSpotify, FaCalendar, FaClock } from 'react-icons/fa'
 
 export default function SinglesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [playingSingle, setPlayingSingle] = useState<number | null>(null)
 
   const singles = [
     {
@@ -53,14 +52,6 @@ export default function SinglesSection() {
       audioSnippet: '/audio/single-4-snippet.mp3',
     },
   ]
-
-  const handlePlayPause = (index: number) => {
-    if (playingSingle === index) {
-      setPlayingSingle(null)
-    } else {
-      setPlayingSingle(index)
-    }
-  }
 
   return (
     <section id="singles" className="section bg-white" ref={ref}>
@@ -109,7 +100,7 @@ export default function SinglesSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 {/* Artwork */}
                 <div className="relative">
-                  <div className="aspect-square rounded-lg overflow-hidden relative group">
+                  <div className="aspect-square rounded-lg overflow-hidden relative">
                     {/* Artwork Image or Placeholder */}
                     {single.status === 'available' ? (
                       <img
@@ -122,21 +113,6 @@ export default function SinglesSection() {
                         #{index + 1}
                       </div>
                     )}
-
-                    {/* Play button overlay */}
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <button
-                        onClick={() => handlePlayPause(index)}
-                        className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
-                        aria-label={playingSingle === index ? 'Pause' : 'Play'}
-                      >
-                        {playingSingle === index ? (
-                          <FaPause className="text-accent-purple text-2xl" />
-                        ) : (
-                          <FaPlay className="text-accent-purple text-2xl ml-1" />
-                        )}
-                      </button>
-                    </div>
                   </div>
 
                   {/* Status Badge */}
