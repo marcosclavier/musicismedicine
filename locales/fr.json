@@ -1,0 +1,340 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "visionaries": "Visionnaires",
+    "singles": "Singles",
+    "listen": "Écouter",
+    "donate": "Don",
+    "impact": "Impact",
+    "listenNow": "Écouter",
+    "donateButton": "Donner",
+    "toggleMenu": "Basculer le menu"
+  },
+  "hero": {
+    "badge": "N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons",
+    "title": "La musique est médecine",
+    "subtitle": "Où la musique, le but et l'espoir se rencontrent",
+    "description": "Quatre singles originaux par N2O, mettant en vedette Alan Parsons et distribués par LANDR",
+    "firstRelease": "Première sortie :",
+    "radioTitle": "\"Radio\"",
+    "producedBy": "– Produit et mixé par Alan Parsons",
+    "availableDate": "Disponible le",
+    "releaseDate": "4 novembre 2025",
+    "releaseSchedule": "Un nouveau single chaque mois jusqu'en février 2026",
+    "listenNowButton": "Écouter maintenant",
+    "donateNowButton": "Faire un don maintenant",
+    "netProceeds": "Les produits nets sont versés à la Fondation canadienne des tumeurs cérébrales",
+    "distributedBy": "Distribué par LANDR"
+  },
+  "about": {
+    "title": "À propos de",
+    "titleHighlight": "La musique est médecine",
+    "subtitle": "La musique est médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Quatre singles originaux par N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
+    "stats": {
+      "singlesLabel": "Singles caritatifs",
+      "raisedLabel": "Déjà recueillis",
+      "supportersLabel": "Supporteurs à travers le pays",
+      "proceedsLabel": "Produits nets donnés"
+    },
+    "contentTitle": "Transformer la perte en objectif",
+    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. Avec Alan Parsons, il a lancé La musique est médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
+    "paragraph2": "Les tumeurs cérébrales affectent des milliers de familles chaque année. Grâce aux concerts-bénéfices passés et au soutien précoce, La musique est médecine a recueilli plus de",
+    "amountRaised": "600 000 $",
+    "paragraph2Continue": "pour la recherche et les programmes sur le cancer du cerveau.",
+    "paragraph3": "Chaque écoute, téléchargement et partage contribue à la mission, les produits nets étant donnés à la Fondation canadienne des tumeurs cérébrales, aidant à financer la recherche, le plaidoyer et le soutien aux patients.",
+    "features": {
+      "musicHeals": {
+        "title": "La musique guérit",
+        "description": "La musique a le pouvoir de guérir, de réconforter et d'inspirer. Nous canalisons ce pouvoir en un soutien concret pour la recherche sur le cancer du cerveau."
+      },
+      "research": {
+        "title": "La recherche sauve des vies",
+        "description": "Chaque dollar recueilli soutient la Fondation canadienne des tumeurs cérébrales dans le financement de la recherche, de l'éducation et des programmes de soutien aux patients."
+      },
+      "hope": {
+        "title": "Espoir pour les familles",
+        "description": "Soutenir les patients et les familles touchés par les tumeurs cérébrales à travers le Canada par la sensibilisation, la recherche et les programmes communautaires."
+      }
+    },
+    "ctaTitle": "Transformer le son en espoir pour les familles à travers le Canada",
+    "ctaDescription": "Chaque auditeur, chaque partage, chaque acte de gentillesse compte. Ensemble, nous pouvons faire de chaque note un pas vers la guérison.",
+    "listenButton": "Écouter les singles",
+    "supportButton": "Soutenir la cause"
+  },
+  "visionaries": {
+    "title": "Rencontrez les",
+    "titleHighlight": "Visionnaires",
+    "subtitle": "Les personnes inspirantes derrière cette initiative qui change des vies",
+    "robertFrances": {
+      "name": "Robert Frances",
+      "title": "Fondateur",
+      "organization": "PDG, Groupe Financier PEAK et membre de N2O",
+      "quote": "Après avoir perdu un ami et camarade de groupe du cancer du cerveau, je voulais transformer l'émotion en quelque chose de significatif. La musique est médecine est notre façon de redonner et d'aider les autres grâce au pouvoir de la musique.",
+      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé La musique est médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
+    },
+    "alanParsons": {
+      "name": "Alan Parsons",
+      "title": "Artiste et producteur lauréat d'un Grammy",
+      "organization": "Artiste vedette",
+      "quote": "La musique connecte les gens dans des moments que les mots seuls ne peuvent atteindre. Ce projet m'a rappelé que la créativité et la compassion peuvent changer des vies.",
+      "bio": "Musicien, ingénieur et producteur de renommée mondiale connu pour son travail légendaire avec Pink Floyd, les Beatles et son propre Alan Parsons Project. Alan Parsons apporte son son et sa vision emblématiques à La musique est médecine, produisant et mixant le single de début \"Radio\", capturant l'émotion, la connexion et le souvenir dans chaque note."
+    },
+    "partnersTitle": "Partenaires et collaborateurs clés",
+    "partners": {
+      "peak": {
+        "name": "Groupe Financier PEAK",
+        "description": "Entreprise de services financiers indépendante basée à Montréal qui favorise l'impact communautaire grâce à l'initiative #PEAKWithPurpose."
+      },
+      "landr": {
+        "name": "LANDR",
+        "description": "Plateforme de premier plan de mastering audio et de distribution distribuant les quatre singles caritatifs à l'échelle mondiale."
+      },
+      "foundation": {
+        "name": "Fondation canadienne des tumeurs cérébrales",
+        "description": "Chef de file en recherche, éducation et soutien communautaire pour les Canadiens touchés par les tumeurs cérébrales. Tous les produits nets profitent à leurs programmes."
+      }
+    },
+    "peakTitle": "Partie de l'initiative #PEAKWithPurpose de PEAK",
+    "peakDescription": "Le Groupe Financier PEAK s'engage à avoir un impact positif dans la communauté, en soutenant des causes qui comptent et en créant un changement durable."
+  },
+  "singles": {
+    "title": "Les",
+    "titleHighlight": "Singles",
+    "subtitle": "Quatre singles originaux par N2O mettant en vedette Alan Parsons, sortant de novembre 2025 à février 2026",
+    "scheduleTitle": "Calendrier de sortie",
+    "scheduleDescription": "Un nouveau single chaque mois • 4 novembre 2025 - 28 février 2026",
+    "radio": {
+      "title": "Radio",
+      "subtitle": "par N2O mettant en vedette Alan Parsons",
+      "releaseDate": "4 novembre 2025",
+      "description": "Produit et mixé par Alan Parsons — une chanson sur la connexion, la mémoire et trouver la lumière après la perte. Cette puissante piste d'ouverture donne le ton pour le voyage à venir.",
+      "themes": ["Connexion", "Mémoire", "Espoir"]
+    },
+    "youAndI": {
+      "title": "You & I (Toi et moi)",
+      "subtitle": "par N2O mettant en vedette Alan Parsons",
+      "releaseDate": "30 novembre 2025",
+      "description": "Un hommage à l'amour, à la résilience et à l'unité. Cette composition sincère célèbre les liens qui nous donnent la force face aux plus grands défis de la vie.",
+      "themes": ["Amour", "Résilience", "Unité"]
+    },
+    "courage": {
+      "title": "Courage",
+      "subtitle": "par N2O mettant en vedette Alan Parsons",
+      "releaseDate": "30 décembre 2025",
+      "description": "Une chanson sur la force, la guérison et la persévérance. Cette piste puissante explore le courage que nous trouvons en nous-mêmes face à l'adversité.",
+      "themes": ["Force", "Guérison", "Persévérance"]
+    },
+    "whereToGo": {
+      "title": "Where to Go (Où aller)",
+      "subtitle": "par N2O mettant en vedette Alan Parsons",
+      "releaseDate": "28 février 2026",
+      "description": "Une réflexion sur le but, l'espoir et l'avancement. La finale inspirante qui regarde vers un avenir rempli de possibilités et de promesses.",
+      "themes": ["But", "Espoir", "Avenir"]
+    },
+    "statusAvailable": "Disponible maintenant",
+    "statusUpcoming": "Bientôt disponible",
+    "releaseLabel": "Date de sortie :",
+    "listenSpotify": "Écouter sur Spotify",
+    "preSave": "Pré-sauvegarder",
+    "collectionTitle": "Collection caritative exclusive",
+    "collectionDescription": "Tous les singles par N2O mettant en vedette Alan Parsons, distribués mondialement par LANDR. Les produits nets sont donnés à la Fondation canadienne des tumeurs cérébrales.",
+    "notificationsButton": "Recevoir les notifications",
+    "howToListenButton": "Comment écouter et acheter"
+  },
+  "listen": {
+    "title": "Comment",
+    "titleHighlight": "Écouter et acheter",
+    "subtitle": "Écoutez sur votre plateforme préférée ou achetez pour maximiser votre impact",
+    "streamTitle": "Écoutez \"Radio\" maintenant",
+    "platformsAvailable": "Actuellement disponible sur Spotify et Qobuz",
+    "impactTitle": "Écouter c'est soutenir, écouter c'est donner",
+    "impactDescription": "Lorsque vous écoutez ou achetez, vous soutenez directement la Fondation canadienne des tumeurs cérébrales. Chaque action aide à transformer la musique en espoir pour les familles à travers le Canada."
+  },
+  "donate": {
+    "title": "Comment",
+    "titleHighlight": "Faire un don",
+    "subtitle": "Soutenez la recherche qui change des vies sur le cancer du cerveau au Neuro",
+    "impactTitle": "Plus de 600 000 $ recueillis pour la recherche sur les tumeurs cérébrales",
+    "impactDescription": "Grâce aux concerts-bénéfices passés et au soutien précoce, ces fonds soutiennent la recherche, l'éducation et les programmes pour les patients. Votre don aujourd'hui poursuit ce travail vital.",
+    "stats": {
+      "totalRaised": "Total recueilli",
+      "supporters": "Supporteurs à travers le pays",
+      "netProceeds": "Produits nets donnés"
+    },
+    "tiersTitle": "Choisissez votre contribution",
+    "tiers": {
+      "single": {
+        "amount": "10 $",
+        "title": "Supporteur single",
+        "description": "Équivalent à une sortie single",
+        "impact": "Soutient le matériel de recherche de base"
+      },
+      "advocate": {
+        "amount": "25 $",
+        "title": "Défenseur de la musique",
+        "description": "Soutenez plusieurs sorties singles",
+        "impact": "Finance les tests de laboratoire et les essais",
+        "popular": "Populaire"
+      },
+      "master": {
+        "amount": "50 $",
+        "title": "Maître de la recherche",
+        "description": "Ayez un impact réel pour les patients",
+        "impact": "Contribue aux coûts des essais cliniques"
+      },
+      "builder": {
+        "amount": "100 $",
+        "title": "Bâtisseur d'espoir",
+        "description": "Soutien complet de la collecte d'échantillons",
+        "impact": "Finance l'équipement de recherche avancé"
+      },
+      "visionary": {
+        "amount": "Personnalisé",
+        "title": "Donateur visionnaire",
+        "description": "Choisissez votre montant préféré",
+        "impact": "Chaque dollar fait une différence"
+      }
+    },
+    "selectButton": "Sélectionner",
+    "oneTimeTitle": "Don unique",
+    "oneTimeDescription": "Ayez un impact immédiat avec une seule contribution pour soutenir la recherche, l'éducation et les programmes pour les patients.",
+    "donateNowButton": "Faire un don maintenant",
+    "benefitsTitle": "Pourquoi faire un don via La musique est médecine?",
+    "benefits": {
+      "receipt": "Reçu fiscal via la Fondation canadienne des tumeurs cérébrales",
+      "secure": "Traitement sécurisé des dons",
+      "direct": "Soutien direct pour la recherche et les programmes pour les patients",
+      "community": "Rejoignez des milliers de supporteurs à travers le pays"
+    },
+    "foundationTitle": "Soutenir la Fondation canadienne des tumeurs cérébrales",
+    "foundationDescription": "Les produits nets de La musique est médecine sont donnés à la Fondation canadienne des tumeurs cérébrales. Depuis plus de quatre décennies, la Fondation est chef de file en recherche, éducation et soutien communautaire, travaillant à améliorer les résultats et à offrir de l'espoir à chaque Canadien touché par une tumeur cérébrale.",
+    "learnMoreLink": "En savoir plus sur la Fondation canadienne des tumeurs cérébrales →",
+    "corporateTitle": "Jumelage d'entreprise et commandites",
+    "corporateDescription": "De nombreux employeurs égalent les dons de bienfaisance, doublant potentiellement votre impact. Renseignez-vous auprès de votre service des ressources humaines sur les programmes de dons jumelés. Des opportunités de commandite d'entreprise sont également disponibles via le Groupe Financier PEAK.",
+    "corporateButton": "Contactez-nous pour les opportunités d'entreprise"
+  },
+  "impact": {
+    "title": "Notre",
+    "titleHighlight": "Impact",
+    "subtitle": "Résultats réels de votre soutien – faire progresser la recherche, créer de l'espoir et sauver des vies",
+    "achievements": {
+      "raised": {
+        "value": "600 000 $ +",
+        "label": "Fonds recueillis",
+        "description": "Soutenir la recherche et les programmes pour les patients"
+      },
+      "supporters": {
+        "value": "Milliers",
+        "label": "Supporteurs",
+        "description": "Rassemblés à travers le pays"
+      },
+      "proceeds": {
+        "value": "100 %",
+        "label": "Produits nets",
+        "description": "Donnés à la Fondation"
+      },
+      "years": {
+        "value": "40+",
+        "label": "Années d'impact",
+        "description": "L'héritage de la Fondation des tumeurs cérébrales"
+      }
+    },
+    "supportTitle": "Comment votre soutien aide",
+    "areas": {
+      "research": {
+        "title": "Recherche et innovation",
+        "description": "Financer la recherche révolutionnaire pour faire progresser le traitement des tumeurs cérébrales et trouver de nouveaux remèdes."
+      },
+      "education": {
+        "title": "Éducation et sensibilisation",
+        "description": "Bâtir une sensibilisation nationale au cancer du cerveau et à ses effets sur les familles à travers le Canada."
+      },
+      "patient": {
+        "title": "Soutien aux patients et aux familles",
+        "description": "Fournir de l'éducation, des ressources et du soutien aux patients et aux aidants tout au long de leur parcours."
+      },
+      "advocacy": {
+        "title": "Plaidoyer et politique",
+        "description": "Travailler à améliorer les résultats par le plaidoyer et les changements de politique au niveau national."
+      }
+    },
+    "testimonialsTitle": "Histoires d'espoir et d'impact",
+    "testimonials": {
+      "sarah": {
+        "name": "Dre Sarah Mitchell",
+        "role": "Chercheuse principale, Le Neuro",
+        "quote": "Le financement de La musique est médecine nous a permis de poursuivre des voies de recherche innovantes que nous n'aurions pas pu explorer autrement. Nous réalisons de véritables percées dans la compréhension du glioblastome grâce à ce soutien."
+      },
+      "michael": {
+        "name": "Michael Thompson",
+        "role": "Survivant du cancer du cerveau",
+        "quote": "Quand j'ai été diagnostiqué, je me sentais sans espoir. Mais savoir que des initiatives comme La musique est médecine financent la recherche donne à moi et à ma famille un réel espoir de meilleurs traitements et, finalement, d'un remède."
+      },
+      "jennifer": {
+        "name": "Jennifer Lee",
+        "role": "Membre de la famille",
+        "quote": "Mon mari lutte contre le glioblastome. La recherche financée par La musique est médecine impacte directement nos vies. Chaque dollar recueilli nous rapproche de traitements plus efficaces et prolonge le temps précieux avec nos proches."
+      },
+      "james": {
+        "name": "Dr James Rodriguez",
+        "role": "Neurochirurgien, Université McGill",
+        "quote": "Les essais cliniques financés par La musique est médecine génèrent des données précieuses qui changent notre approche du traitement du cancer du cerveau. Ce soutien communautaire se traduit directement en avancées médicales."
+      }
+    },
+    "previousTestimonial": "Témoignage précédent",
+    "nextTestimonial": "Témoignage suivant",
+    "goToTestimonial": "Aller au témoignage",
+    "partnerTitle": "Soutenir la Fondation canadienne des tumeurs cérébrales",
+    "partnerDescription": "Depuis plus de quatre décennies, la Fondation canadienne des tumeurs cérébrales est chef de file en recherche, éducation et soutien communautaire. Sa mission est d'améliorer les résultats, de financer l'innovation et d'offrir de l'espoir à chaque Canadien touché par une tumeur cérébrale.",
+    "visitFoundation": "Visitez la Fondation canadienne des tumeurs cérébrales →",
+    "ctaTitle": "Faites partie de la solution",
+    "ctaDescription": "Chaque contribution – que ce soit en écoutant, en achetant ou en donnant – aide à financer la recherche qui mènera à de meilleurs traitements et, finalement, à un remède.",
+    "listenButton": "Écouter les singles",
+    "donateButton": "Faire un don"
+  },
+  "footer": {
+    "ctaTitle": "La musique est médecine",
+    "ctaSubtitle": "Écoutez, achetez, donnez et faites une différence",
+    "listenButton": "Écouter le premier single",
+    "donateButton": "Faire un don maintenant",
+    "aboutDescription1": "Une initiative musicale canadienne sincère de Groupe Financier PEAK et N2O, mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons. Recueillir des fonds et sensibiliser à la recherche sur le cancer du cerveau grâce au pouvoir guérisseur de la musique.",
+    "aboutDescription2": "Les produits nets sont donnés à la Fondation canadienne des tumeurs cérébrales, soutenant la recherche, l'éducation et les programmes pour les patients à travers le pays.",
+    "quickLinksTitle": "Liens rapides",
+    "quickLinks": {
+      "home": "Accueil",
+      "about": "À propos",
+      "visionaries": "Visionnaires",
+      "singles": "Les Singles",
+      "listen": "Écouter et acheter",
+      "donate": "Faire un don",
+      "impact": "Impact"
+    },
+    "connectTitle": "Connecter",
+    "emailLabel": "peakcommunication@peakgroup.com",
+    "newsletterTitle": "Restez informé",
+    "newsletterDescription": "Soyez averti lorsque de nouveaux singles sortent et restez informé de notre impact sur la recherche.",
+    "emailPlaceholder": "Entrez votre courriel",
+    "subscribeButton": "S'abonner",
+    "subscribingButton": "Abonnement en cours...",
+    "successMessage": "Merci de vous être abonné!",
+    "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "partnersTitle": "Fiers partenaires et commanditaires",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "accessibility": "Accessibilité",
+    "copyright": "Groupe Financier PEAK. Tous droits réservés.",
+    "peakPurpose": "Partie de l'initiative #PEAKWithPurpose",
+    "madeWithLove": "Fait avec",
+    "supportMessage": "pour soutenir la recherche sur le cancer du cerveau"
+  },
+  "metadata": {
+    "title": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "description": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales par l'espoir, la guérison et des chansons puissantes.",
+    "ogTitle": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "ogDescription": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales par l'espoir, la guérison et des chansons puissantes.",
+    "ogImageAlt": "La musique est médecine mettant en vedette N2O et Alan Parsons",
+    "twitterTitle": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "twitterDescription": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales."
+  }
+}

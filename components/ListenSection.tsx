@@ -5,8 +5,10 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { FaSpotify, FaApple, FaYoutube, FaAmazon, FaShoppingCart, FaHeadphones, FaChevronDown, FaChevronUp, FaMusic } from 'react-icons/fa'
 import { SiTidal } from 'react-icons/si'
+import { useTranslations } from 'next-intl'
 
 export default function ListenSection() {
+  const t = useTranslations('listen')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -78,10 +80,10 @@ export default function ListenSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            How to <span className="text-gradient">Listen & Buy</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Stream on your favorite platform or purchase to maximize your impact
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -93,7 +95,7 @@ export default function ListenSection() {
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
-            Stream "Radio" Now
+            {t('streamTitle')}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {streamingPlatforms.map((platform, index) => (
@@ -115,7 +117,7 @@ export default function ListenSection() {
             ))}
           </div>
           <p className="text-center text-text-secondary mt-6">
-            Currently available on Spotify and Qobuz
+            {t('platformsAvailable')}
           </p>
         </motion.div>
 
@@ -176,11 +178,10 @@ export default function ListenSection() {
           className="bg-gradient-to-r from-accent-purple to-accent-orange text-white rounded-2xl p-8 mb-16 text-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-            Streaming is Support, Listening is Giving
+            {t('impactTitle')}
           </h3>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            When you listen or buy, you're directly supporting the Brain Tumour Foundation of Canada.
-            Every action helps turn music into hope for families across Canada.
+            {t('impactDescription')}
           </p>
         </motion.div>
 

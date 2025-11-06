@@ -1,0 +1,340 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "visionaries": "Visionaries",
+    "singles": "The Singles",
+    "listen": "Listen",
+    "donate": "Donate",
+    "impact": "Impact",
+    "listenNow": "Listen Now",
+    "donateButton": "Donate",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "N2O Featuring Grammy-Winning Artist Alan Parsons",
+    "title": "Music is Medicine",
+    "subtitle": "Where music, purpose, and hope come together",
+    "description": "Four original singles by N2O, featuring Alan Parsons and distributed by LANDR",
+    "firstRelease": "First release:",
+    "radioTitle": "\"Radio\"",
+    "producedBy": "– Produced and Mixed by Alan Parsons",
+    "availableDate": "Available",
+    "releaseDate": "November 4, 2025",
+    "releaseSchedule": "One new single every month through February 2026",
+    "listenNowButton": "Listen Now",
+    "donateNowButton": "Donate Now",
+    "netProceeds": "Net proceeds donated to the Brain Tumour Foundation of Canada",
+    "distributedBy": "Distributed by LANDR"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Music Is Medicine",
+    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O. Four original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
+    "stats": {
+      "singlesLabel": "Charity Singles",
+      "raisedLabel": "Already Raised",
+      "supportersLabel": "Supporters Nationwide",
+      "proceedsLabel": "Net Proceeds Donated"
+    },
+    "contentTitle": "Turning Loss Into Purpose",
+    "paragraph1": "After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. Together with Alan Parsons, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.",
+    "paragraph2": "Brain tumours affect thousands of families every year. Through past benefit concerts and early support, Music Is Medicine has raised over",
+    "amountRaised": "$600,000",
+    "paragraph2Continue": "for brain cancer research and programs.",
+    "paragraph3": "Every stream, download, and share contributes to the mission, with net proceeds donated to the Brain Tumour Foundation of Canada, helping fund research, advocacy, and patient support.",
+    "features": {
+      "musicHeals": {
+        "title": "Music Heals",
+        "description": "Music has the power to heal, comfort, and inspire. We channel this power into actionable support for brain cancer research."
+      },
+      "research": {
+        "title": "Research Saves Lives",
+        "description": "Every dollar raised supports the Brain Tumour Foundation of Canada in funding research, education, and patient support programs."
+      },
+      "hope": {
+        "title": "Hope for Families",
+        "description": "Supporting patients and families affected by brain tumours across Canada through awareness, research, and community programs."
+      }
+    },
+    "ctaTitle": "Turning Sound Into Hope for Families Across Canada",
+    "ctaDescription": "Every listener, every share, every act of kindness counts. Together, we can make every note a step toward healing.",
+    "listenButton": "Listen to the Singles",
+    "supportButton": "Support the Cause"
+  },
+  "visionaries": {
+    "title": "Meet the",
+    "titleHighlight": "Visionaries",
+    "subtitle": "The inspiring individuals behind this life-changing initiative",
+    "robertFrances": {
+      "name": "Robert Frances",
+      "title": "Founder",
+      "organization": "CEO, PEAK Financial Group & Member of N2O",
+      "quote": "After losing a friend and bandmate to brain cancer, I wanted to turn emotion into something meaningful. Music Is Medicine is our way to give back and help others through the power of music.",
+      "bio": "After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. As CEO of PEAK Financial Group and member of the band N2O, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada."
+    },
+    "alanParsons": {
+      "name": "Alan Parsons",
+      "title": "Grammy-Winning Artist & Producer",
+      "organization": "Featured Artist",
+      "quote": "Music connects people in moments that words alone can't reach. This project reminded me that creativity and compassion can change lives.",
+      "bio": "World-renowned musician, engineer, and producer known for his legendary work with Pink Floyd, The Beatles, and his own Alan Parsons Project. Alan Parsons brings his iconic sound and vision to Music Is Medicine, producing and mixing the debut single \"Radio\", capturing emotion, connection, and remembrance in every note."
+    },
+    "partnersTitle": "Key Partners & Collaborators",
+    "partners": {
+      "peak": {
+        "name": "PEAK Financial Group",
+        "description": "Montreal-based independent financial services firm driving community impact through the #PEAKWithPurpose initiative."
+      },
+      "landr": {
+        "name": "LANDR",
+        "description": "Leading audio mastering and distribution platform distributing all four charity singles globally."
+      },
+      "foundation": {
+        "name": "Brain Tumour Foundation of Canada",
+        "description": "Leading the way in research, education, and community support for Canadians affected by brain tumours. All net proceeds benefit their programs."
+      }
+    },
+    "peakTitle": "Part of PEAK's #PEAKWithPurpose Initiative",
+    "peakDescription": "PEAK Financial Group is committed to making a positive impact in the community, supporting causes that matter and creating lasting change."
+  },
+  "singles": {
+    "title": "The",
+    "titleHighlight": "Singles",
+    "subtitle": "Four original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026",
+    "scheduleTitle": "Release Schedule",
+    "scheduleDescription": "One new single every month • November 4, 2025 - February 28, 2026",
+    "radio": {
+      "title": "Radio",
+      "subtitle": "by N2O featuring Alan Parsons",
+      "releaseDate": "November 4, 2025",
+      "description": "Produced and Mixed by Alan Parsons — a song about connection, memory, and finding light after loss. This powerful opening track sets the tone for the journey ahead.",
+      "themes": ["Connection", "Memory", "Hope"]
+    },
+    "youAndI": {
+      "title": "You & I",
+      "subtitle": "by N2O featuring Alan Parsons",
+      "releaseDate": "November 30, 2025",
+      "description": "A tribute to love, resilience, and unity. This heartfelt composition celebrates the bonds that give us strength through life's greatest challenges.",
+      "themes": ["Love", "Resilience", "Unity"]
+    },
+    "courage": {
+      "title": "Courage",
+      "subtitle": "by N2O featuring Alan Parsons",
+      "releaseDate": "December 30, 2025",
+      "description": "A song about strength, healing, and perseverance. This powerful track explores the courage we find within ourselves when facing adversity.",
+      "themes": ["Strength", "Healing", "Perseverance"]
+    },
+    "whereToGo": {
+      "title": "Where to Go",
+      "subtitle": "by N2O featuring Alan Parsons",
+      "releaseDate": "February 28, 2026",
+      "description": "A reflection on purpose, hope, and moving forward. The inspiring finale that looks toward a future filled with possibility and promise.",
+      "themes": ["Purpose", "Hope", "Future"]
+    },
+    "statusAvailable": "Available Now",
+    "statusUpcoming": "Coming Soon",
+    "releaseLabel": "Release Date:",
+    "listenSpotify": "Listen on Spotify",
+    "preSave": "Pre-Save",
+    "collectionTitle": "Exclusive Charity Collection",
+    "collectionDescription": "All singles by N2O featuring Alan Parsons, distributed globally by LANDR. Net proceeds donated to the Brain Tumour Foundation of Canada.",
+    "notificationsButton": "Get Notifications",
+    "howToListenButton": "How to Listen & Buy"
+  },
+  "listen": {
+    "title": "How to",
+    "titleHighlight": "Listen & Buy",
+    "subtitle": "Stream on your favorite platform or purchase to maximize your impact",
+    "streamTitle": "Stream \"Radio\" Now",
+    "platformsAvailable": "Currently available on Spotify and Qobuz",
+    "impactTitle": "Streaming is Support, Listening is Giving",
+    "impactDescription": "When you listen or buy, you're directly supporting the Brain Tumour Foundation of Canada. Every action helps turn music into hope for families across Canada."
+  },
+  "donate": {
+    "title": "How to",
+    "titleHighlight": "Donate",
+    "subtitle": "Support life-changing brain cancer research at The Neuro",
+    "impactTitle": "Over $600,000 Raised for Brain Tumour Research",
+    "impactDescription": "Through past benefit concerts and early support, these funds support research, education, and patient programs. Your donation today continues this vital work.",
+    "stats": {
+      "totalRaised": "Total Raised",
+      "supporters": "Supporters Nationwide",
+      "netProceeds": "Net Proceeds Donated"
+    },
+    "tiersTitle": "Choose Your Contribution",
+    "tiers": {
+      "single": {
+        "amount": "$10",
+        "title": "Single Supporter",
+        "description": "Equivalent to one single release",
+        "impact": "Supports basic research materials"
+      },
+      "advocate": {
+        "amount": "$25",
+        "title": "Music Advocate",
+        "description": "Support multiple single releases",
+        "impact": "Funds laboratory testing and trials",
+        "popular": "Popular"
+      },
+      "master": {
+        "amount": "$50",
+        "title": "Research Master",
+        "description": "Make a real impact for patients",
+        "impact": "Contributes to clinical trial costs"
+      },
+      "builder": {
+        "amount": "$100",
+        "title": "Hope Builder",
+        "description": "Full sample collection support",
+        "impact": "Funds advanced research equipment"
+      },
+      "visionary": {
+        "amount": "Custom",
+        "title": "Visionary Donor",
+        "description": "Choose your preferred amount",
+        "impact": "Every dollar makes a difference"
+      }
+    },
+    "selectButton": "Select",
+    "oneTimeTitle": "One-Time Donation",
+    "oneTimeDescription": "Make an immediate impact with a single contribution to support research, education, and patient programs.",
+    "donateNowButton": "Donate Now",
+    "benefitsTitle": "Why Donate Through Music is Medicine?",
+    "benefits": {
+      "receipt": "Tax-receiptable through Brain Tumour Foundation of Canada",
+      "secure": "Secure donation processing",
+      "direct": "Direct support for research and patient programs",
+      "community": "Join thousands of supporters nationwide"
+    },
+    "foundationTitle": "Supporting the Brain Tumour Foundation of Canada",
+    "foundationDescription": "Net proceeds from Music Is Medicine are donated to the Brain Tumour Foundation of Canada. For over four decades, the Foundation has led the way in research, education, and community support, working to improve outcomes and offer hope to every Canadian affected by a brain tumour.",
+    "learnMoreLink": "Learn More About the Brain Tumour Foundation →",
+    "corporateTitle": "Corporate Matching & Sponsorships",
+    "corporateDescription": "Many employers match charitable donations, potentially doubling your impact. Ask your HR department about matching gift programs. Corporate sponsorship opportunities are also available through PEAK Financial Group.",
+    "corporateButton": "Contact for Corporate Opportunities"
+  },
+  "impact": {
+    "title": "Our",
+    "titleHighlight": "Impact",
+    "subtitle": "Real results from your support – advancing research, creating hope, and saving lives",
+    "achievements": {
+      "raised": {
+        "value": "$600K+",
+        "label": "Funds Raised",
+        "description": "Supporting research and patient programs"
+      },
+      "supporters": {
+        "value": "1000s",
+        "label": "Supporters",
+        "description": "Brought together nationwide"
+      },
+      "proceeds": {
+        "value": "100%",
+        "label": "Net Proceeds",
+        "description": "Donated to the Foundation"
+      },
+      "years": {
+        "value": "40+",
+        "label": "Years of Impact",
+        "description": "Brain Tumour Foundation's legacy"
+      }
+    },
+    "supportTitle": "How Your Support Helps",
+    "areas": {
+      "research": {
+        "title": "Research & Innovation",
+        "description": "Funding groundbreaking research to advance brain tumour treatment and find new cures."
+      },
+      "education": {
+        "title": "Education & Awareness",
+        "description": "Building national awareness about brain cancer and its effects on families across Canada."
+      },
+      "patient": {
+        "title": "Patient & Family Support",
+        "description": "Providing education, resources, and support for patients and caregivers throughout their journey."
+      },
+      "advocacy": {
+        "title": "Advocacy & Policy",
+        "description": "Working to improve outcomes through advocacy and policy changes at the national level."
+      }
+    },
+    "testimonialsTitle": "Stories of Hope & Impact",
+    "testimonials": {
+      "sarah": {
+        "name": "Dr. Sarah Mitchell",
+        "role": "Lead Researcher, The Neuro",
+        "quote": "The funding from Music is Medicine has enabled us to pursue innovative research paths we couldn't have explored otherwise. We're making real breakthroughs in understanding glioblastoma thanks to this support."
+      },
+      "michael": {
+        "name": "Michael Thompson",
+        "role": "Brain Cancer Survivor",
+        "quote": "When I was diagnosed, I felt hopeless. But knowing that initiatives like Music is Medicine are funding research gives me and my family real hope for better treatments and ultimately, a cure."
+      },
+      "jennifer": {
+        "name": "Jennifer Lee",
+        "role": "Family Member",
+        "quote": "My husband is fighting glioblastoma. The research funded by Music is Medicine directly impacts our lives. Every dollar raised brings us closer to more effective treatments and extends precious time with loved ones."
+      },
+      "james": {
+        "name": "Dr. James Rodriguez",
+        "role": "Neurosurgeon, McGill University",
+        "quote": "Clinical trials funded by Music is Medicine are generating valuable data that's changing how we approach brain cancer treatment. This community support translates directly into medical advances."
+      }
+    },
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "goToTestimonial": "Go to testimonial",
+    "partnerTitle": "Supporting the Brain Tumour Foundation of Canada",
+    "partnerDescription": "For over four decades, the Brain Tumour Foundation of Canada has led the way in research, education, and community support. Its mission is to improve outcomes, fund innovation, and offer hope to every Canadian affected by a brain tumour.",
+    "visitFoundation": "Visit the Brain Tumour Foundation →",
+    "ctaTitle": "Be Part of the Solution",
+    "ctaDescription": "Every contribution – whether streaming, purchasing, or donating – helps fund the research that will lead to better treatments and ultimately, a cure.",
+    "listenButton": "Listen to the Singles",
+    "donateButton": "Make a Donation"
+  },
+  "footer": {
+    "ctaTitle": "Music is Medicine",
+    "ctaSubtitle": "Listen, Buy, Donate, and Make a Difference",
+    "listenButton": "Listen to the First Single",
+    "donateButton": "Donate Now",
+    "aboutDescription1": "A heartfelt Canadian music initiative by PEAK Financial Group and N2O, featuring Grammy-winning artist Alan Parsons. Raising funds and awareness for brain cancer research through the healing power of music.",
+    "aboutDescription2": "Net proceeds donated to the Brain Tumour Foundation of Canada, supporting research, education, and patient programs nationwide.",
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": {
+      "home": "Home",
+      "about": "About",
+      "visionaries": "Visionaries",
+      "singles": "The Singles",
+      "listen": "Listen & Buy",
+      "donate": "Donate",
+      "impact": "Impact"
+    },
+    "connectTitle": "Connect",
+    "emailLabel": "peakcommunication@peakgroup.com",
+    "newsletterTitle": "Stay Updated",
+    "newsletterDescription": "Get notified when new singles drop and stay informed about our research impact.",
+    "emailPlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe",
+    "subscribingButton": "Subscribing...",
+    "successMessage": "Thank you for subscribing!",
+    "errorMessage": "Something went wrong. Please try again.",
+    "partnersTitle": "Proud Partners & Sponsors",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "accessibility": "Accessibility",
+    "copyright": "PEAK Financial Group. All rights reserved.",
+    "peakPurpose": "Part of the #PEAKWithPurpose initiative",
+    "madeWithLove": "Made with",
+    "supportMessage": "to support brain cancer research"
+  },
+  "metadata": {
+    "title": "Music Is Medicine – N2O & Alan Parsons for Brain Cancer",
+    "description": "A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada through hope, healing, and powerful songs.",
+    "ogTitle": "Music Is Medicine – N2O & Alan Parsons for Brain Cancer",
+    "ogDescription": "A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada through hope, healing, and powerful songs.",
+    "ogImageAlt": "Music is Medicine featuring N2O and Alan Parsons",
+    "twitterTitle": "Music Is Medicine – N2O & Alan Parsons for Brain Cancer",
+    "twitterDescription": "A charity music project by N2O and Alan Parsons supporting the Brain Tumour Foundation of Canada."
+  }
+}

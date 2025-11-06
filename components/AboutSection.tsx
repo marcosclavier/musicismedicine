@@ -4,32 +4,34 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaMusic, FaBrain, FaHeart, FaMicroscope } from 'react-icons/fa'
+import { useTranslations } from 'next-intl'
 
 export default function AboutSection() {
+  const t = useTranslations('about')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const stats = [
-    { value: '4', label: 'Charity Singles', icon: FaMusic },
-    { value: '$600K+', label: 'Already Raised', icon: FaHeart },
-    { value: '1000s', label: 'Supporters Nationwide', icon: FaBrain },
-    { value: '100%', label: 'Net Proceeds Donated', icon: FaMicroscope },
+    { value: '4', label: t('stats.singlesLabel'), icon: FaMusic },
+    { value: '$600K+', label: t('stats.raisedLabel'), icon: FaHeart },
+    { value: '1000s', label: t('stats.supportersLabel'), icon: FaBrain },
+    { value: '100%', label: t('stats.proceedsLabel'), icon: FaMicroscope },
   ]
 
   const features = [
     {
-      title: 'Music Heals',
-      description: 'Music has the power to heal, comfort, and inspire. We channel this power into actionable support for brain cancer research.',
+      title: t('features.musicHeals.title'),
+      description: t('features.musicHeals.description'),
       icon: FaMusic,
     },
     {
-      title: 'Research Saves Lives',
-      description: 'Every dollar raised supports the Brain Tumour Foundation of Canada in funding research, education, and patient support programs.',
+      title: t('features.research.title'),
+      description: t('features.research.description'),
       icon: FaMicroscope,
     },
     {
-      title: 'Hope for Families',
-      description: 'Supporting patients and families affected by brain tumours across Canada through awareness, research, and community programs.',
+      title: t('features.hope.title'),
+      description: t('features.hope.description'),
       icon: FaHeart,
     },
   ]
@@ -45,11 +47,10 @@ export default function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            About <span className="text-gradient">Music Is Medicine</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O.
-            Four original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -88,19 +89,16 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h3 className="text-3xl font-bold text-text-primary mb-6">
-              Turning Loss Into Purpose
+              {t('contentTitle')}
             </h3>
             <p className="text-lg text-text-secondary mb-4 leading-relaxed">
-              After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. Together with Alan Parsons,
-              he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.
+              {t('paragraph1')}
             </p>
             <p className="text-lg text-text-secondary mb-4 leading-relaxed">
-              Brain tumours affect thousands of families every year. Through past benefit concerts and early support,
-              Music Is Medicine has raised over <span className="font-bold text-primary-blue">$600,000</span> for brain cancer research and programs.
+              {t('paragraph2')} <span className="font-bold text-primary-blue">{t('amountRaised')}</span> {t('paragraph2Continue')}
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
-              Every stream, download, and share contributes to the mission, with net proceeds donated to the Brain Tumour Foundation of Canada,
-              helping fund research, advocacy, and patient support.
+              {t('paragraph3')}
             </p>
           </motion.div>
 
@@ -145,24 +143,23 @@ export default function AboutSection() {
           className="bg-gradient-to-r from-primary-blue to-accent-purple text-white rounded-2xl p-8 sm:p-12 text-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-            Turning Sound Into Hope for Families Across Canada
+            {t('ctaTitle')}
           </h3>
           <p className="text-lg sm:text-xl mb-6 max-w-2xl mx-auto opacity-90">
-            Every listener, every share, every act of kindness counts.
-            Together, we can make every note a step toward healing.
+            {t('ctaDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#singles"
               className="bg-white text-primary-blue px-8 py-3 rounded-lg font-semibold hover:bg-primary-gray transition-colors duration-300"
             >
-              Listen to the Singles
+              {t('listenButton')}
             </a>
             <a
               href="#donate"
               className="bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
             >
-              Support the Cause
+              {t('supportButton')}
             </a>
           </div>
         </motion.div>

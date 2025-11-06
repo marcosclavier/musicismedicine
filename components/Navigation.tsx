@@ -4,8 +4,11 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import LanguageToggle from './LanguageToggle'
 
 export default function Navigation() {
+  const t = useTranslations('navigation')
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -30,13 +33,13 @@ export default function Navigation() {
   }, [])
 
   const navLinks = [
-    { to: 'hero', label: 'Home' },
-    { to: 'about', label: 'About' },
-    { to: 'visionaries', label: 'Visionaries' },
-    { to: 'singles', label: 'The Singles' },
-    { to: 'listen', label: 'Listen' },
-    { to: 'donate', label: 'Donate' },
-    { to: 'impact', label: 'Impact' },
+    { to: 'hero', label: t('home') },
+    { to: 'about', label: t('about') },
+    { to: 'visionaries', label: t('visionaries') },
+    { to: 'singles', label: t('singles') },
+    { to: 'listen', label: t('listen') },
+    { to: 'donate', label: t('donate') },
+    { to: 'impact', label: t('impact') },
   ]
 
   return (
@@ -93,7 +96,7 @@ export default function Navigation() {
               duration={500}
               className="cursor-pointer px-6 py-2 bg-accent-purple text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
             >
-              Listen Now
+              {t('listenNow')}
             </Link>
             <Link
               to="donate"
@@ -101,18 +104,22 @@ export default function Navigation() {
               duration={500}
               className="cursor-pointer px-6 py-2 bg-accent-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
             >
-              Donate
+              {t('donateButton')}
             </Link>
+            <div className="pl-4">
+              <LanguageToggle isScrolled={isScrolled} />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageToggle isScrolled={isScrolled} />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2 rounded-md ${
                 isScrolled ? 'text-text-primary' : 'text-white'
               }`}
-              aria-label="Toggle menu"
+              aria-label={t('toggleMenu')}
             >
               {isMobileMenuOpen ? (
                 <FaTimes className="h-6 w-6" />
@@ -150,7 +157,7 @@ export default function Navigation() {
                 className="block px-4 py-2 bg-accent-purple text-white rounded-lg font-semibold text-center cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Listen Now
+                {t('listenNow')}
               </Link>
               <Link
                 to="donate"
@@ -159,7 +166,7 @@ export default function Navigation() {
                 className="block px-4 py-2 bg-accent-orange text-white rounded-lg font-semibold text-center cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Donate
+                {t('donateButton')}
               </Link>
             </div>
           </div>

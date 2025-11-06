@@ -5,35 +5,37 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { FaChevronLeft, FaChevronRight, FaMicroscope, FaUsers, FaChartLine, FaAward } from 'react-icons/fa'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function ImpactSection() {
+  const t = useTranslations('impact')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   const testimonials = [
     {
-      name: 'Dr. Sarah Mitchell',
-      role: 'Lead Researcher, The Neuro',
-      quote: 'The funding from Music is Medicine has enabled us to pursue innovative research paths we couldn\'t have explored otherwise. We\'re making real breakthroughs in understanding glioblastoma thanks to this support.',
+      name: t('testimonials.sarah.name'),
+      role: t('testimonials.sarah.role'),
+      quote: t('testimonials.sarah.quote'),
       image: '/images/testimonial-1.jpg',
     },
     {
-      name: 'Michael Thompson',
-      role: 'Brain Cancer Survivor',
-      quote: 'When I was diagnosed, I felt hopeless. But knowing that initiatives like Music is Medicine are funding research gives me and my family real hope for better treatments and ultimately, a cure.',
+      name: t('testimonials.michael.name'),
+      role: t('testimonials.michael.role'),
+      quote: t('testimonials.michael.quote'),
       image: '/images/testimonial-2.jpg',
     },
     {
-      name: 'Jennifer Lee',
-      role: 'Family Member',
-      quote: 'My husband is fighting glioblastoma. The research funded by Music is Medicine directly impacts our lives. Every dollar raised brings us closer to more effective treatments and extends precious time with loved ones.',
+      name: t('testimonials.jennifer.name'),
+      role: t('testimonials.jennifer.role'),
+      quote: t('testimonials.jennifer.quote'),
       image: '/images/testimonial-3.jpg',
     },
     {
-      name: 'Dr. James Rodriguez',
-      role: 'Neurosurgeon, McGill University',
-      quote: 'Clinical trials funded by Music is Medicine are generating valuable data that\'s changing how we approach brain cancer treatment. This community support translates directly into medical advances.',
+      name: t('testimonials.james.name'),
+      role: t('testimonials.james.role'),
+      quote: t('testimonials.james.quote'),
       image: '/images/testimonial-4.jpg',
     },
   ]
@@ -41,46 +43,46 @@ export default function ImpactSection() {
   const achievements = [
     {
       icon: FaAward,
-      value: '$600K+',
-      label: 'Funds Raised',
-      description: 'Supporting research and patient programs',
+      value: t('achievements.raised.value'),
+      label: t('achievements.raised.label'),
+      description: t('achievements.raised.description'),
     },
     {
       icon: FaUsers,
-      value: '1000s',
-      label: 'Supporters',
-      description: 'Brought together nationwide',
+      value: t('achievements.supporters.value'),
+      label: t('achievements.supporters.label'),
+      description: t('achievements.supporters.description'),
     },
     {
       icon: FaChartLine,
-      value: '100%',
-      label: 'Net Proceeds',
-      description: 'Donated to the Foundation',
+      value: t('achievements.proceeds.value'),
+      label: t('achievements.proceeds.label'),
+      description: t('achievements.proceeds.description'),
     },
     {
       icon: FaMicroscope,
-      value: '40+',
-      label: 'Years of Impact',
-      description: 'Brain Tumour Foundation\'s legacy',
+      value: t('achievements.years.value'),
+      label: t('achievements.years.label'),
+      description: t('achievements.years.description'),
     },
   ]
 
   const researchAreas = [
     {
-      title: 'Research & Innovation',
-      description: 'Funding groundbreaking research to advance brain tumour treatment and find new cures.',
+      title: t('areas.research.title'),
+      description: t('areas.research.description'),
     },
     {
-      title: 'Education & Awareness',
-      description: 'Building national awareness about brain cancer and its effects on families across Canada.',
+      title: t('areas.education.title'),
+      description: t('areas.education.description'),
     },
     {
-      title: 'Patient & Family Support',
-      description: 'Providing education, resources, and support for patients and caregivers throughout their journey.',
+      title: t('areas.patient.title'),
+      description: t('areas.patient.description'),
     },
     {
-      title: 'Advocacy & Policy',
-      description: 'Working to improve outcomes through advocacy and policy changes at the national level.',
+      title: t('areas.advocacy.title'),
+      description: t('areas.advocacy.description'),
     },
   ]
 
@@ -103,10 +105,10 @@ export default function ImpactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            Our <span className="text-gradient">Impact</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Real results from your support – advancing research, creating hope, and saving lives
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -149,7 +151,7 @@ export default function ImpactSection() {
           className="bg-white rounded-2xl p-8 sm:p-12 mb-16"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
-            How Your Support Helps
+            {t('supportTitle')}
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             {researchAreas.map((area, index) => (
@@ -186,7 +188,7 @@ export default function ImpactSection() {
           className="bg-gradient-to-br from-primary-blue to-accent-purple text-white rounded-2xl p-8 sm:p-12 mb-16 relative overflow-hidden"
         >
           <h3 className="text-3xl font-bold mb-8 text-center">
-            Stories of Hope & Impact
+            {t('testimonialsTitle')}
           </h3>
 
           {/* Testimonial Content */}
@@ -224,7 +226,7 @@ export default function ImpactSection() {
             <button
               onClick={prevTestimonial}
               className="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors duration-300"
-              aria-label="Previous testimonial"
+              aria-label={t('previousTestimonial')}
             >
               <FaChevronLeft />
             </button>
@@ -238,7 +240,7 @@ export default function ImpactSection() {
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentTestimonial ? 'bg-white w-8' : 'bg-white/50'
                   }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
+                  aria-label={`${t('goToTestimonial')} ${index + 1}`}
                 />
               ))}
             </div>
@@ -246,7 +248,7 @@ export default function ImpactSection() {
             <button
               onClick={nextTestimonial}
               className="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors duration-300"
-              aria-label="Next testimonial"
+              aria-label={t('nextTestimonial')}
             >
               <FaChevronRight />
             </button>
@@ -261,7 +263,7 @@ export default function ImpactSection() {
           className="bg-white rounded-2xl p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-text-primary mb-6">
-            Supporting the Brain Tumour Foundation of Canada
+            {t('partnerTitle')}
           </h3>
           <div className="max-w-2xl mx-auto">
             <div className="p-6 bg-primary-gray rounded-lg text-center">
@@ -279,8 +281,7 @@ export default function ImpactSection() {
                 Brain Tumour Foundation of Canada
               </h4>
               <p className="text-text-secondary text-sm mb-4">
-                For over four decades, the Brain Tumour Foundation of Canada has led the way in research, education, and community support.
-                Its mission is to improve outcomes, fund innovation, and offer hope to every Canadian affected by a brain tumour.
+                {t('partnerDescription')}
               </p>
               <a
                 href="https://www.braintumour.ca/"
@@ -288,7 +289,7 @@ export default function ImpactSection() {
                 rel="noopener noreferrer"
                 className="inline-block text-primary-blue font-semibold hover:text-accent-purple transition-colors duration-300"
               >
-                Visit the Brain Tumour Foundation →
+                {t('visitFoundation')}
               </a>
             </div>
           </div>
@@ -302,24 +303,23 @@ export default function ImpactSection() {
           className="mt-12 text-center"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-4">
-            Be Part of the Solution
+            {t('ctaTitle')}
           </h3>
           <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
-            Every contribution – whether streaming, purchasing, or donating –
-            helps fund the research that will lead to better treatments and ultimately, a cure.
+            {t('ctaDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#singles"
               className="bg-accent-purple text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
             >
-              Listen to the Singles
+              {t('listenButton')}
             </a>
             <a
               href="#donate"
               className="bg-accent-orange text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
             >
-              Make a Donation
+              {t('donateButton')}
             </a>
           </div>
         </motion.div>

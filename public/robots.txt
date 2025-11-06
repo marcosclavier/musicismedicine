@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://musicismedicine.ca/sitemap.xml
+Sitemap: https://musicismedicinebypeak.com/sitemap.xml

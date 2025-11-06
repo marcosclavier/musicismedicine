@@ -7,8 +7,10 @@ import { Link as ScrollLink } from 'react-scroll'
 import Link from 'next/link'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope, FaHeart, FaMusic, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('footer')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -36,15 +38,15 @@ export default function Footer() {
 
       if (response.ok) {
         setStatus('success')
-        setMessage(data.message || 'Thank you for subscribing!')
+        setMessage(data.message || t('successMessage'))
         setEmail('') // Clear the input
       } else {
         setStatus('error')
-        setMessage(data.error || 'Something went wrong. Please try again.')
+        setMessage(data.error || t('errorMessage'))
       }
     } catch (error) {
       setStatus('error')
-      setMessage('Network error. Please check your connection and try again.')
+      setMessage(t('errorMessage'))
     }
   }
 
@@ -59,13 +61,13 @@ export default function Footer() {
   // ]
 
   const quickLinks = [
-    { label: 'Home', to: 'hero' },
-    { label: 'About', to: 'about' },
-    { label: 'Visionaries', to: 'visionaries' },
-    { label: 'The Singles', to: 'singles' },
-    { label: 'Listen & Buy', to: 'listen' },
-    { label: 'Donate', to: 'donate' },
-    { label: 'Impact', to: 'impact' },
+    { label: t('quickLinks.home'), to: 'hero' },
+    { label: t('quickLinks.about'), to: 'about' },
+    { label: t('quickLinks.visionaries'), to: 'visionaries' },
+    { label: t('quickLinks.singles'), to: 'singles' },
+    { label: t('quickLinks.listen'), to: 'listen' },
+    { label: t('quickLinks.donate'), to: 'donate' },
+    { label: t('quickLinks.impact'), to: 'impact' },
   ]
 
   return (
@@ -79,10 +81,10 @@ export default function Footer() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-            Music is Medicine
+            {t('ctaTitle')}
           </h2>
           <p className="text-xl sm:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Listen, Buy, Donate, and Make a Difference
+            {t('ctaSubtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <ScrollLink
@@ -93,7 +95,7 @@ export default function Footer() {
             >
               <button className="flex items-center justify-center gap-3 bg-white text-accent-purple px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
                 <FaMusic />
-                Listen to the First Single
+                {t('listenButton')}
               </button>
             </ScrollLink>
             <a
@@ -103,7 +105,7 @@ export default function Footer() {
             >
               <button className="flex items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto">
                 <FaHeart />
-                Donate Now
+                {t('donateButton')}
               </button>
             </a>
           </div>
@@ -130,13 +132,10 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              A heartfelt Canadian music initiative by PEAK Financial Group and N2O,
-              featuring Grammy-winning artist Alan Parsons. Raising funds and awareness for
-              brain cancer research through the healing power of music.
+              {t('aboutDescription1')}
             </p>
             <p className="text-gray-400 text-sm">
-              Net proceeds donated to the Brain Tumour Foundation of Canada, supporting research,
-              education, and patient programs nationwide.
+              {t('aboutDescription2')}
             </p>
           </motion.div>
 
@@ -146,7 +145,7 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-bold mb-4">{t('quickLinksTitle')}</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -171,7 +170,7 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-lg font-bold mb-4">Connect</h4>
+            <h4 className="text-lg font-bold mb-4">{t('connectTitle')}</h4>
             <div className="space-y-3 mb-6">
               <a
                 href="mailto:peakcommunication@peakgroup.com"
@@ -209,14 +208,14 @@ export default function Footer() {
           className="bg-gray-800 rounded-lg p-6 mb-12"
         >
           <div className="text-center max-w-2xl mx-auto">
-            <h4 className="text-xl font-bold mb-3">Stay Updated</h4>
+            <h4 className="text-xl font-bold mb-3">{t('newsletterTitle')}</h4>
             <p className="text-gray-400 mb-4">
-              Get notified when new singles drop and stay informed about our research impact.
+              {t('newsletterDescription')}
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('emailPlaceholder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -231,10 +230,10 @@ export default function Footer() {
                 {status === 'loading' ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Subscribing...
+                    {t('subscribingButton')}
                   </>
                 ) : (
-                  'Subscribe'
+                  t('subscribeButton')
                 )}
               </button>
             </form>
@@ -269,7 +268,7 @@ export default function Footer() {
           className="mb-12 text-center"
         >
           <h5 className="text-sm font-semibold text-gray-400 mb-6">
-            Proud Partners & Sponsors
+            {t('partnersTitle')}
           </h5>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center max-w-5xl mx-auto">
             <div className="flex items-center justify-center h-16 px-4">
@@ -345,21 +344,21 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/privacy" className="hover:text-accent-purple transition-colors duration-300">
-                Privacy Policy
+                {t('privacyPolicy')}
               </Link>
               <span>•</span>
               <Link href="/terms" className="hover:text-accent-purple transition-colors duration-300">
-                Terms of Service
+                {t('termsOfService')}
               </Link>
               <span>•</span>
               <Link href="/accessibility" className="hover:text-accent-purple transition-colors duration-300">
-                Accessibility
+                {t('accessibility')}
               </Link>
             </div>
             <div className="text-center md:text-right">
-              <p>&copy; {new Date().getFullYear()} PEAK Financial Group. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} {t('copyright')}</p>
               <p className="mt-1">
-                Part of the #PEAKWithPurpose initiative
+                {t('peakPurpose')}
               </p>
             </div>
           </div>
@@ -374,7 +373,7 @@ export default function Footer() {
         className="bg-black py-4 text-center"
       >
         <p className="text-sm text-gray-500">
-          Made with <FaHeart className="inline text-red-500" /> to support brain cancer research
+          {t('madeWithLove')} <FaHeart className="inline text-red-500" /> {t('supportMessage')}
         </p>
       </motion.div>
     </footer>

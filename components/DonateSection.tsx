@@ -4,60 +4,62 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaHeart, FaCalendarAlt, FaBuilding, FaCheck, FaReceipt, FaUniversity } from 'react-icons/fa'
+import { useTranslations } from 'next-intl'
 
 export default function DonateSection() {
+  const t = useTranslations('donate')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const donationTiers = [
     {
-      amount: '$10',
-      title: 'Single Supporter',
-      description: 'Equivalent to one single release',
-      impact: 'Supports basic research materials',
+      amount: t('tiers.single.amount'),
+      title: t('tiers.single.title'),
+      description: t('tiers.single.description'),
+      impact: t('tiers.single.impact'),
       icon: '🎵',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=10',
     },
     {
-      amount: '$25',
-      title: 'Music Advocate',
-      description: 'Support multiple single releases',
-      impact: 'Funds laboratory testing and trials',
+      amount: t('tiers.advocate.amount'),
+      title: t('tiers.advocate.title'),
+      description: t('tiers.advocate.description'),
+      impact: t('tiers.advocate.impact'),
       icon: '🎸',
       popular: true,
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=25',
     },
     {
-      amount: '$50',
-      title: 'Research Master',
-      description: 'Make a real impact for patients',
-      impact: 'Contributes to clinical trial costs',
+      amount: t('tiers.master.amount'),
+      title: t('tiers.master.title'),
+      description: t('tiers.master.description'),
+      impact: t('tiers.master.impact'),
       icon: '🎼',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=50',
     },
     {
-      amount: '$100',
-      title: 'Hope Builder',
-      description: 'Full sample collection support',
-      impact: 'Funds advanced research equipment',
+      amount: t('tiers.builder.amount'),
+      title: t('tiers.builder.title'),
+      description: t('tiers.builder.description'),
+      impact: t('tiers.builder.impact'),
       icon: '🏆',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1&amt=100',
     },
     {
-      amount: 'Custom',
-      title: 'Visionary Donor',
-      description: 'Choose your preferred amount',
-      impact: 'Every dollar makes a difference',
+      amount: t('tiers.visionary.amount'),
+      title: t('tiers.visionary.title'),
+      description: t('tiers.visionary.description'),
+      impact: t('tiers.visionary.impact'),
       icon: '💫',
       link: 'https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1',
     },
   ]
 
   const benefits = [
-    { text: 'Tax-receiptable through Brain Tumour Foundation of Canada', icon: FaReceipt },
-    { text: 'Secure donation processing', icon: FaCheck },
-    { text: 'Direct support for research and patient programs', icon: FaHeart },
-    { text: 'Join thousands of supporters nationwide', icon: FaCalendarAlt },
+    { text: t('benefits.receipt'), icon: FaReceipt },
+    { text: t('benefits.secure'), icon: FaCheck },
+    { text: t('benefits.direct'), icon: FaHeart },
+    { text: t('benefits.community'), icon: FaCalendarAlt },
   ]
 
   return (
@@ -71,10 +73,10 @@ export default function DonateSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            How to <span className="text-gradient">Donate</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Support life-changing brain cancer research at The Neuro
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -86,24 +88,23 @@ export default function DonateSection() {
           className="bg-gradient-to-r from-primary-blue to-accent-purple text-white rounded-2xl p-8 sm:p-12 text-center mb-12"
         >
           <h3 className="text-3xl sm:text-4xl font-bold mb-4">
-            Over $600,000 Raised for Brain Tumour Research
+            {t('impactTitle')}
           </h3>
           <p className="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto mb-6">
-            Through past benefit concerts and early support, these funds support research, education, and patient programs.
-            Your donation today continues this vital work.
+            {t('impactDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center text-left sm:text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold">$600K+</div>
-              <div className="text-sm opacity-90">Total Raised</div>
+              <div className="text-sm opacity-90">{t('stats.totalRaised')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold">1000s</div>
-              <div className="text-sm opacity-90">Supporters Nationwide</div>
+              <div className="text-sm opacity-90">{t('stats.supporters')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold">100%</div>
-              <div className="text-sm opacity-90">Net Proceeds Donated</div>
+              <div className="text-sm opacity-90">{t('stats.netProceeds')}</div>
             </div>
           </div>
         </motion.div>
@@ -116,7 +117,7 @@ export default function DonateSection() {
           className="mb-12"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
-            Choose Your Contribution
+            {t('tiersTitle')}
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {donationTiers.map((tier, index) => (
@@ -131,7 +132,7 @@ export default function DonateSection() {
               >
                 {tier.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent-orange text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                    Popular
+                    {t('tiers.advocate.popular')}
                   </div>
                 )}
                 <div className="text-center">
@@ -156,7 +157,7 @@ export default function DonateSection() {
                     rel="noopener noreferrer"
                     className="block w-full bg-primary-blue text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300 group-hover:scale-105 text-center"
                   >
-                    Select
+                    {t('selectButton')}
                   </a>
                 </div>
               </motion.div>
@@ -176,10 +177,10 @@ export default function DonateSection() {
             <div className="text-center">
               <FaHeart className="text-5xl text-accent-orange mx-auto mb-4" />
               <h4 className="text-2xl font-bold text-text-primary mb-3">
-                One-Time Donation
+                {t('oneTimeTitle')}
               </h4>
               <p className="text-text-secondary mb-6">
-                Make an immediate impact with a single contribution to support research, education, and patient programs.
+                {t('oneTimeDescription')}
               </p>
               <a
                 href="https://btfc.akaraisin.com/ui/musicismedicine/donations/start?it=1"
@@ -187,7 +188,7 @@ export default function DonateSection() {
                 rel="noopener noreferrer"
                 className="inline-block bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
               >
-                Donate Now
+                {t('donateNowButton')}
               </a>
             </div>
           </div>
@@ -201,7 +202,7 @@ export default function DonateSection() {
           className="bg-white rounded-2xl p-8 mb-12 shadow-lg"
         >
           <h3 className="text-2xl font-bold text-text-primary mb-6 text-center">
-            Why Donate Through Music is Medicine?
+            {t('benefitsTitle')}
           </h3>
           <div className="grid sm:grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
@@ -230,12 +231,10 @@ export default function DonateSection() {
         >
           <FaUniversity className="text-5xl text-primary-blue mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-text-primary mb-4">
-            Supporting the Brain Tumour Foundation of Canada
+            {t('foundationTitle')}
           </h3>
           <p className="text-text-secondary mb-4 max-w-2xl mx-auto leading-relaxed">
-            Net proceeds from Music Is Medicine are donated to the Brain Tumour Foundation of Canada.
-            For over four decades, the Foundation has led the way in research, education, and community support,
-            working to improve outcomes and offer hope to every Canadian affected by a brain tumour.
+            {t('foundationDescription')}
           </p>
           <a
             href="https://www.braintumour.ca/"
@@ -243,7 +242,7 @@ export default function DonateSection() {
             rel="noopener noreferrer"
             className="inline-block text-primary-blue font-semibold hover:text-accent-purple transition-colors duration-300"
           >
-            Learn More About the Brain Tumour Foundation →
+            {t('learnMoreLink')}
           </a>
         </motion.div>
 
@@ -256,18 +255,16 @@ export default function DonateSection() {
         >
           <FaBuilding className="text-5xl mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-4">
-            Corporate Matching & Sponsorships
+            {t('corporateTitle')}
           </h3>
           <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            Many employers match charitable donations, potentially doubling your impact.
-            Ask your HR department about matching gift programs. Corporate sponsorship
-            opportunities are also available through PEAK Financial Group.
+            {t('corporateDescription')}
           </p>
           <a
             href="mailto:peakcommunication@peakgroup.com"
             className="inline-block bg-white text-accent-purple px-8 py-3 rounded-lg font-semibold hover:bg-primary-gray transition-colors duration-300"
           >
-            Contact for Corporate Opportunities
+            {t('corporateButton')}
           </a>
         </motion.div>
       </div>

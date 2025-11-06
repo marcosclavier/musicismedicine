@@ -5,44 +5,46 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaQuoteLeft } from 'react-icons/fa'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function VisionariesSection() {
+  const t = useTranslations('visionaries')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const visionaries = [
     {
-      name: 'Robert Frances',
-      title: 'Founder',
-      organization: 'CEO, PEAK Financial Group & Member of N2O',
+      name: t('robertFrances.name'),
+      title: t('robertFrances.title'),
+      organization: t('robertFrances.organization'),
       image: '/robert-frances.jpg',
-      quote: 'After losing a friend and bandmate to brain cancer, I wanted to turn emotion into something meaningful. Music Is Medicine is our way to give back and help others through the power of music.',
-      bio: 'After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. As CEO of PEAK Financial Group and member of the band N2O, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.',
+      quote: t('robertFrances.quote'),
+      bio: t('robertFrances.bio'),
     },
     {
-      name: 'Alan Parsons',
-      title: 'Grammy-Winning Artist & Producer',
-      organization: 'Featured Artist',
+      name: t('alanParsons.name'),
+      title: t('alanParsons.title'),
+      organization: t('alanParsons.organization'),
       image: '/alan-parsons.jpg',
-      quote: 'Music connects people in moments that words alone can\'t reach. This project reminded me that creativity and compassion can change lives.',
-      bio: 'World-renowned musician, engineer, and producer known for his legendary work with Pink Floyd, The Beatles, and his own Alan Parsons Project. Alan Parsons brings his iconic sound and vision to Music Is Medicine, producing and mixing the debut single "Radio", capturing emotion, connection, and remembrance in every note.',
+      quote: t('alanParsons.quote'),
+      bio: t('alanParsons.bio'),
     },
   ]
 
   const partners = [
     {
-      name: 'PEAK Financial Group',
-      description: 'Montreal-based independent financial services firm driving community impact through the #PEAKWithPurpose initiative.',
+      name: t('partners.peak.name'),
+      description: t('partners.peak.description'),
       logo: '/logo/peak-logo-transparent.png',
     },
     {
-      name: 'LANDR',
-      description: 'Leading audio mastering and distribution platform distributing all four charity singles globally.',
+      name: t('partners.landr.name'),
+      description: t('partners.landr.description'),
       logo: '/logo/LANDR_Blue_Logo-png.png',
     },
     {
-      name: 'Brain Tumour Foundation of Canada',
-      description: 'Leading the way in research, education, and community support for Canadians affected by brain tumours. All net proceeds benefit their programs.',
+      name: t('partners.foundation.name'),
+      description: t('partners.foundation.description'),
       logo: '/logo/brain-tumour-foundation-logo.png',
     },
   ]
@@ -58,10 +60,10 @@ export default function VisionariesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            Meet the <span className="text-gradient">Visionaries</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            The inspiring individuals behind this life-changing initiative
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -129,7 +131,7 @@ export default function VisionariesSection() {
           className="bg-white rounded-2xl p-8 sm:p-12"
         >
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
-            Key Partners & Collaborators
+            {t('partnersTitle')}
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {partners.map((partner, index) => (
@@ -170,11 +172,10 @@ export default function VisionariesSection() {
           className="mt-12 bg-gradient-to-r from-primary-blue to-accent-purple text-white rounded-2xl p-8 text-center"
         >
           <h4 className="text-2xl font-bold mb-3">
-            Part of PEAK's #PEAKWithPurpose Initiative
+            {t('peakTitle')}
           </h4>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            PEAK Financial Group is committed to making a positive impact in the community,
-            supporting causes that matter and creating lasting change.
+            {t('peakDescription')}
           </p>
         </motion.div>
       </div>

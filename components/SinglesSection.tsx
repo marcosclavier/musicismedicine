@@ -5,50 +5,52 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FaSpotify, FaCalendar, FaClock } from 'react-icons/fa'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function SinglesSection() {
+  const t = useTranslations('singles')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const singles = [
     {
-      title: 'Radio',
-      subtitle: 'by N2O featuring Alan Parsons',
-      releaseDate: 'November 4, 2025',
+      title: t('radio.title'),
+      subtitle: t('radio.subtitle'),
+      releaseDate: t('radio.releaseDate'),
       status: 'available',
-      description: 'Produced and Mixed by Alan Parsons — a song about connection, memory, and finding light after loss. This powerful opening track sets the tone for the journey ahead.',
-      themes: ['Connection', 'Memory', 'Hope'],
+      description: t('radio.description'),
+      themes: [t('radio.themes.0'), t('radio.themes.1'), t('radio.themes.2')],
       artwork: '/Radio-Final-RGB-1500.jpeg',
       audioSnippet: '/audio/single-1-snippet.mp3',
       spotifyLink: 'https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3?si=eyUeMGfvS9uINyRPFLQ_8w&nd=1&dlsi=dc22e2de078c4929',
     },
     {
-      title: 'You & I',
-      subtitle: 'by N2O featuring Alan Parsons',
-      releaseDate: 'November 30, 2025',
+      title: t('youAndI.title'),
+      subtitle: t('youAndI.subtitle'),
+      releaseDate: t('youAndI.releaseDate'),
       status: 'upcoming',
-      description: 'A tribute to love, resilience, and unity. This heartfelt composition celebrates the bonds that give us strength through life\'s greatest challenges.',
-      themes: ['Love', 'Resilience', 'Unity'],
+      description: t('youAndI.description'),
+      themes: [t('youAndI.themes.0'), t('youAndI.themes.1'), t('youAndI.themes.2')],
       artwork: '/images/single-2.jpg',
       audioSnippet: '/audio/single-2-snippet.mp3',
     },
     {
-      title: 'Courage',
-      subtitle: 'by N2O featuring Alan Parsons',
-      releaseDate: 'December 30, 2025',
+      title: t('courage.title'),
+      subtitle: t('courage.subtitle'),
+      releaseDate: t('courage.releaseDate'),
       status: 'upcoming',
-      description: 'A song about strength, healing, and perseverance. This powerful track explores the courage we find within ourselves when facing adversity.',
-      themes: ['Strength', 'Healing', 'Perseverance'],
+      description: t('courage.description'),
+      themes: [t('courage.themes.0'), t('courage.themes.1'), t('courage.themes.2')],
       artwork: '/images/single-3.jpg',
       audioSnippet: '/audio/single-3-snippet.mp3',
     },
     {
-      title: 'Where to Go',
-      subtitle: 'by N2O featuring Alan Parsons',
-      releaseDate: 'February 28, 2026',
+      title: t('whereToGo.title'),
+      subtitle: t('whereToGo.subtitle'),
+      releaseDate: t('whereToGo.releaseDate'),
       status: 'upcoming',
-      description: 'A reflection on purpose, hope, and moving forward. The inspiring finale that looks toward a future filled with possibility and promise.',
-      themes: ['Purpose', 'Hope', 'Future'],
+      description: t('whereToGo.description'),
+      themes: [t('whereToGo.themes.0'), t('whereToGo.themes.1'), t('whereToGo.themes.2')],
       artwork: '/images/single-4.jpg',
       audioSnippet: '/audio/single-4-snippet.mp3',
     },
@@ -65,10 +67,10 @@ export default function SinglesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-text-primary mb-6">
-            The <span className="text-gradient">Singles</span>
+            {t('title')} <span className="text-gradient">{t('titleHighlight')}</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Four original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -81,10 +83,10 @@ export default function SinglesSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-2">
             <FaCalendar className="text-2xl" />
-            <h3 className="text-2xl font-bold">Release Schedule</h3>
+            <h3 className="text-2xl font-bold">{t('scheduleTitle')}</h3>
           </div>
           <p className="text-lg opacity-90">
-            One new single every month • November 4, 2025 - February 28, 2026
+            {t('scheduleDescription')}
           </p>
         </motion.div>
 
@@ -123,12 +125,12 @@ export default function SinglesSection() {
                   <div className="absolute top-3 right-3">
                     {single.status === 'upcoming' && (
                       <span className="bg-accent-orange text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-                        <FaClock /> Coming Soon
+                        <FaClock /> {t('statusUpcoming')}
                       </span>
                     )}
                     {single.status === 'available' && (
                       <span className="bg-accent-green text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        Available Now
+                        {t('statusAvailable')}
                       </span>
                     )}
                   </div>
@@ -142,7 +144,7 @@ export default function SinglesSection() {
                     </h3>
                     <p className="text-accent-purple font-semibold flex items-center gap-2">
                       <FaCalendar />
-                      Release Date: {single.releaseDate}
+                      {t('releaseLabel')} {single.releaseDate}
                     </p>
                   </div>
 
@@ -166,7 +168,7 @@ export default function SinglesSection() {
                   <div className="flex flex-wrap gap-3">
                     {single.status === 'upcoming' ? (
                       <button className="flex items-center gap-2 bg-primary-gray text-text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300">
-                        Pre-Save
+                        {t('preSave')}
                       </button>
                     ) : (
                       <a
@@ -175,7 +177,7 @@ export default function SinglesSection() {
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-[#1DB954] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#1ed760] transition-colors duration-300"
                       >
-                        <FaSpotify /> Listen on Spotify
+                        <FaSpotify /> {t('listenSpotify')}
                       </a>
                     )}
                   </div>
@@ -193,21 +195,20 @@ export default function SinglesSection() {
           className="mt-12 bg-primary-gray rounded-2xl p-8 text-center"
         >
           <h3 className="text-2xl font-bold text-text-primary mb-4">
-            Exclusive Charity Collection
+            {t('collectionTitle')}
           </h3>
           <p className="text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
-            All singles by N2O featuring Alan Parsons, distributed globally by LANDR.
-            Net proceeds donated to the Brain Tumour Foundation of Canada.
+            {t('collectionDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-primary-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300">
-              Get Notifications
+              {t('notificationsButton')}
             </button>
             <a
               href="#listen"
               className="bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
             >
-              How to Listen & Buy
+              {t('howToListenButton')}
             </a>
           </div>
         </motion.div>

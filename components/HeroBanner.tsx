@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
 import { FaPlay, FaHeart } from 'react-icons/fa'
+import { useTranslations } from 'next-intl'
 
 export default function HeroBanner() {
+  const t = useTranslations('hero')
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Gradient Background */}
@@ -28,7 +31,7 @@ export default function HeroBanner() {
             className="inline-block mb-6 max-w-full px-4"
           >
             <span className="bg-white/20 backdrop-blur-sm text-white px-4 sm:px-6 py-2 sm:py-3 rounded-2xl sm:rounded-full text-xs sm:text-sm font-semibold border border-white/30 inline-block text-center leading-relaxed">
-              N2O Featuring Grammy-Winning Artist Alan Parsons
+              {t('badge')}
             </span>
           </motion.div>
 
@@ -39,9 +42,9 @@ export default function HeroBanner() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Music is Medicine
+            {t('title')}
             <br />
-            <span className="text-accent-orange">Where music, purpose, and hope come together</span>
+            <span className="text-accent-orange">{t('subtitle')}</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -51,7 +54,7 @@ export default function HeroBanner() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 max-w-4xl mx-auto"
           >
-            Four original singles by N2O, featuring Alan Parsons and distributed by LANDR
+            {t('description')}
           </motion.p>
 
           {/* Release Info */}
@@ -61,11 +64,11 @@ export default function HeroBanner() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg sm:text-xl text-white/80 mb-12"
           >
-            First release: <span className="font-bold text-accent-orange">"Radio"</span> – Produced and Mixed by Alan Parsons
+            {t('firstRelease')} <span className="font-bold text-accent-orange">{t('radioTitle')}</span> {t('producedBy')}
             <br />
-            Available <span className="font-bold text-accent-orange">November 4, 2025</span>
+            {t('availableDate')} <span className="font-bold text-accent-orange">{t('releaseDate')}</span>
             <br />
-            One new single every month through February 2026
+            {t('releaseSchedule')}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -83,7 +86,7 @@ export default function HeroBanner() {
             >
               <button className="flex items-center gap-3 bg-accent-purple text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-2xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-purple-500/50">
                 <FaPlay className="group-hover:scale-110 transition-transform" />
-                Listen Now
+                {t('listenNowButton')}
               </button>
             </Link>
             <a
@@ -94,7 +97,7 @@ export default function HeroBanner() {
             >
               <button className="flex items-center gap-3 bg-accent-orange text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-2xl hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-orange-500/50">
                 <FaHeart className="group-hover:scale-110 transition-transform" />
-                Donate Now
+                {t('donateNowButton')}
               </button>
             </a>
           </motion.div>
@@ -106,8 +109,8 @@ export default function HeroBanner() {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="mt-12 text-white/70 text-sm sm:text-base"
           >
-            <p>Net proceeds donated to the Brain Tumour Foundation of Canada</p>
-            <p className="mt-2">Distributed by LANDR</p>
+            <p>{t('netProceeds')}</p>
+            <p className="mt-2">{t('distributedBy')}</p>
           </motion.div>
         </motion.div>
 
