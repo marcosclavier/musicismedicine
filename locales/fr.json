@@ -14,7 +14,7 @@
   "hero": {
     "badge": "N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons",
     "title": "Music comme médecine",
-    "subtitle": "Où la musique, le but et l'espoir se rencontrent",
+    "subtitle": "Où la musique, l'engagement et l'espoir se rencontrent",
     "description": "Quatre singles originaux par N2O, mettant en vedette Alan Parsons et distribués par LANDR",
     "firstRelease": "Première sortie :",
     "radioTitle": "\"Radio\"",
@@ -34,11 +34,11 @@
     "stats": {
       "singlesLabel": "Singles caritatifs",
       "raisedLabel": "Déjà recueillis",
-      "supportersLabel": "Supporteurs à travers le pays",
+      "supportersLabel": "Soutiens à travers le pays",
       "proceedsLabel": "Produits nets donnés"
     },
-    "contentTitle": "Transformer la perte en objectif",
-    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. Avec Alan Parsons, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
+    "contentTitle": "Transformer la perte en engagement",
+    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. Avec Alan Parsons, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
     "paragraph2": "Les tumeurs cérébrales affectent des milliers de familles chaque année. Grâce aux concerts-bénéfices passés et au soutien précoce, Music comme médecine a recueilli plus de",
     "amountRaised": "600 000 $",
     "paragraph2Continue": "pour la recherche et les programmes sur le cancer du cerveau.",
@@ -54,7 +54,7 @@
       },
       "hope": {
         "title": "Espoir pour les familles",
-        "description": "Soutenir les patients et les familles touchés par les tumeurs cérébrales à travers le Canada par la sensibilisation, la recherche et les programmes communautaires."
+        "description": "Soutien aux patients et aux familles touchés par les tumeurs cérébrales à travers le Canada par la sensibilisation, la recherche et les programmes communautaires."
       }
     },
     "ctaTitle": "Transformer le son en espoir pour les familles à travers le Canada",
@@ -71,7 +71,7 @@
       "title": "Fondateur",
       "organization": "PDG, Groupe Financier PEAK et membre de N2O",
       "quote": "Après avoir perdu un ami et camarade de groupe du cancer du cerveau, je voulais transformer l'émotion en quelque chose de significatif. Music comme médecine est notre façon de redonner et d'aider les autres grâce au pouvoir de la musique.",
-      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
+      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
     },
     "alanParsons": {
       "name": "Alan Parsons",
@@ -108,8 +108,8 @@
       "title": "Radio",
       "subtitle": "par N2O mettant en vedette Alan Parsons",
       "releaseDate": "4 novembre 2025",
-      "description": "Produit et mixé par Alan Parsons — une chanson sur la connexion, la mémoire et trouver la lumière après la perte. Cette puissante piste d'ouverture donne le ton pour le voyage à venir.",
-      "themes": ["Connexion", "Mémoire", "Espoir"]
+      "description": "Produit et mixé par Alan Parsons — une chanson sur le lien, la mémoire et la lumière trouvée après la perte. Cette puissante piste d'ouverture donne le ton pour le voyage à venir.",
+      "themes": ["Lien", "Mémoire", "Espoir"]
     },
     "youAndI": {
       "title": "You & I (Toi et moi)",
@@ -129,14 +129,14 @@
       "title": "Where to Go (Où aller)",
       "subtitle": "par N2O mettant en vedette Alan Parsons",
       "releaseDate": "28 février 2026",
-      "description": "Une réflexion sur le but, l'espoir et l'avancement. La finale inspirante qui regarde vers un avenir rempli de possibilités et de promesses.",
+      "description": "Une réflexion sur le but, l'espoir et le fait d'aller de l'avant. La finale inspirante qui regarde vers un avenir rempli de possibilités et de promesses.",
       "themes": ["But", "Espoir", "Avenir"]
     },
     "statusAvailable": "Disponible maintenant",
     "statusUpcoming": "Bientôt disponible",
     "releaseLabel": "Date de sortie :",
     "listenSpotify": "Écouter sur Spotify",
-    "preSave": "Pré-sauvegarder",
+    "preSave": "Pré-enregistrer",
     "collectionTitle": "Collection caritative exclusive",
     "collectionDescription": "Tous les singles par N2O mettant en vedette Alan Parsons, distribués mondialement par LANDR. Les produits nets sont donnés à la Fondation canadienne des tumeurs cérébrales.",
     "notificationsButton": "Recevoir les notifications",
@@ -159,14 +159,14 @@
     "impactDescription": "Grâce aux concerts-bénéfices passés et au soutien précoce, ces fonds soutiennent la recherche, l'éducation et les programmes pour les patients. Votre don aujourd'hui poursuit ce travail vital.",
     "stats": {
       "totalRaised": "Total recueilli",
-      "supporters": "Supporteurs à travers le pays",
+      "supporters": "Soutiens à travers le pays",
       "netProceeds": "Produits nets donnés"
     },
     "tiersTitle": "Choisissez votre contribution",
     "tiers": {
       "single": {
         "amount": "10 $",
-        "title": "Supporteur single",
+        "title": "Donateur single",
         "description": "Équivalent à une sortie single",
         "impact": "Soutient le matériel de recherche de base"
       },
@@ -179,7 +179,7 @@
       },
       "master": {
         "amount": "50 $",
-        "title": "Maître de la recherche",
+        "title": "Pilier de la recherche",
         "description": "Ayez un impact réel pour les patients",
         "impact": "Contribue aux coûts des essais cliniques"
       },
@@ -192,7 +192,7 @@
       "visionary": {
         "amount": "Personnalisé",
         "title": "Donateur visionnaire",
-        "description": "Choisissez votre montant préféré",
+        "description": "Choisissez le montant de votre choix",
         "impact": "Chaque dollar fait une différence"
       }
     },
@@ -205,7 +205,7 @@
       "receipt": "Reçu fiscal via la Fondation canadienne des tumeurs cérébrales",
       "secure": "Traitement sécurisé des dons",
       "direct": "Soutien direct pour la recherche et les programmes pour les patients",
-      "community": "Rejoignez des milliers de supporteurs à travers le pays"
+      "community": "Rejoignez des milliers de soutiens à travers le pays"
     },
     "foundationTitle": "Soutenir la Fondation canadienne des tumeurs cérébrales",
     "foundationDescription": "Les produits nets de Music comme médecine sont donnés à la Fondation canadienne des tumeurs cérébrales. Depuis plus de quatre décennies, la Fondation est chef de file en recherche, éducation et soutien communautaire, travaillant à améliorer les résultats et à offrir de l'espoir à chaque Canadien touché par une tumeur cérébrale.",
@@ -220,13 +220,13 @@
     "subtitle": "Résultats réels de votre soutien – faire progresser la recherche, créer de l'espoir et sauver des vies",
     "achievements": {
       "raised": {
-        "value": "600 000 $ +",
+        "value": "Plus de 600 000 $",
         "label": "Fonds recueillis",
         "description": "Soutenir la recherche et les programmes pour les patients"
       },
       "supporters": {
         "value": "Milliers",
-        "label": "Supporteurs",
+        "label": "Soutiens",
         "description": "Rassemblés à travers le pays"
       },
       "proceeds": {
@@ -314,11 +314,11 @@
     "emailLabel": "peakcommunication@peakgroup.com",
     "newsletterTitle": "Restez informé",
     "newsletterDescription": "Soyez averti lorsque de nouveaux singles sortent et restez informé de notre impact sur la recherche.",
-    "emailPlaceholder": "Entrez votre courriel",
+    "emailPlaceholder": "Entrez votre adresse courriel",
     "subscribeButton": "S'abonner",
     "subscribingButton": "Abonnement en cours...",
     "successMessage": "Merci de vous être abonné!",
-    "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
     "partnersTitle": "Fiers partenaires et commanditaires",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfService": "Conditions d'utilisation",
