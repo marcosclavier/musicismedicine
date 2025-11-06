@@ -13,7 +13,7 @@
   },
   "hero": {
     "badge": "N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons",
-    "title": "La musique est médecine",
+    "title": "Music comme médecine",
     "subtitle": "Où la musique, le but et l'espoir se rencontrent",
     "description": "Quatre singles originaux par N2O, mettant en vedette Alan Parsons et distribués par LANDR",
     "firstRelease": "Première sortie :",
@@ -29,8 +29,8 @@
   },
   "about": {
     "title": "À propos de",
-    "titleHighlight": "La musique est médecine",
-    "subtitle": "La musique est médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Quatre singles originaux par N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
+    "titleHighlight": "Music comme médecine",
+    "subtitle": "Music comme médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Quatre singles originaux par N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
     "stats": {
       "singlesLabel": "Singles caritatifs",
       "raisedLabel": "Déjà recueillis",
@@ -38,8 +38,8 @@
       "proceedsLabel": "Produits nets donnés"
     },
     "contentTitle": "Transformer la perte en objectif",
-    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. Avec Alan Parsons, il a lancé La musique est médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
-    "paragraph2": "Les tumeurs cérébrales affectent des milliers de familles chaque année. Grâce aux concerts-bénéfices passés et au soutien précoce, La musique est médecine a recueilli plus de",
+    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. Avec Alan Parsons, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
+    "paragraph2": "Les tumeurs cérébrales affectent des milliers de familles chaque année. Grâce aux concerts-bénéfices passés et au soutien précoce, Music comme médecine a recueilli plus de",
     "amountRaised": "600 000 $",
     "paragraph2Continue": "pour la recherche et les programmes sur le cancer du cerveau.",
     "paragraph3": "Chaque écoute, téléchargement et partage contribue à la mission, les produits nets étant donnés à la Fondation canadienne des tumeurs cérébrales, aidant à financer la recherche, le plaidoyer et le soutien aux patients.",
@@ -70,15 +70,15 @@
       "name": "Robert Frances",
       "title": "Fondateur",
       "organization": "PDG, Groupe Financier PEAK et membre de N2O",
-      "quote": "Après avoir perdu un ami et camarade de groupe du cancer du cerveau, je voulais transformer l'émotion en quelque chose de significatif. La musique est médecine est notre façon de redonner et d'aider les autres grâce au pouvoir de la musique.",
-      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé La musique est médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
+      "quote": "Après avoir perdu un ami et camarade de groupe du cancer du cerveau, je voulais transformer l'émotion en quelque chose de significatif. Music comme médecine est notre façon de redonner et d'aider les autres grâce au pouvoir de la musique.",
+      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en objectif. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
     },
     "alanParsons": {
       "name": "Alan Parsons",
       "title": "Artiste et producteur lauréat d'un Grammy",
       "organization": "Artiste vedette",
       "quote": "La musique connecte les gens dans des moments que les mots seuls ne peuvent atteindre. Ce projet m'a rappelé que la créativité et la compassion peuvent changer des vies.",
-      "bio": "Musicien, ingénieur et producteur de renommée mondiale connu pour son travail légendaire avec Pink Floyd, les Beatles et son propre Alan Parsons Project. Alan Parsons apporte son son et sa vision emblématiques à La musique est médecine, produisant et mixant le single de début \"Radio\", capturant l'émotion, la connexion et le souvenir dans chaque note."
+      "bio": "Musicien, ingénieur et producteur de renommée mondiale connu pour son travail légendaire avec Pink Floyd, les Beatles et son propre Alan Parsons Project. Alan Parsons apporte son son et sa vision emblématiques à Music comme médecine, produisant et mixant le single de début \"Radio\", capturant l'émotion, la connexion et le souvenir dans chaque note."
     },
     "partnersTitle": "Partenaires et collaborateurs clés",
     "partners": {
@@ -200,7 +200,7 @@
     "oneTimeTitle": "Don unique",
     "oneTimeDescription": "Ayez un impact immédiat avec une seule contribution pour soutenir la recherche, l'éducation et les programmes pour les patients.",
     "donateNowButton": "Faire un don maintenant",
-    "benefitsTitle": "Pourquoi faire un don via La musique est médecine?",
+    "benefitsTitle": "Pourquoi faire un don via Music comme médecine?",
     "benefits": {
       "receipt": "Reçu fiscal via la Fondation canadienne des tumeurs cérébrales",
       "secure": "Traitement sécurisé des dons",
@@ -208,7 +208,7 @@
       "community": "Rejoignez des milliers de supporteurs à travers le pays"
     },
     "foundationTitle": "Soutenir la Fondation canadienne des tumeurs cérébrales",
-    "foundationDescription": "Les produits nets de La musique est médecine sont donnés à la Fondation canadienne des tumeurs cérébrales. Depuis plus de quatre décennies, la Fondation est chef de file en recherche, éducation et soutien communautaire, travaillant à améliorer les résultats et à offrir de l'espoir à chaque Canadien touché par une tumeur cérébrale.",
+    "foundationDescription": "Les produits nets de Music comme médecine sont donnés à la Fondation canadienne des tumeurs cérébrales. Depuis plus de quatre décennies, la Fondation est chef de file en recherche, éducation et soutien communautaire, travaillant à améliorer les résultats et à offrir de l'espoir à chaque Canadien touché par une tumeur cérébrale.",
     "learnMoreLink": "En savoir plus sur la Fondation canadienne des tumeurs cérébrales →",
     "corporateTitle": "Jumelage d'entreprise et commandites",
     "corporateDescription": "De nombreux employeurs égalent les dons de bienfaisance, doublant potentiellement votre impact. Renseignez-vous auprès de votre service des ressources humaines sur les programmes de dons jumelés. Des opportunités de commandite d'entreprise sont également disponibles via le Groupe Financier PEAK.",
@@ -264,22 +264,22 @@
       "sarah": {
         "name": "Dre Sarah Mitchell",
         "role": "Chercheuse principale, Le Neuro",
-        "quote": "Le financement de La musique est médecine nous a permis de poursuivre des voies de recherche innovantes que nous n'aurions pas pu explorer autrement. Nous réalisons de véritables percées dans la compréhension du glioblastome grâce à ce soutien."
+        "quote": "Le financement de Music comme médecine nous a permis de poursuivre des voies de recherche innovantes que nous n'aurions pas pu explorer autrement. Nous réalisons de véritables percées dans la compréhension du glioblastome grâce à ce soutien."
       },
       "michael": {
         "name": "Michael Thompson",
         "role": "Survivant du cancer du cerveau",
-        "quote": "Quand j'ai été diagnostiqué, je me sentais sans espoir. Mais savoir que des initiatives comme La musique est médecine financent la recherche donne à moi et à ma famille un réel espoir de meilleurs traitements et, finalement, d'un remède."
+        "quote": "Quand j'ai été diagnostiqué, je me sentais sans espoir. Mais savoir que des initiatives comme Music comme médecine financent la recherche donne à moi et à ma famille un réel espoir de meilleurs traitements et, finalement, d'un remède."
       },
       "jennifer": {
         "name": "Jennifer Lee",
         "role": "Membre de la famille",
-        "quote": "Mon mari lutte contre le glioblastome. La recherche financée par La musique est médecine impacte directement nos vies. Chaque dollar recueilli nous rapproche de traitements plus efficaces et prolonge le temps précieux avec nos proches."
+        "quote": "Mon mari lutte contre le glioblastome. La recherche financée par Music comme médecine impacte directement nos vies. Chaque dollar recueilli nous rapproche de traitements plus efficaces et prolonge le temps précieux avec nos proches."
       },
       "james": {
         "name": "Dr James Rodriguez",
         "role": "Neurochirurgien, Université McGill",
-        "quote": "Les essais cliniques financés par La musique est médecine génèrent des données précieuses qui changent notre approche du traitement du cancer du cerveau. Ce soutien communautaire se traduit directement en avancées médicales."
+        "quote": "Les essais cliniques financés par Music comme médecine génèrent des données précieuses qui changent notre approche du traitement du cancer du cerveau. Ce soutien communautaire se traduit directement en avancées médicales."
       }
     },
     "previousTestimonial": "Témoignage précédent",
@@ -294,7 +294,7 @@
     "donateButton": "Faire un don"
   },
   "footer": {
-    "ctaTitle": "La musique est médecine",
+    "ctaTitle": "Music comme médecine",
     "ctaSubtitle": "Écoutez, achetez, donnez et faites une différence",
     "listenButton": "Écouter le premier single",
     "donateButton": "Faire un don maintenant",
@@ -329,12 +329,12 @@
     "supportMessage": "pour soutenir la recherche sur le cancer du cerveau"
   },
   "metadata": {
-    "title": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "title": "Music comme médecine – N2O et Alan Parsons pour le cancer du cerveau",
     "description": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales par l'espoir, la guérison et des chansons puissantes.",
-    "ogTitle": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "ogTitle": "Music comme médecine – N2O et Alan Parsons pour le cancer du cerveau",
     "ogDescription": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales par l'espoir, la guérison et des chansons puissantes.",
-    "ogImageAlt": "La musique est médecine mettant en vedette N2O et Alan Parsons",
-    "twitterTitle": "La musique est médecine – N2O et Alan Parsons pour le cancer du cerveau",
+    "ogImageAlt": "Music comme médecine mettant en vedette N2O et Alan Parsons",
+    "twitterTitle": "Music comme médecine – N2O et Alan Parsons pour le cancer du cerveau",
     "twitterDescription": "Un projet musical caritatif de N2O et Alan Parsons soutenant la Fondation canadienne des tumeurs cérébrales."
   }
 }
