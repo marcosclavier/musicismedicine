@@ -25,34 +25,44 @@ export default function SinglesSection() {
       spotifyLink: 'https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3?si=eyUeMGfvS9uINyRPFLQ_8w&nd=1&dlsi=dc22e2de078c4929',
     },
     {
-      title: t('youAndI.title'),
-      subtitle: t('youAndI.subtitle'),
-      releaseDate: t('youAndI.releaseDate'),
+      title: t('single2.title'),
+      subtitle: t('single2.subtitle'),
+      releaseDate: t('single2.releaseDate'),
       status: 'upcoming',
-      description: t('youAndI.description'),
-      themes: [t('youAndI.themes.0'), t('youAndI.themes.1'), t('youAndI.themes.2')],
+      description: t('single2.description'),
+      themes: [t('single2.themes.0')],
       artwork: '/images/single-2.jpg',
       audioSnippet: '/audio/single-2-snippet.mp3',
     },
     {
-      title: t('courage.title'),
-      subtitle: t('courage.subtitle'),
-      releaseDate: t('courage.releaseDate'),
+      title: t('single3.title'),
+      subtitle: t('single3.subtitle'),
+      releaseDate: t('single3.releaseDate'),
       status: 'upcoming',
-      description: t('courage.description'),
-      themes: [t('courage.themes.0'), t('courage.themes.1'), t('courage.themes.2')],
+      description: t('single3.description'),
+      themes: [t('single3.themes.0')],
       artwork: '/images/single-3.jpg',
       audioSnippet: '/audio/single-3-snippet.mp3',
     },
     {
-      title: t('whereToGo.title'),
-      subtitle: t('whereToGo.subtitle'),
-      releaseDate: t('whereToGo.releaseDate'),
+      title: t('single4.title'),
+      subtitle: t('single4.subtitle'),
+      releaseDate: t('single4.releaseDate'),
       status: 'upcoming',
-      description: t('whereToGo.description'),
-      themes: [t('whereToGo.themes.0'), t('whereToGo.themes.1'), t('whereToGo.themes.2')],
+      description: t('single4.description'),
+      themes: [t('single4.themes.0')],
       artwork: '/images/single-4.jpg',
       audioSnippet: '/audio/single-4-snippet.mp3',
+    },
+    {
+      title: t('single5.title'),
+      subtitle: t('single5.subtitle'),
+      releaseDate: t('single5.releaseDate'),
+      status: 'upcoming',
+      description: t('single5.description'),
+      themes: [t('single5.themes.0')],
+      artwork: '/images/single-5.jpg',
+      audioSnippet: '/audio/single-5-snippet.mp3',
     },
   ]
 
@@ -186,32 +196,6 @@ export default function SinglesSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Collection Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-12 bg-primary-gray rounded-2xl p-8 text-center"
-        >
-          <h3 className="text-2xl font-bold text-text-primary mb-4">
-            {t('collectionTitle')}
-          </h3>
-          <p className="text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
-            {t('collectionDescription')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent-purple transition-colors duration-300">
-              {t('notificationsButton')}
-            </button>
-            <a
-              href="#listen"
-              className="bg-accent-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
-            >
-              {t('howToListenButton')}
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

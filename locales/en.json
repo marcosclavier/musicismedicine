@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "visionaries": "Visionaries",
+    "bandStory": "The Band",
     "singles": "The Singles",
     "listen": "Listen",
     "donate": "Donate",
@@ -12,10 +13,10 @@
     "toggleMenu": "Toggle menu"
   },
   "hero": {
-    "badge": "N2O Featuring Grammy-Winning Artist Alan Parsons",
+    "badge": "N2O Featuring 14 Grammy-Winning Artist Alan Parsons",
     "title": "Music is Medicine",
     "subtitle": "Where music, purpose, and hope come together",
-    "description": "Four original singles by N2O, featuring Alan Parsons and distributed by LANDR",
+    "description": "Five original singles by N2O, featuring Alan Parsons",
     "firstRelease": "First release:",
     "radioTitle": "\"Radio\"",
     "producedBy": "– Produced and Mixed by Alan Parsons",
@@ -24,21 +25,20 @@
     "releaseSchedule": "One new single every month through February 2026",
     "listenNowButton": "Listen Now",
     "donateNowButton": "Donate Now",
-    "netProceeds": "Net proceeds donated to the Brain Tumour Foundation of Canada",
-    "distributedBy": "Distributed by LANDR"
+    "netProceeds": "Net proceeds donated to the Brain Tumour Foundation of Canada"
   },
   "about": {
     "title": "About",
     "titleHighlight": "Music Is Medicine",
-    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O. Four original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
+    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O. Five original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
     "stats": {
       "singlesLabel": "Charity Singles",
       "raisedLabel": "Already Raised",
-      "supportersLabel": "Supporters Nationwide",
+      "supportersLabel": "Supporters Worldwide",
       "proceedsLabel": "Net Proceeds Donated"
     },
     "contentTitle": "Turning Loss Into Purpose",
-    "paragraph1": "After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. Together with Alan Parsons, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families across Canada.",
+    "paragraph1": "After losing a close bandmate to brain cancer, Robert Frances turned that loss into purpose. Together with Alan Parsons, he launched Music Is Medicine to use the power of music to raise awareness, support research, and offer hope to families all over the world.",
     "paragraph2": "Brain tumours affect thousands of families every year. Through past benefit concerts and early support, Music Is Medicine has raised over",
     "amountRaised": "$600,000",
     "paragraph2Continue": "for brain cancer research and programs.",
@@ -78,7 +78,7 @@
       "title": "Grammy-Winning Artist & Producer",
       "organization": "Featured Artist",
       "quote": "Music connects people in moments that words alone can't reach. This project reminded me that creativity and compassion can change lives.",
-      "bio": "World-renowned musician, engineer, and producer known for his legendary work with Pink Floyd, The Beatles, and his own Alan Parsons Project. Alan Parsons brings his iconic sound and vision to Music Is Medicine, producing and mixing the debut single \"Radio\", capturing emotion, connection, and remembrance in every note."
+      "bio": "World-renowned musician, engineer, and producer known for his legendary work with Pink Floyd, The Beatles, and his own Alan Parsons Project. Together with the Alan Parsons Live Project, Alan brings his iconic sound and vision to Music Is Medicine, producing and mixing the debut single \"Radio\", capturing emotion, connection, and remembrance in every note."
     },
     "partnersTitle": "Key Partners & Collaborators",
     "partners": {
@@ -101,7 +101,7 @@
   "singles": {
     "title": "The",
     "titleHighlight": "Singles",
-    "subtitle": "Four original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026",
+    "subtitle": "Five original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026",
     "scheduleTitle": "Release Schedule",
     "scheduleDescription": "One new single every month • November 4, 2025 - February 28, 2026",
     "radio": {
@@ -111,26 +111,33 @@
       "description": "Produced and Mixed by Alan Parsons — a song about connection, memory, and finding light after loss. This powerful opening track sets the tone for the journey ahead.",
       "themes": ["Connection", "Memory", "Hope"]
     },
-    "youAndI": {
-      "title": "You & I",
+    "single2": {
+      "title": "Single #2",
       "subtitle": "by N2O featuring Alan Parsons",
       "releaseDate": "November 30, 2025",
-      "description": "A tribute to love, resilience, and unity. This heartfelt composition celebrates the bonds that give us strength through life's greatest challenges.",
-      "themes": ["Love", "Resilience", "Unity"]
+      "description": "A heartfelt composition exploring themes of connection and resilience.",
+      "themes": ["Coming Soon"]
     },
-    "courage": {
-      "title": "Courage",
+    "single3": {
+      "title": "Single #3",
       "subtitle": "by N2O featuring Alan Parsons",
       "releaseDate": "December 30, 2025",
-      "description": "A song about strength, healing, and perseverance. This powerful track explores the courage we find within ourselves when facing adversity.",
-      "themes": ["Strength", "Healing", "Perseverance"]
+      "description": "A powerful track about strength and perseverance.",
+      "themes": ["Coming Soon"]
     },
-    "whereToGo": {
-      "title": "Where to Go",
+    "single4": {
+      "title": "Single #4",
+      "subtitle": "by N2O featuring Alan Parsons",
+      "releaseDate": "January 30, 2026",
+      "description": "An inspiring composition about hope and purpose.",
+      "themes": ["Coming Soon"]
+    },
+    "single5": {
+      "title": "Single #5",
       "subtitle": "by N2O featuring Alan Parsons",
       "releaseDate": "February 28, 2026",
-      "description": "A reflection on purpose, hope, and moving forward. The inspiring finale that looks toward a future filled with possibility and promise.",
-      "themes": ["Purpose", "Hope", "Future"]
+      "description": "The finale that looks toward a future filled with possibility.",
+      "themes": ["Coming Soon"]
     },
     "statusAvailable": "Available Now",
     "statusUpcoming": "Coming Soon",
@@ -327,6 +334,54 @@
     "peakPurpose": "Part of the #PEAKWithPurpose initiative",
     "madeWithLove": "Made with",
     "supportMessage": "to support brain cancer research"
+  },
+  "bandStory": {
+    "badge": "#never2old to rock",
+    "title": "The N2O Story",
+    "subtitle": "A band of lifelong friends whose music became medicine — honoring loss, celebrating friendship, and creating hope through every note",
+    "photoCaption": "Lifelong friends, boundless passion, timeless music",
+    "story": {
+      "friendshipTitle": "From Friendship to Legacy",
+      "paragraph1": "N2O is more than a band — we're a brotherhood of lifelong friends and musicians bound by a deep passion for music, creativity, and the magic of the recording process. We've always believed we're <strong>#never2old</strong> to evolve, write new songs, and push our sound forward.",
+      "paragraph2": "Our music reflects the energy and joy of being young at heart — a dynamic blend of rock, pop, and power ballads driven by raw emotion and authenticity. But behind every chord and lyric is a deeper story.",
+      "paragraph3": "When we lost our dear friend and bandmate <strong>David Tondino</strong>, it changed us all. David wasn't just our drummer — he was the heartbeat of our collaboration, a constant source of creativity and friendship. His passing left a profound impact on each of us, reshaping not just our music, but our purpose."
+    },
+    "mission": {
+      "title": "Music as Medicine",
+      "paragraph1": "From the beginning, our goal was to use our music to create a legacy — to tell the story of our journey, the creative process, and how we found a way forward after losing David. We wanted to honor his memory by continuing to make the music he loved.",
+      "paragraph2": "When <strong>Alan Parsons</strong> and his Live Project came to Montreal, something magical happened. Alan and his band recorded and produced stunning new versions of our original songs, bringing the band's vision for <strong>Music is Medicine</strong> to life in ways we never imagined.",
+      "paragraph3": "Now, being able to contribute our music to support brain cancer research at The Neuro feels like a full-circle moment. David's spirit lives on in every note, and through this initiative, we're transforming our grief into hope, our loss into healing, and our music into medicine."
+    },
+    "bandTitle": "The Band",
+    "members": {
+      "morris": {
+        "role": "Bass / Vocals"
+      },
+      "shawn": {
+        "role": "Percussion"
+      },
+      "rob": {
+        "role": "Keyboards"
+      },
+      "david": {
+        "role": "Drums / Vocals"
+      },
+      "peter": {
+        "role": "Guitars"
+      }
+    },
+    "inMemory": "In Loving Memory",
+    "tribute": {
+      "title": "For David",
+      "quote": "David Tondino was the heartbeat of N2O — a brilliant drummer, creative force, and cherished friend. His passing left an immeasurable void, but his spirit continues to inspire every song we create. This project is our tribute to him, our way of ensuring that his legacy lives on through music that heals.",
+      "attribution": "— The N2O Band"
+    },
+    "currentWork": {
+      "title": "The Journey Continues",
+      "description": "We're currently in the studio working on our second album of original material — a tribute to friendship, creativity, and the power of music to heal.",
+      "button": "Listen on ReverbNation",
+      "followText": "Follow our journey and discover more of our music"
+    }
   },
   "metadata": {
     "title": "Music Is Medicine – N2O & Alan Parsons for Brain Cancer",

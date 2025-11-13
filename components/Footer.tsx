@@ -50,15 +50,13 @@ export default function Footer() {
     }
   }
 
-  // COMMENTED OUT: No social media accounts exist yet
-  // Uncomment and add real URLs when social media presence is established
-  // const socialLinks = [
-  //   { icon: FaFacebook, link: 'https://facebook.com/yourpage', label: 'Facebook' },
-  //   { icon: FaTwitter, link: 'https://twitter.com/yourhandle', label: 'Twitter' },
-  //   { icon: FaInstagram, link: 'https://instagram.com/yourhandle', label: 'Instagram' },
-  //   { icon: FaLinkedin, link: 'https://linkedin.com/company/yourcompany', label: 'LinkedIn' },
-  //   { icon: FaYoutube, link: 'https://youtube.com/@yourchannel', label: 'YouTube' },
-  // ]
+  const socialLinks = [
+    { icon: FaFacebook, link: 'https://www.facebook.com/PEAKFinancialGroup', label: 'Facebook' },
+    { icon: FaTwitter, link: 'https://twitter.com/peakfg', label: 'Twitter' },
+    { icon: FaInstagram, link: 'https://www.instagram.com/peakfinancialgroup/', label: 'Instagram' },
+    { icon: FaLinkedin, link: 'https://www.linkedin.com/company/peak-financial-group/', label: 'LinkedIn' },
+    { icon: FaYoutube, link: 'https://www.youtube.com/@PEAKFinancialGroup', label: 'YouTube' },
+  ]
 
   const quickLinks = [
     { label: t('quickLinks.home'), to: 'hero' },
@@ -67,7 +65,6 @@ export default function Footer() {
     { label: t('quickLinks.singles'), to: 'singles' },
     { label: t('quickLinks.listen'), to: 'listen' },
     { label: t('quickLinks.donate'), to: 'donate' },
-    { label: t('quickLinks.impact'), to: 'impact' },
   ]
 
   return (
@@ -180,8 +177,7 @@ export default function Footer() {
                 <span className="text-sm">peakcommunication@peakgroup.com</span>
               </a>
             </div>
-            {/* COMMENTED OUT: Social media section hidden until accounts are created
-            <h5 className="text-sm font-semibold mb-3">Follow Us</h5>
+            <h5 className="text-sm font-semibold mb-3">Follow PEAK Financial Group</h5>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
                 <a
@@ -196,7 +192,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            */}
           </motion.div>
         </div>
 

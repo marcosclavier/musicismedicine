@@ -12,9 +12,9 @@ export default function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const stats = [
-    { value: '4', label: t('stats.singlesLabel'), icon: FaMusic },
+    { value: '5', label: t('stats.singlesLabel'), icon: FaMusic },
     { value: '$600K+', label: t('stats.raisedLabel'), icon: FaHeart },
-    { value: '1000s', label: t('stats.supportersLabel'), icon: FaBrain },
+    { value: '+5000', label: t('stats.supportersLabel'), icon: FaBrain },
     { value: '100%', label: t('stats.proceedsLabel'), icon: FaMicroscope },
   ]
 

@@ -110,7 +110,6 @@ export default function HeroBanner() {
             className="mt-12 text-white/70 text-sm sm:text-base"
           >
             <p>{t('netProceeds')}</p>
-            <p className="mt-2">{t('distributedBy')}</p>
           </motion.div>
         </motion.div>
 

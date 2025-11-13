@@ -9,6 +9,9 @@ import AboutSection from '@/components/AboutSection'
 const VisionariesSection = dynamic(() => import('@/components/VisionariesSection'), {
   loading: () => <div className="min-h-screen" />,
 })
+const BandStorySection = dynamic(() => import('@/components/BandStorySection'), {
+  loading: () => <div className="min-h-screen" />,
+})
 const SinglesSection = dynamic(() => import('@/components/SinglesSection'), {
   loading: () => <div className="min-h-screen" />,
 })
@@ -16,9 +19,6 @@ const ListenSection = dynamic(() => import('@/components/ListenSection'), {
   loading: () => <div className="min-h-screen" />,
 })
 const DonateSection = dynamic(() => import('@/components/DonateSection'), {
-  loading: () => <div className="min-h-screen" />,
-})
-const ImpactSection = dynamic(() => import('@/components/ImpactSection'), {
   loading: () => <div className="min-h-screen" />,
 })
 const Footer = dynamic(() => import('@/components/Footer'), {
@@ -32,10 +32,10 @@ export default function Home() {
       <HeroBanner />
       <AboutSection />
       <VisionariesSection />
+      <BandStorySection />
       <SinglesSection />
       <ListenSection />
       <DonateSection />
-      <ImpactSection />
       <Footer />
     </main>
   )

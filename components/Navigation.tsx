@@ -36,10 +36,10 @@ export default function Navigation() {
     { to: 'hero', label: t('home') },
     { to: 'about', label: t('about') },
     { to: 'visionaries', label: t('visionaries') },
+    { to: 'band-story', label: t('bandStory') },
     { to: 'singles', label: t('singles') },
     { to: 'listen', label: t('listen') },
     { to: 'donate', label: t('donate') },
-    { to: 'impact', label: t('impact') },
   ]
 
   return (

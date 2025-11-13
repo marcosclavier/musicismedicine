@@ -3,6 +3,7 @@
     "home": "Accueil",
     "about": "À propos",
     "visionaries": "Visionnaires",
+    "bandStory": "Le groupe",
     "singles": "Singles",
     "listen": "Écouter",
     "donate": "Don",
@@ -12,10 +13,10 @@
     "toggleMenu": "Basculer le menu"
   },
   "hero": {
-    "badge": "N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons",
+    "badge": "N2O mettant en vedette l'artiste lauréat de 14 Grammy Alan Parsons",
     "title": "Music comme médecine",
     "subtitle": "Où la musique, l'engagement et l'espoir se rencontrent",
-    "description": "Quatre singles originaux par N2O, mettant en vedette Alan Parsons et distribués par LANDR",
+    "description": "Cinq singles originaux par N2O, mettant en vedette Alan Parsons",
     "firstRelease": "Première sortie :",
     "radioTitle": "\"Radio\"",
     "producedBy": "– Produit et mixé par Alan Parsons",
@@ -24,21 +25,20 @@
     "releaseSchedule": "Un nouveau single chaque mois jusqu'en février 2026",
     "listenNowButton": "Écouter maintenant",
     "donateNowButton": "Faire un don maintenant",
-    "netProceeds": "Les produits nets sont versés à la Fondation canadienne des tumeurs cérébrales",
-    "distributedBy": "Distribué par LANDR"
+    "netProceeds": "Les produits nets sont versés à la Fondation canadienne des tumeurs cérébrales"
   },
   "about": {
     "title": "À propos de",
     "titleHighlight": "Music comme médecine",
-    "subtitle": "Music comme médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Quatre singles originaux par N2O mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
+    "subtitle": "Music comme médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Cinq singles originaux par N2O mettant en vedette l'artiste lauréat de 14 Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
     "stats": {
       "singlesLabel": "Singles caritatifs",
       "raisedLabel": "Déjà recueillis",
-      "supportersLabel": "Soutiens à travers le pays",
+      "supportersLabel": "Soutiens à travers le monde",
       "proceedsLabel": "Produits nets donnés"
     },
     "contentTitle": "Transformer la perte en engagement",
-    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. Avec Alan Parsons, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada.",
+    "paragraph1": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. Avec Alan Parsons, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le monde.",
     "paragraph2": "Les tumeurs cérébrales affectent des milliers de familles chaque année. Grâce aux concerts-bénéfices passés et au soutien précoce, Music comme médecine a recueilli plus de",
     "amountRaised": "600 000 $",
     "paragraph2Continue": "pour la recherche et les programmes sur le cancer du cerveau.",
@@ -57,7 +57,7 @@
         "description": "Soutien aux patients et aux familles touchés par les tumeurs cérébrales à travers le Canada par la sensibilisation, la recherche et les programmes communautaires."
       }
     },
-    "ctaTitle": "Transformer le son en espoir pour les familles à travers le Canada",
+    "ctaTitle": "Transformer le son en espoir pour les familles à travers le monde",
     "ctaDescription": "Chaque auditeur, chaque partage, chaque acte de gentillesse compte. Ensemble, nous pouvons faire de chaque note un pas vers la guérison.",
     "listenButton": "Écouter les singles",
     "supportButton": "Soutenir la cause"
@@ -71,14 +71,14 @@
       "title": "Fondateur",
       "organization": "PDG, Groupe Financier PEAK et membre de N2O",
       "quote": "Après avoir perdu un ami et camarade de groupe du cancer du cerveau, je voulais transformer l'émotion en quelque chose de significatif. Music comme médecine est notre façon de redonner et d'aider les autres grâce au pouvoir de la musique.",
-      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le Canada."
+      "bio": "Après avoir perdu un camarade de groupe proche du cancer du cerveau, Robert Frances a transformé cette perte en engagement. En tant que PDG de Groupe Financier PEAK et membre du groupe N2O, il a lancé Music comme médecine pour utiliser le pouvoir de la musique pour sensibiliser, soutenir la recherche et offrir de l'espoir aux familles à travers le monde."
     },
     "alanParsons": {
       "name": "Alan Parsons",
-      "title": "Artiste et producteur lauréat d'un Grammy",
+      "title": "Artiste et producteur lauréat de 14 Grammy",
       "organization": "Artiste vedette",
       "quote": "La musique connecte les gens dans des moments que les mots seuls ne peuvent atteindre. Ce projet m'a rappelé que la créativité et la compassion peuvent changer des vies.",
-      "bio": "Musicien, ingénieur et producteur de renommée mondiale connu pour son travail légendaire avec Pink Floyd, les Beatles et son propre Alan Parsons Project. Alan Parsons apporte son son et sa vision emblématiques à Music comme médecine, produisant et mixant le single de début \"Radio\", capturant l'émotion, la connexion et le souvenir dans chaque note."
+      "bio": "Musicien, ingénieur et producteur de renommée mondiale connu pour son travail légendaire avec Pink Floyd, les Beatles et son propre Alan Parsons Project. Avec l'Alan Parsons Live Project, Alan apporte son son et sa vision emblématiques à Music comme médecine, produisant et mixant le single de début \"Radio\", capturant l'émotion, la connexion et le souvenir dans chaque note."
     },
     "partnersTitle": "Partenaires et collaborateurs clés",
     "partners": {
@@ -101,7 +101,7 @@
   "singles": {
     "title": "Les",
     "titleHighlight": "Singles",
-    "subtitle": "Quatre singles originaux par N2O mettant en vedette Alan Parsons, sortant de novembre 2025 à février 2026",
+    "subtitle": "Cinq singles originaux par N2O mettant en vedette Alan Parsons, sortant de novembre 2025 à février 2026",
     "scheduleTitle": "Calendrier de sortie",
     "scheduleDescription": "Un nouveau single chaque mois • 4 novembre 2025 - 28 février 2026",
     "radio": {
@@ -111,26 +111,33 @@
       "description": "Produit et mixé par Alan Parsons — une chanson sur le lien, la mémoire et la lumière trouvée après la perte. Cette puissante piste d'ouverture donne le ton pour le voyage à venir.",
       "themes": ["Lien", "Mémoire", "Espoir"]
     },
-    "youAndI": {
-      "title": "You & I (Toi et moi)",
+    "single2": {
+      "title": "Single #2",
       "subtitle": "par N2O mettant en vedette Alan Parsons",
       "releaseDate": "30 novembre 2025",
-      "description": "Un hommage à l'amour, à la résilience et à l'unité. Cette composition sincère célèbre les liens qui nous donnent la force face aux plus grands défis de la vie.",
-      "themes": ["Amour", "Résilience", "Unité"]
+      "description": "Une composition sincère explorant des thèmes de connexion et de résilience.",
+      "themes": ["Bientôt disponible"]
     },
-    "courage": {
-      "title": "Courage",
+    "single3": {
+      "title": "Single #3",
       "subtitle": "par N2O mettant en vedette Alan Parsons",
       "releaseDate": "30 décembre 2025",
-      "description": "Une chanson sur la force, la guérison et la persévérance. Cette piste puissante explore le courage que nous trouvons en nous-mêmes face à l'adversité.",
-      "themes": ["Force", "Guérison", "Persévérance"]
+      "description": "Une piste puissante sur la force et la persévérance.",
+      "themes": ["Bientôt disponible"]
     },
-    "whereToGo": {
-      "title": "Where to Go (Où aller)",
+    "single4": {
+      "title": "Single #4",
+      "subtitle": "par N2O mettant en vedette Alan Parsons",
+      "releaseDate": "30 janvier 2026",
+      "description": "Une composition inspirante sur l'espoir et le but.",
+      "themes": ["Bientôt disponible"]
+    },
+    "single5": {
+      "title": "Single #5",
       "subtitle": "par N2O mettant en vedette Alan Parsons",
       "releaseDate": "28 février 2026",
-      "description": "Une réflexion sur le but, l'espoir et le fait d'aller de l'avant. La finale inspirante qui regarde vers un avenir rempli de possibilités et de promesses.",
-      "themes": ["But", "Espoir", "Avenir"]
+      "description": "La finale qui regarde vers un avenir rempli de possibilités.",
+      "themes": ["Bientôt disponible"]
     },
     "statusAvailable": "Disponible maintenant",
     "statusUpcoming": "Bientôt disponible",
@@ -149,7 +156,7 @@
     "streamTitle": "Écoutez \"Radio\" maintenant",
     "platformsAvailable": "Actuellement disponible sur Spotify et Qobuz",
     "impactTitle": "Écouter c'est soutenir, écouter c'est donner",
-    "impactDescription": "Lorsque vous écoutez ou achetez, vous soutenez directement la Fondation canadienne des tumeurs cérébrales. Chaque action aide à transformer la musique en espoir pour les familles à travers le Canada."
+    "impactDescription": "Lorsque vous écoutez ou achetez, vous soutenez directement la Fondation canadienne des tumeurs cérébrales. Chaque action aide à transformer la musique en espoir pour les familles à travers le monde."
   },
   "donate": {
     "title": "Comment",
@@ -298,7 +305,7 @@
     "ctaSubtitle": "Écoutez, achetez, donnez et faites une différence",
     "listenButton": "Écouter le premier single",
     "donateButton": "Faire un don maintenant",
-    "aboutDescription1": "Une initiative musicale canadienne sincère de Groupe Financier PEAK et N2O, mettant en vedette l'artiste lauréat d'un Grammy Alan Parsons. Recueillir des fonds et sensibiliser à la recherche sur le cancer du cerveau grâce au pouvoir guérisseur de la musique.",
+    "aboutDescription1": "Une initiative musicale canadienne sincère de Groupe Financier PEAK et N2O, mettant en vedette l'artiste lauréat de 14 Grammy Alan Parsons. Cinq singles originaux recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau grâce au pouvoir guérisseur de la musique.",
     "aboutDescription2": "Les produits nets sont donnés à la Fondation canadienne des tumeurs cérébrales, soutenant la recherche, l'éducation et les programmes pour les patients à travers le pays.",
     "quickLinksTitle": "Liens rapides",
     "quickLinks": {
@@ -327,6 +334,54 @@
     "peakPurpose": "Partie de l'initiative #PEAKWithPurpose",
     "madeWithLove": "Fait avec",
     "supportMessage": "pour soutenir la recherche sur le cancer du cerveau"
+  },
+  "bandStory": {
+    "badge": "#never2old to rock",
+    "title": "L'histoire de N2O",
+    "subtitle": "Un groupe d'amis de toujours dont la musique est devenue médecine — honorant la perte, célébrant l'amitié et créant l'espoir à travers chaque note",
+    "photoCaption": "Amis de toujours, passion sans limites, musique intemporelle",
+    "story": {
+      "friendshipTitle": "De l'amitié à l'héritage",
+      "paragraph1": "N2O est plus qu'un groupe — nous sommes une fraternité d'amis de toujours et de musiciens liés par une passion profonde pour la musique, la créativité et la magie du processus d'enregistrement. Nous avons toujours cru que nous n'étions <strong>#never2old</strong> pour évoluer, écrire de nouvelles chansons et faire progresser notre son.",
+      "paragraph2": "Notre musique reflète l'énergie et la joie d'avoir un cœur jeune — un mélange dynamique de rock, de pop et de ballades puissantes animées par l'émotion brute et l'authenticité. Mais derrière chaque accord et chaque parole se cache une histoire plus profonde.",
+      "paragraph3": "Quand nous avons perdu notre cher ami et camarade de groupe <strong>David Tondino</strong>, cela nous a tous changés. David n'était pas seulement notre batteur — il était le cœur battant de notre collaboration, une source constante de créativité et d'amitié. Son décès a eu un impact profond sur chacun de nous, remodelant non seulement notre musique, mais notre raison d'être."
+    },
+    "mission": {
+      "title": "Music comme médecine",
+      "paragraph1": "Dès le début, notre objectif était d'utiliser notre musique pour créer un héritage — raconter l'histoire de notre parcours, du processus créatif et de la façon dont nous avons trouvé un chemin après la perte de David. Nous voulions honorer sa mémoire en continuant à faire la musique qu'il aimait.",
+      "paragraph2": "Quand <strong>Alan Parsons</strong> et son Live Project sont venus à Montréal, quelque chose de magique s'est produit. Alan et son groupe ont enregistré et produit de superbes nouvelles versions de nos chansons originales, donnant vie à la vision du groupe pour <strong>Music comme médecine</strong> d'une manière que nous n'avions jamais imaginée.",
+      "paragraph3": "Maintenant, pouvoir contribuer notre musique pour soutenir la recherche sur le cancer du cerveau au Neuro ressemble à un moment de boucle bouclée. L'esprit de David vit dans chaque note, et grâce à cette initiative, nous transformons notre chagrin en espoir, notre perte en guérison, et notre musique en médecine."
+    },
+    "bandTitle": "Le groupe",
+    "members": {
+      "morris": {
+        "role": "Basse / Voix"
+      },
+      "shawn": {
+        "role": "Percussion"
+      },
+      "rob": {
+        "role": "Claviers"
+      },
+      "david": {
+        "role": "Batterie / Voix"
+      },
+      "peter": {
+        "role": "Guitares"
+      }
+    },
+    "inMemory": "En mémoire de",
+    "tribute": {
+      "title": "Pour David",
+      "quote": "David Tondino était le cœur battant de N2O — un batteur brillant, une force créative et un ami chéri. Son décès a laissé un vide incommensurable, mais son esprit continue d'inspirer chaque chanson que nous créons. Ce projet est notre hommage à lui, notre façon de nous assurer que son héritage perdure à travers une musique qui guérit.",
+      "attribution": "— Le groupe N2O"
+    },
+    "currentWork": {
+      "title": "Le voyage continue",
+      "description": "Nous sommes actuellement en studio en train de travailler sur notre deuxième album de matériel original — un hommage à l'amitié, à la créativité et au pouvoir de la musique pour guérir.",
+      "button": "Écouter sur ReverbNation",
+      "followText": "Suivez notre parcours et découvrez plus de notre musique"
+    }
   },
   "metadata": {
     "title": "Music comme médecine – N2O et Alan Parsons pour le cancer du cerveau",
