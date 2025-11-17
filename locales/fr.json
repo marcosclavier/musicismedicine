@@ -30,7 +30,7 @@
   "about": {
     "title": "À propos de",
     "titleHighlight": "Music comme médecine",
-    "subtitle": "Music comme médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membre du groupe N2O. Cinq singles originaux par N2O mettant en vedette l'artiste lauréat de 14 Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
+    "subtitle": "Music comme médecine est une initiative musicale canadienne sincère créée par Robert Frances, PDG de Groupe Financier PEAK et membres du groupe N2O. Cinq singles originaux par N2O mettant en vedette l'artiste lauréat de 14 Grammy Alan Parsons, recueillant des fonds et sensibilisant à la recherche sur le cancer du cerveau.",
     "stats": {
       "singlesLabel": "Singles caritatifs",
       "raisedLabel": "Déjà recueillis",
@@ -154,7 +154,7 @@
     "titleHighlight": "Écouter et acheter",
     "subtitle": "Écoutez sur votre plateforme préférée ou achetez pour maximiser votre impact",
     "streamTitle": "Écoutez \"Radio\" maintenant",
-    "platformsAvailable": "Actuellement disponible sur Spotify et Qobuz",
+    "platformsAvailable": "Actuellement disponible sur Spotify, Apple Music et YouTube Music",
     "impactTitle": "Écouter c'est soutenir, écouter c'est donner",
     "impactDescription": "Lorsque vous écoutez ou achetez, vous soutenez directement la Fondation canadienne des tumeurs cérébrales. Chaque action aide à transformer la musique en espoir pour les familles à travers le monde."
   },
@@ -381,6 +381,155 @@
       "description": "Nous sommes actuellement en studio en train de travailler sur notre deuxième album de matériel original — un hommage à l'amitié, à la créativité et au pouvoir de la musique pour guérir.",
       "button": "Écouter sur ReverbNation",
       "followText": "Suivez notre parcours et découvrez plus de notre musique"
+    }
+  },
+  "lyrics": {
+    "common": {
+      "close": "Fermer",
+      "print": "Imprimer les paroles",
+      "chorus": "Refrain",
+      "bridge": "Pont",
+      "writtenBy": "Écrit par",
+      "producedBy": "Produit par",
+      "viewLyrics": "Voir les paroles",
+      "englishVersion": "Version anglaise",
+      "frenchTranslation": "Traduction française"
+    },
+    "radio": {
+      "title": "Radio",
+      "artist": "N2O mettant en vedette Alan Parsons",
+      "sectionsEn": [
+        {
+          "type": "verse",
+          "lines": [
+            "I listen to your lines",
+            "Selfishly I see my life",
+            "Came along and passed me by",
+            "Passed me by",
+            "",
+            "Seems like a long time ago",
+            "Listening to Abbey Road",
+            "Every line you'll ever write",
+            "Memories, the lasting kind"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "All my life the winding road",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        },
+        {
+          "type": "verse",
+          "lines": [
+            "Do you hear my moans",
+            "A heart alone",
+            "I listen to the radio",
+            "All my life",
+            "In my mind",
+            "That's where I go"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "On my own the nights alone",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        },
+        {
+          "type": "bridge",
+          "lines": [
+            "All the love that I can take",
+            "I never felt alone no",
+            "Every move that I can make",
+            "Always there to get me back home"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "On my own the nights alone",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            "J'écoute tes paroles",
+            "Égoïstement je vois ma vie",
+            "Qui est venue et m'a dépassé",
+            "M'a dépassé",
+            "",
+            "Ça semble si loin maintenant",
+            "En écoutant Abbey Road",
+            "Chaque ligne que tu écriras",
+            "Des souvenirs, ceux qui restent"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "Toute ma vie sur ce chemin sinueux",
+            "J'ai trouvé un endroit à moi",
+            "Dans ma tête",
+            "Près de mon lit",
+            "J'entends les Beatles à la radio"
+          ]
+        },
+        {
+          "type": "verse",
+          "lines": [
+            "Entends-tu mes plaintes",
+            "Un cœur solitaire",
+            "J'écoute la radio",
+            "Toute ma vie",
+            "Dans mon esprit",
+            "C'est là que je vais"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "Seul, les nuits solitaires",
+            "J'ai trouvé un endroit à moi",
+            "Dans ma tête",
+            "Près de mon lit",
+            "J'entends les Beatles à la radio"
+          ]
+        },
+        {
+          "type": "bridge",
+          "lines": [
+            "Tout l'amour que je peux prendre",
+            "Je ne me suis jamais senti seul non",
+            "Chaque mouvement que je peux faire",
+            "Toujours là pour me ramener chez moi"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "Seul, les nuits solitaires",
+            "J'ai trouvé un endroit à moi",
+            "Dans ma tête",
+            "Près de mon lit",
+            "J'entends les Beatles à la radio"
+          ]
+        }
+      ]
     }
   },
   "metadata": {

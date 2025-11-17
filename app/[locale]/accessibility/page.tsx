@@ -119,7 +119,7 @@ export default function Accessibility() {
               Some content on our website comes from third-party services:
             </p>
             <ul className="list-disc pl-6 mb-4 text-text-secondary space-y-2">
-              <li><strong>Streaming Platforms:</strong> Spotify and Qobuz embeds - accessibility determined by those platforms</li>
+              <li><strong>Streaming Platforms:</strong> Spotify, Apple Music, and YouTube Music links - accessibility determined by those platforms</li>
               <li><strong>Donation Platform:</strong> Brain Tumour Foundation of Canada's donation system</li>
               <li><strong>Social Media:</strong> Links to social media platforms</li>
             </ul>

@@ -412,10 +412,11 @@ This is the main homepage that imports and arranges all sections in order. The p
 - Used for: Corporate sponsorship inquiries
 - Located in: `components/DonateSection.tsx` line 278
 
-### Music Streaming Source
+### Music Streaming Links
 
-- **Qobuz**: `https://www.qobuz.com/ca-en/album/radio-n2o-featuring-alan-parsons-live-project/i9croel68wg1a`
-- Reference in: `phase-2-changes.md` line 199
+- **Apple Music**: `https://music.apple.com/fi/artist/n2o/1324337417`
+- **YouTube Music**: `https://music.youtube.com/channel/UCEyKQl1b3XKYWpZLP2_MNjw`
+- Used in: `components/ListenSection.tsx`
 - **Note**: Audio snippets need to be extracted and hosted locally
 
 ### Newsletter / Email Marketing

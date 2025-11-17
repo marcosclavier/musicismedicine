@@ -15,7 +15,8 @@ export default function ListenSection() {
 
   const streamingPlatforms = [
     { name: 'Spotify', icon: FaSpotify, color: 'bg-[#1DB954]', link: 'https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3?si=eyUeMGfvS9uINyRPFLQ_8w&nd=1&dlsi=dc22e2de078c4929' },
-    { name: 'Qobuz', icon: FaMusic, color: 'bg-[#0067C5]', link: 'https://www.qobuz.com/ca-en/album/radio-n2o-featuring-alan-parsons-live-project/i9croel68wg1a' },
+    { name: 'Apple Music', icon: FaApple, color: 'bg-[#FA243C]', link: 'https://music.apple.com/fi/artist/n2o/1324337417' },
+    { name: 'YouTube Music', icon: FaYoutube, color: 'bg-[#FF0000]', link: 'https://music.youtube.com/channel/UCEyKQl1b3XKYWpZLP2_MNjw' },
   ]
 
   const purchaseOptions = [
@@ -97,7 +98,7 @@ export default function ListenSection() {
           <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">
             {t('streamTitle')}
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {streamingPlatforms.map((platform, index) => (
               <motion.a
                 key={index}

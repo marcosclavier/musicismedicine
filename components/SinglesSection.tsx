@@ -2,15 +2,18 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { FaSpotify, FaCalendar, FaClock } from 'react-icons/fa'
+import { useRef, useState } from 'react'
+import { FaSpotify, FaCalendar, FaClock, FaFileAlt } from 'react-icons/fa'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import LyricsModal from './LyricsModal'
 
 export default function SinglesSection() {
   const t = useTranslations('singles')
+  const tLyrics = useTranslations('lyrics.common')
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const [selectedLyrics, setSelectedLyrics] = useState<string | null>(null)
 
   const singles = [
     {
@@ -23,6 +26,7 @@ export default function SinglesSection() {
       artwork: '/Radio-Final-RGB-1500.jpeg',
       audioSnippet: '/audio/single-1-snippet.mp3',
       spotifyLink: 'https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3?si=eyUeMGfvS9uINyRPFLQ_8w&nd=1&dlsi=dc22e2de078c4929',
+      lyricsKey: 'radio',
     },
     {
       title: t('single2.title'),
@@ -190,6 +194,14 @@ export default function SinglesSection() {
                         <FaSpotify /> {t('listenSpotify')}
                       </a>
                     )}
+                    {single.lyricsKey && (
+                      <button
+                        onClick={() => setSelectedLyrics(single.lyricsKey || null)}
+                        className="flex items-center gap-2 bg-accent-purple text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent-orange transition-colors duration-300"
+                      >
+                        <FaFileAlt /> {tLyrics('viewLyrics')}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -197,6 +209,15 @@ export default function SinglesSection() {
           ))}
         </div>
       </div>
+
+      {/* Lyrics Modal */}
+      {selectedLyrics && (
+        <LyricsModal
+          isOpen={!!selectedLyrics}
+          onClose={() => setSelectedLyrics(null)}
+          songKey={selectedLyrics}
+        />
+      )}
     </section>
   )
 }

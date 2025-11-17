@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-text-primary mb-4">Third-Party Links</h2>
             <p className="text-text-secondary leading-relaxed mb-4">
-              Our website contains links to third-party websites including Spotify, Qobuz, and the Brain Tumour
+              Our website contains links to third-party websites including Spotify, Apple Music, YouTube Music, and the Brain Tumour
               Foundation of Canada's donation platform. We are not responsible for the privacy practices of these
               third-party sites. We encourage you to review their privacy policies.
             </p>

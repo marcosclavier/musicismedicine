@@ -88,7 +88,7 @@ export default function TermsOfService() {
               Alan Parsons, is protected by copyright and other intellectual property laws.
             </p>
             <p className="text-text-secondary leading-relaxed mb-4">
-              When you stream or purchase music through authorized platforms (Spotify, Qobuz, etc.), you
+              When you stream or purchase music through authorized platforms (Spotify, Apple Music, YouTube Music, etc.), you
               are granted a limited, non-exclusive license to access and listen to the music for personal,
               non-commercial use only.
             </p>
@@ -117,7 +117,7 @@ export default function TermsOfService() {
               The Website contains links to third-party websites and services, including:
             </p>
             <ul className="list-disc pl-6 mb-4 text-text-secondary space-y-2">
-              <li>Streaming platforms (Spotify, Qobuz)</li>
+              <li>Streaming platforms (Spotify, Apple Music, YouTube Music)</li>
               <li>Brain Tumour Foundation of Canada donation platform</li>
               <li>Social media platforms</li>
               <li>Partner and sponsor websites</li>

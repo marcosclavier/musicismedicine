@@ -30,7 +30,7 @@
   "about": {
     "title": "About",
     "titleHighlight": "Music Is Medicine",
-    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and member of the band N2O. Five original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
+    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and members of the band N2O. Five original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
     "stats": {
       "singlesLabel": "Charity Singles",
       "raisedLabel": "Already Raised",
@@ -154,7 +154,7 @@
     "titleHighlight": "Listen & Buy",
     "subtitle": "Stream on your favorite platform or purchase to maximize your impact",
     "streamTitle": "Stream \"Radio\" Now",
-    "platformsAvailable": "Currently available on Spotify and Qobuz",
+    "platformsAvailable": "Currently available on Spotify, Apple Music, and Youtube Music.",
     "impactTitle": "Streaming is Support, Listening is Giving",
     "impactDescription": "When you listen or buy, you're directly supporting the Brain Tumour Foundation of Canada. Every action helps turn music into hope for families across Canada."
   },
@@ -381,6 +381,87 @@
       "description": "We're currently in the studio working on our second album of original material — a tribute to friendship, creativity, and the power of music to heal.",
       "button": "Listen on ReverbNation",
       "followText": "Follow our journey and discover more of our music"
+    }
+  },
+  "lyrics": {
+    "common": {
+      "close": "Close",
+      "print": "Print lyrics",
+      "chorus": "Chorus",
+      "bridge": "Bridge",
+      "writtenBy": "Written by",
+      "producedBy": "Produced by",
+      "viewLyrics": "View Lyrics"
+    },
+    "radio": {
+      "title": "Radio",
+      "artist": "N2O featuring Alan Parsons",
+      "sections": [
+        {
+          "type": "verse",
+          "lines": [
+            "I listen to your lines",
+            "Selfishly I see my life",
+            "Came along and passed me by",
+            "Passed me by",
+            "",
+            "Seems like a long time ago",
+            "Listening to Abbey Road",
+            "Every line you'll ever write",
+            "Memories, the lasting kind"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "All my life the winding road",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        },
+        {
+          "type": "verse",
+          "lines": [
+            "Do you hear my moans",
+            "A heart alone",
+            "I listen to the radio",
+            "All my life",
+            "In my mind",
+            "That's where I go"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "On my own the nights alone",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        },
+        {
+          "type": "bridge",
+          "lines": [
+            "All the love that I can take",
+            "I never felt alone no",
+            "Every move that I can make",
+            "Always there to get me back home"
+          ]
+        },
+        {
+          "type": "chorus",
+          "lines": [
+            "On my own the nights alone",
+            "I found a place to call my own",
+            "In my head",
+            "Beside my bed",
+            "I hear the Beatles on the radio"
+          ]
+        }
+      ]
     }
   },
   "metadata": {

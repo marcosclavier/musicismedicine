@@ -196,7 +196,12 @@ Distributed globally by LANDR, Music Is Medicine merges artistry, technology, an
 
 General Notes
 
-users can use this link to listen to the song. If possible extract the sample so we can host it in the websites. https://www.qobuz.com/ca-en/album/radio-n2o-featuring-alan-parsons-live-project/i9croel68wg1a
+Users can listen to the music on the following platforms:
+- Apple Music: https://music.apple.com/fi/artist/n2o/1324337417
+- YouTube Music: https://music.youtube.com/channel/UCEyKQl1b3XKYWpZLP2_MNjw
+- Spotify: https://open.spotify.com/track/6e81ngILs9n5EeMQJIUVK3
+
+If possible extract audio samples so we can host them on the website.
 
 Donations are accepted through the brain tumour foundation of Canada https://www.braintumour.ca/general-giving/
 

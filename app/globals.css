@@ -134,3 +134,4 @@ a:focus, button:focus {
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-blue via-accent-purple to-accent-orange;
 }
+
