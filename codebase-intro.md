@@ -6,6 +6,8 @@ This is a Next.js-based landing page for **Music Is Medicine**, a charitable mus
 
 The website showcases four original charity singles released monthly from November 2025 through February 2026, with net proceeds donated to support brain tumour research, education, and patient programs.
 
+IMPORTANT NOTE: If you introduce changes to the codebase that make this document outdated please update this document!
+
 ---
 
 ## Tech Stack
@@ -45,6 +47,7 @@ alan-parsons-landing/
 │   ├── AboutSection.tsx    # Initiative overview with stats
 │   ├── VisionariesSection.tsx  # Robert Frances & Alan Parsons profiles
 │   ├── SinglesSection.tsx  # Four singles showcase with release schedule
+│   ├── LyricsModal.tsx     # Lyrics display modal with bilingual support
 │   ├── ListenSection.tsx   # Streaming platforms & purchase options
 │   ├── DonateSection.tsx   # Donation tiers & giving options
 │   ├── ImpactSection.tsx   # Research impact & testimonials
@@ -116,25 +119,45 @@ The landing page follows a **single-page scrolling architecture** with 9 main se
 - **File**: `components/SinglesSection.tsx`
 - **ID**: `#singles`
 - **Features**:
-  - Release schedule banner (November 2025 - February 2026)
-  - Four singles with details:
-    1. **Radio** (Nov 4, 2025) - Available now with Spotify link
-    2. **You & I** (Nov 30, 2025) - Upcoming
-    3. **Courage** (Dec 30, 2025) - Upcoming
-    4. **Where to Go** (Feb 28, 2026) - Upcoming
+  - Release schedule banner (November 2025 - March 2026)
+  - Five singles with details:
+    1. **Radio** (Nov 19, 2025) - Available now with Spotify link and lyrics
+    2. **Single #2** (Dec 19, 2025) - Upcoming
+    3. **Single #3** (Jan 19, 2026) - Upcoming
+    4. **Single #4** (Feb 19, 2026) - Upcoming
+    5. **Single #5** (Mar 19, 2026) - Upcoming
   - Album artwork display (Radio has real artwork, others show placeholders)
-  - Play/pause button overlays (UI only, no actual audio player implemented)
+  - "View Lyrics" button for singles with lyrics available
   - Theme tags for each single
   - Status badges (Available Now / Coming Soon)
+  - Integrated LyricsModal component for displaying song lyrics
+
+### 5a. Lyrics Modal
+- **File**: `components/LyricsModal.tsx`
+- **Triggered by**: "View Lyrics" button in SinglesSection
+- **Features**:
+  - **Animated modal overlay** with Framer Motion
+  - **Bilingual support**:
+    - English locale: Shows only English lyrics
+    - French locale: Shows English original and French translation side-by-side
+  - **Print functionality**: Opens clean print window with formatted lyrics
+  - **Structured lyrics display**:
+    - Verse/Chorus/Bridge labels
+    - Proper line spacing and formatting
+    - Indented choruses with colored borders
+  - **Credits section**: Artist attribution and copyright
+  - **Responsive design**: Two-column layout on desktop, stacked on mobile
+  - **Keyboard accessible**: ESC key to close, backdrop click to dismiss
+  - **Translation integration**: Uses next-intl for localized content
 
 ### 6. Listen Section
 - **File**: `components/ListenSection.tsx`
 - **ID**: `#listen`
 - **Features**:
-  - Streaming platform buttons (Spotify, Apple Music, YouTube, Amazon, Tidal)
-  - Purchase options explanation
-  - FAQ accordion
+  - Streaming platform buttons (Spotify, Apple Music, YouTube Music)
+  - Direct links to artist pages on each platform
   - Impact messaging: "Every listen helps turn music into medicine"
+  - Responsive grid layout for platform icons
 
 ### 7. Donate Section
 - **File**: `components/DonateSection.tsx`
@@ -156,15 +179,30 @@ The landing page follows a **single-page scrolling architecture** with 9 main se
   - Partner organizations
   - Social proof and credibility building
 
+### 8a. Band Story Section
+- **File**: `components/BandStorySection.tsx`
+- **ID**: `#band-story`
+- **Features**:
+  - N2O band introduction and story
+  - Band member profiles (Morris Dascal, Shawn Dascal, Rob Frances, Peter Winternitz, David Tondino)
+  - Tribute to David Tondino (in memory)
+  - "From Friendship to Legacy" narrative
+  - "Music as Medicine" mission statement
+  - "The Journey Continues" section about current work
+  - Band photo display
+  - Link to ReverbNation for additional music
+  - Uses next-intl for bilingual support
+
 ### 9. Footer
 - **File**: `components/Footer.tsx`
 - **ID**: N/A
 - **Features**:
-  - Newsletter signup
+  - Newsletter signup with Mailchimp integration
   - Social media links
   - Quick navigation
   - Contact information
   - Legal links (privacy policy, terms)
+  - No longer includes "Proud Sponsors" section (removed as of Nov 2025)
 
 ---
 
@@ -363,11 +401,12 @@ This is the main homepage that imports and arranges all sections in order. The p
 2. HeroBanner
 3. AboutSection
 4. VisionariesSection
-5. SinglesSection
-6. ListenSection
-7. DonateSection
-8. ImpactSection
-9. Footer
+5. BandStorySection
+6. SinglesSection
+7. ListenSection
+8. DonateSection
+9. ImpactSection
+10. Footer
 
 ### 3. `tailwind.config.js` - Design Tokens
 
@@ -517,19 +556,20 @@ From `components/SinglesSection.tsx` and `phase-2-changes.md`:
 
 | # | Title | Release Date | Status | Notes |
 |---|-------|-------------|--------|-------|
-| 1 | Radio | November 4, 2025 | Available | Produced & Mixed by Alan Parsons |
-| 2 | You & I | November 30, 2025 | Upcoming | Tribute to love & resilience |
-| 3 | Courage | December 30, 2025 | Upcoming | About strength & healing |
-| 4 | Where to Go | February 28, 2026 | Upcoming | Reflection on purpose & hope |
+| 1 | Radio | November 19, 2025 | Available | Produced & Mixed by Alan Parsons |
+| 2 | Single #2 | December 19, 2025 | Upcoming | TBD |
+| 3 | Single #3 | January 19, 2026 | Upcoming | TBD |
+| 4 | Single #4 | February 19, 2026 | Upcoming | TBD |
+| 5 | Single #5 | March 19, 2026 | Upcoming | TBD |
 
-**Note**: There's a discrepancy in dates. The hero banner says "November 4, 2025" while phase-2-changes.md says "October 30, 2025". The code currently uses **November 4, 2025**.
+**Note**: Release dates updated November 2025. All singles released on the 19th of each month, one month apart. Credits changed from "featuring Alan Parsons" to "produced and mixed by Alan Parsons" to accurately reflect his role.
 
 ### Key Statistics
 
 From `components/AboutSection.tsx` and `components/DonateSection.tsx`:
 
-- **$600,000+** already raised through benefit concerts and early support
-- **4** charity singles
+- **$600,000+** already raised through benefit concert and early support (singular)
+- **5** charity singles (updated from 4)
 - **100%** of net proceeds donated
 - **1000s** of supporters nationwide
 - First benefit concert: **May 14, 2024** at Théâtre Maisonneuve, Montreal
@@ -814,8 +854,21 @@ Current branch structure:
 
 ## Version History
 
-- **v1.0.0** (Current): Initial landing page with all 8 sections
+- **v1.0.0**: Initial landing page with all 8 sections
 - **Phase 2**: Updated content based on `phase-2-changes.md`
+- **v1.1.0** (November 19, 2025): Major content updates
+  - Added BandStorySection component
+  - Updated release dates (Radio moved to Nov 19, 2025; all subsequent singles on 19th of month)
+  - Changed credits from "featuring" to "produced and mixed by" Alan Parsons
+  - Updated singles count from 4 to 5
+  - Removed "Proud Sponsors" section from footer
+  - Changed "Listen & Buy" to "Listen & Support"
+  - Updated "The Neuro" references to "Brain Tumour Foundation of Canada"
+  - Changed "concerts" to "concert" (singular) in donation section
+  - Removed tier descriptions/impact text from donation tiers
+  - Removed hyphens in Band Story text (replaced with commas)
+  - Updated "Journey Continues" section with new messaging
+  - Applied all changes to both English and French translations
 
 ---
 
@@ -831,6 +884,7 @@ Current branch structure:
 | Hero headline | `components/HeroBanner.tsx` |
 | About text | `components/AboutSection.tsx` |
 | Artist profiles | `components/VisionariesSection.tsx` |
+| Band story | `components/BandStorySection.tsx` |
 | Singles info | `components/SinglesSection.tsx` |
 | Streaming links | `components/ListenSection.tsx` |
 | Donation tiers | `components/DonateSection.tsx` |
@@ -847,6 +901,7 @@ Current branch structure:
 | Hero | `#hero` | HeroBanner |
 | About | `#about` | AboutSection |
 | Visionaries | `#visionaries` | VisionariesSection |
+| Band Story | `#band-story` | BandStorySection |
 | Singles | `#singles` | SinglesSection |
 | Listen | `#listen` | ListenSection |
 | Donate | `#donate` | DonateSection |

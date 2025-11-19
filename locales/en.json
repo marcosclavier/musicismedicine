@@ -16,12 +16,12 @@
     "badge": "N2O Featuring 14 Grammy-Winning Artist Alan Parsons",
     "title": "Music is Medicine",
     "subtitle": "Where music, purpose, and hope come together",
-    "description": "Five original singles by N2O, featuring Alan Parsons",
+    "description": "Five original singles by N2O, produced by Alan Parsons",
     "firstRelease": "First release:",
     "radioTitle": "\"Radio\"",
     "producedBy": "– Produced and Mixed by Alan Parsons",
     "availableDate": "Available",
-    "releaseDate": "November 4, 2025",
+    "releaseDate": "November 19, 2025",
     "releaseSchedule": "One new single every month through February 2026",
     "listenNowButton": "Listen Now",
     "donateNowButton": "Donate Now",
@@ -30,7 +30,7 @@
   "about": {
     "title": "About",
     "titleHighlight": "Music Is Medicine",
-    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and members of the band N2O. Five original singles by N2O featuring Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
+    "subtitle": "Music Is Medicine is a heartfelt Canadian music initiative created by Robert Frances, CEO of PEAK Financial Group and members of the band N2O. Five original singles by N2O produced by Grammy-winning artist Alan Parsons, raising funds and awareness for brain cancer research.",
     "stats": {
       "singlesLabel": "Charity Singles",
       "raisedLabel": "Already Raised",
@@ -88,7 +88,7 @@
       },
       "landr": {
         "name": "LANDR",
-        "description": "Leading audio mastering and distribution platform distributing all four charity singles globally."
+        "description": "Leading audio mastering and distribution platform distributing all five singles globally."
       },
       "foundation": {
         "name": "Brain Tumour Foundation of Canada",
@@ -101,41 +101,41 @@
   "singles": {
     "title": "The",
     "titleHighlight": "Singles",
-    "subtitle": "Five original singles by N2O featuring Alan Parsons, releasing from November 2025 through February 2026",
+    "subtitle": "Five original singles by N2O, produced and mixed by Alan Parsons, releasing from November 2025 through February 2026",
     "scheduleTitle": "Release Schedule",
-    "scheduleDescription": "One new single every month • November 4, 2025 - February 28, 2026",
+    "scheduleDescription": "One new single every month • November 2025 - March 2026",
     "radio": {
       "title": "Radio",
-      "subtitle": "by N2O featuring Alan Parsons",
-      "releaseDate": "November 4, 2025",
+      "subtitle": "by N2O, produced and mixed by Alan Parsons",
+      "releaseDate": "November 19, 2025",
       "description": "Produced and Mixed by Alan Parsons — a song about connection, memory, and finding light after loss. This powerful opening track sets the tone for the journey ahead.",
       "themes": ["Connection", "Memory", "Hope"]
     },
     "single2": {
       "title": "Single #2",
-      "subtitle": "by N2O featuring Alan Parsons",
-      "releaseDate": "November 30, 2025",
+      "subtitle": "by N2O, produced and mixed by Alan Parsons",
+      "releaseDate": "December 2025",
       "description": "A heartfelt composition exploring themes of connection and resilience.",
       "themes": ["Coming Soon"]
     },
     "single3": {
       "title": "Single #3",
-      "subtitle": "by N2O featuring Alan Parsons",
-      "releaseDate": "December 30, 2025",
+      "subtitle": "by N2O, produced and mixed by Alan Parsons",
+      "releaseDate": "January 2026",
       "description": "A powerful track about strength and perseverance.",
       "themes": ["Coming Soon"]
     },
     "single4": {
       "title": "Single #4",
-      "subtitle": "by N2O featuring Alan Parsons",
-      "releaseDate": "January 30, 2026",
+      "subtitle": "by N2O, produced and mixed by Alan Parsons",
+      "releaseDate": "February 2026",
       "description": "An inspiring composition about hope and purpose.",
       "themes": ["Coming Soon"]
     },
     "single5": {
       "title": "Single #5",
-      "subtitle": "by N2O featuring Alan Parsons",
-      "releaseDate": "February 28, 2026",
+      "subtitle": "by N2O, produced and mixed by Alan Parsons",
+      "releaseDate": "March 2026",
       "description": "The finale that looks toward a future filled with possibility.",
       "themes": ["Coming Soon"]
     },
@@ -145,25 +145,25 @@
     "listenSpotify": "Listen on Spotify",
     "preSave": "Pre-Save",
     "collectionTitle": "Exclusive Charity Collection",
-    "collectionDescription": "All singles by N2O featuring Alan Parsons, distributed globally by LANDR. Net proceeds donated to the Brain Tumour Foundation of Canada.",
+    "collectionDescription": "All singles by N2O, produced and mixed by Alan Parsons, distributed globally by LANDR. Net proceeds donated to the Brain Tumour Foundation of Canada.",
     "notificationsButton": "Get Notifications",
     "howToListenButton": "How to Listen & Buy"
   },
   "listen": {
     "title": "How to",
-    "titleHighlight": "Listen & Buy",
-    "subtitle": "Stream on your favorite platform or purchase to maximize your impact",
+    "titleHighlight": "Listen & Support",
+    "subtitle": "Stream on your favorite platform or support to maximize your impact",
     "streamTitle": "Stream \"Radio\" Now",
     "platformsAvailable": "Currently available on Spotify, Apple Music, and Youtube Music.",
     "impactTitle": "Streaming is Support, Listening is Giving",
-    "impactDescription": "When you listen or buy, you're directly supporting the Brain Tumour Foundation of Canada. Every action helps turn music into hope for families across Canada."
+    "impactDescription": "When you listen or donate, you're directly supporting the Brain Tumour Foundation of Canada. Every action helps turn music into hope for families across Canada."
   },
   "donate": {
     "title": "How to",
     "titleHighlight": "Donate",
-    "subtitle": "Support life-changing brain cancer research at The Neuro",
+    "subtitle": "Support life-changing brain cancer research at Brain Tumour Foundation of Canada",
     "impactTitle": "Over $600,000 Raised for Brain Tumour Research",
-    "impactDescription": "Through past benefit concerts and early support, these funds support research, education, and patient programs. Your donation today continues this vital work.",
+    "impactDescription": "Through past benefit concert and early support, these funds support research, education, and patient programs. Your donation today continues this vital work.",
     "stats": {
       "totalRaised": "Total Raised",
       "supporters": "Supporters Nationwide",
@@ -174,33 +174,28 @@
       "single": {
         "amount": "$10",
         "title": "Single Supporter",
-        "description": "Equivalent to one single release",
-        "impact": "Supports basic research materials"
+        "description": "Equivalent to one single release"
       },
       "advocate": {
         "amount": "$25",
         "title": "Music Advocate",
         "description": "Support multiple single releases",
-        "impact": "Funds laboratory testing and trials",
         "popular": "Popular"
       },
       "master": {
         "amount": "$50",
         "title": "Research Master",
-        "description": "Make a real impact for patients",
-        "impact": "Contributes to clinical trial costs"
+        "description": "Make a real impact for patients"
       },
       "builder": {
         "amount": "$100",
         "title": "Hope Builder",
-        "description": "Full sample collection support",
-        "impact": "Funds advanced research equipment"
+        "description": "Full sample collection support"
       },
       "visionary": {
         "amount": "Custom",
         "title": "Visionary Donor",
-        "description": "Choose your preferred amount",
-        "impact": "Every dollar makes a difference"
+        "description": "Choose your preferred amount"
       }
     },
     "selectButton": "Select",
@@ -342,15 +337,15 @@
     "photoCaption": "Lifelong friends, boundless passion, timeless music",
     "story": {
       "friendshipTitle": "From Friendship to Legacy",
-      "paragraph1": "N2O is more than a band — we're a brotherhood of lifelong friends and musicians bound by a deep passion for music, creativity, and the magic of the recording process. We've always believed we're <strong>#never2old</strong> to evolve, write new songs, and push our sound forward.",
-      "paragraph2": "Our music reflects the energy and joy of being young at heart — a dynamic blend of rock, pop, and power ballads driven by raw emotion and authenticity. But behind every chord and lyric is a deeper story.",
-      "paragraph3": "When we lost our dear friend and bandmate <strong>David Tondino</strong>, it changed us all. David wasn't just our drummer — he was the heartbeat of our collaboration, a constant source of creativity and friendship. His passing left a profound impact on each of us, reshaping not just our music, but our purpose."
+      "paragraph1": "N2O is more than a band, we're a brotherhood of lifelong friends and musicians bound by a deep passion for music, creativity, and the magic of the recording process. We've always believed we're <strong>#never2old</strong> to evolve, write new songs, and push our sound forward.",
+      "paragraph2": "Our music reflects the energy and joy of being young at heart, a dynamic blend of rock, pop, and power ballads driven by raw emotion and authenticity. But behind every chord and lyric is a deeper story.",
+      "paragraph3": "When we lost our dear friend and bandmate <strong>David Tondino</strong>, it changed us all. David wasn't just our drummer, he was the heartbeat of our collaboration, a constant source of creativity and friendship. His passing left a profound impact on each of us, reshaping not just our music, but our purpose."
     },
     "mission": {
       "title": "Music as Medicine",
       "paragraph1": "From the beginning, our goal was to use our music to create a legacy — to tell the story of our journey, the creative process, and how we found a way forward after losing David. We wanted to honor his memory by continuing to make the music he loved.",
       "paragraph2": "When <strong>Alan Parsons</strong> and his Live Project came to Montreal, something magical happened. Alan and his band recorded and produced stunning new versions of our original songs, bringing the band's vision for <strong>Music is Medicine</strong> to life in ways we never imagined.",
-      "paragraph3": "Now, being able to contribute our music to support brain cancer research at The Neuro feels like a full-circle moment. David's spirit lives on in every note, and through this initiative, we're transforming our grief into hope, our loss into healing, and our music into medicine."
+      "paragraph3": "Now, being able to contribute our music to support brain cancer research feels like a full-circle moment. David's spirit lives on in every note, and through this initiative, we're transforming our grief into hope, our loss into healing, and our music into medicine."
     },
     "bandTitle": "The Band",
     "members": {
@@ -378,7 +373,7 @@
     },
     "currentWork": {
       "title": "The Journey Continues",
-      "description": "We're currently in the studio working on our second album of original material — a tribute to friendship, creativity, and the power of music to heal.",
+      "description": "We're crafting our next original single, a heartfelt tribute to friendship, creativity, and the healing power of music. Stay tuned! The next chapter of Music Is Medicine is on its way.",
       "button": "Listen on ReverbNation",
       "followText": "Follow our journey and discover more of our music"
     }
