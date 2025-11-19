@@ -49,13 +49,14 @@ export default function BandStorySection() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl mb-16"
+          className="relative w-full h-auto rounded-2xl overflow-hidden shadow-2xl mb-16"
         >
           <Image
             src="/N2O_band.jpg"
             alt="N2O Band - Morris Dascal, Shawn Dascal, Rob Frances, and Peter Winternitz"
-            fill
-            className="object-cover object-center"
+            width={1200}
+            height={800}
+            className="w-full h-auto object-contain"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1200px"
             priority
           />
