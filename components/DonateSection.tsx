@@ -141,11 +141,6 @@ export default function DonateSection() {
                   <p className="text-sm text-text-secondary mb-3">
                     {tier.description}
                   </p>
-                  <div className="bg-primary-gray rounded-lg p-3 mb-4">
-                    <p className="text-xs text-text-primary font-medium">
-                      {tier.impact}
-                    </p>
-                  </div>
                   <a
                     href={tier.link}
                     target="_blank"
