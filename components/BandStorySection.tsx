@@ -49,19 +49,20 @@ export default function BandStorySection() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl mb-16"
+          className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl mb-16"
         >
           <Image
             src="/N2O_band.jpg"
             alt="N2O Band - Morris Dascal, Shawn Dascal, Rob Frances, and Peter Winternitz"
             fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 1200px"
+            className="object-cover object-center"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          <div className="absolute bottom-8 left-8 right-8">
-            <h3 className="text-white text-3xl md:text-4xl font-heading font-bold mb-2">N2O</h3>
-            <p className="text-white/90 text-lg">{t('photoCaption')}</p>
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8">
+            <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-1 sm:mb-2">N2O</h3>
+            <p className="text-white/90 text-base sm:text-lg">{t('photoCaption')}</p>
           </div>
         </motion.div>
 
